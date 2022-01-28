@@ -1,0 +1,1258 @@
+TimeQuest Timing Analyzer report for comparador_sensores
+Fri Jan 28 11:29:08 2022
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Slow 1200mV 85C Model Metastability Report
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Slow 1200mV 0C Model Metastability Report
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Fast 1200mV 0C Model Metastability Report
+ 32. Multicorner Timing Analysis Summary
+ 33. Progagation Delay
+ 34. Minimum Progagation Delay
+ 35. Board Trace Model Assignments
+ 36. Input Transition Times
+ 37. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 38. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 39. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 40. Clock Transfers
+ 41. Report TCCS
+ 42. Report RSKM
+ 43. Unconstrained Paths
+ 44. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; comparador_sensores                                               ;
+; Device Family      ; Cyclone IV GX                                                     ;
+; Device Name        ; EP4CGX15BF14C6                                                    ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Enabled                                                           ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
+---------------------------------------
+; Slow 1200mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++-------------------------------------------------------------------+
+; Propagation Delay                                                 ;
++--------------+----------------+--------+--------+--------+--------+
+; Input Port   ; Output Port    ; RR     ; RF     ; FR     ; FF     ;
++--------------+----------------+--------+--------+--------+--------+
+; data[0]      ; igual_sensores ; 10.161 ; 10.104 ; 10.646 ; 10.580 ;
+; data[0]      ; maior_sensores ;        ; 10.321 ; 11.139 ;        ;
+; data[0]      ; menor_sensores ; 10.371 ;        ;        ; 10.631 ;
+; data[1]      ; igual_sensores ; 10.440 ; 10.417 ; 10.983 ; 10.955 ;
+; data[1]      ; maior_sensores ;        ; 10.791 ; 11.460 ;        ;
+; data[1]      ; menor_sensores ; 11.035 ;        ;        ; 11.599 ;
+; data[2]      ; igual_sensores ; 8.194  ; 8.134  ; 8.273  ; 8.203  ;
+; data[2]      ; maior_sensores ;        ; 8.059  ; 8.459  ;        ;
+; data[2]      ; menor_sensores ; 8.321  ;        ;        ; 8.144  ;
+; data[3]      ; igual_sensores ; 7.904  ; 7.807  ; 7.992  ; 7.886  ;
+; data[3]      ; maior_sensores ;        ; 8.394  ; 8.605  ;        ;
+; data[3]      ; menor_sensores ; 8.483  ;        ;        ; 8.554  ;
+; data[4]      ; igual_sensores ; 10.449 ; 10.436 ; 10.963 ; 10.894 ;
+; data[4]      ; maior_sensores ;        ; 10.136 ; 10.957 ;        ;
+; data[4]      ; menor_sensores ; 10.594 ;        ;        ; 10.848 ;
+; data[5]      ; igual_sensores ; 9.907  ; 9.938  ; 10.449 ; 10.351 ;
+; data[5]      ; maior_sensores ;        ; 9.044  ; 9.577  ;        ;
+; data[5]      ; menor_sensores ; 9.137  ;        ;        ; 9.539  ;
+; data[6]      ; igual_sensores ; 10.014 ; 9.940  ; 10.475 ; 10.433 ;
+; data[6]      ; maior_sensores ;        ; 9.738  ; 10.568 ;        ;
+; data[6]      ; menor_sensores ; 10.049 ;        ;        ; 10.273 ;
+; data[7]      ; igual_sensores ; 9.922  ; 9.925  ; 10.411 ; 10.300 ;
+; data[7]      ; maior_sensores ;        ; 8.970  ; 9.504  ;        ;
+; data[7]      ; menor_sensores ; 8.997  ;        ;        ; 9.415  ;
+; data[8]      ; igual_sensores ; 10.249 ; 10.135 ; 10.763 ; 10.682 ;
+; data[8]      ; maior_sensores ;        ; 9.735  ; 10.576 ;        ;
+; data[8]      ; menor_sensores ; 10.515 ;        ;        ; 10.792 ;
+; data[9]      ; igual_sensores ; 10.138 ; 10.061 ; 10.648 ; 10.566 ;
+; data[9]      ; maior_sensores ;        ; 9.352  ; 9.938  ;        ;
+; data[9]      ; menor_sensores ; 9.413  ;        ;        ; 9.877  ;
+; data[10]     ; igual_sensores ; 9.962  ; 9.820  ; 10.499 ; 10.301 ;
+; data[10]     ; maior_sensores ;        ; 9.185  ; 10.014 ;        ;
+; data[10]     ; menor_sensores ; 9.910  ;        ;        ; 10.159 ;
+; data[11]     ; igual_sensores ; 9.199  ; 9.055  ; 9.672  ; 9.561  ;
+; data[11]     ; maior_sensores ;        ; 9.187  ; 9.782  ;        ;
+; data[11]     ; menor_sensores ; 9.304  ;        ;        ; 9.786  ;
+; data[12]     ; igual_sensores ; 9.247  ; 9.130  ; 9.747  ; 9.621  ;
+; data[12]     ; maior_sensores ;        ; 9.281  ; 10.122 ;        ;
+; data[12]     ; menor_sensores ; 9.576  ;        ;        ; 9.839  ;
+; data[13]     ; igual_sensores ; 9.546  ; 9.463  ; 10.001 ; 9.913  ;
+; data[13]     ; maior_sensores ;        ; 8.738  ; 9.250  ;        ;
+; data[13]     ; menor_sensores ; 8.820  ;        ;        ; 9.226  ;
+; data[14]     ; igual_sensores ; 9.661  ; 9.568  ; 10.163 ; 10.061 ;
+; data[14]     ; maior_sensores ;        ; 9.280  ; 10.116 ;        ;
+; data[14]     ; menor_sensores ; 9.545  ;        ;        ; 9.807  ;
+; data[15]     ; igual_sensores ; 7.118  ; 7.023  ; 7.245  ; 7.182  ;
+; data[15]     ; maior_sensores ;        ; 6.207  ; 6.496  ;        ;
+; data[15]     ; menor_sensores ; 6.316  ;        ;        ; 6.395  ;
+; escolha2[0]  ; igual_sensores ; 9.884  ; 9.824  ; 10.363 ; 10.336 ;
+; escolha2[0]  ; maior_sensores ; 10.031 ;        ;        ; 10.227 ;
+; escolha2[0]  ; menor_sensores ;        ; 9.783  ; 10.533 ;        ;
+; escolha2[1]  ; igual_sensores ; 10.364 ; 10.344 ; 10.914 ; 10.884 ;
+; escolha2[1]  ; maior_sensores ; 10.162 ;        ;        ; 10.604 ;
+; escolha2[1]  ; menor_sensores ;        ; 10.130 ; 10.689 ;        ;
+; escolha2[2]  ; igual_sensores ; 8.155  ; 8.092  ; 8.246  ; 8.178  ;
+; escolha2[2]  ; maior_sensores ; 8.205  ;        ;        ; 7.998  ;
+; escolha2[2]  ; menor_sensores ;        ; 8.452  ; 8.807  ;        ;
+; escolha2[3]  ; igual_sensores ; 10.028 ; 9.928  ; 10.463 ; 10.396 ;
+; escolha2[3]  ; maior_sensores ; 9.605  ;        ;        ; 9.977  ;
+; escolha2[3]  ; menor_sensores ;        ; 9.533  ; 10.014 ;        ;
+; escolha2[4]  ; igual_sensores ; 8.234  ; 8.184  ; 8.291  ; 8.273  ;
+; escolha2[4]  ; maior_sensores ; 7.821  ;        ;        ; 7.619  ;
+; escolha2[4]  ; menor_sensores ;        ; 7.587  ; 7.954  ;        ;
+; escolha2[5]  ; igual_sensores ; 9.951  ; 9.903  ; 10.426 ; 10.369 ;
+; escolha2[5]  ; maior_sensores ; 9.850  ;        ;        ; 10.259 ;
+; escolha2[5]  ; menor_sensores ;        ; 9.935  ; 10.440 ;        ;
+; escolha2[6]  ; igual_sensores ; 10.059 ; 10.023 ; 10.543 ; 10.449 ;
+; escolha2[6]  ; maior_sensores ; 9.395  ;        ;        ; 9.575  ;
+; escolha2[6]  ; menor_sensores ;        ; 8.951  ; 9.650  ;        ;
+; escolha2[7]  ; igual_sensores ; 10.015 ; 9.943  ; 10.532 ; 10.451 ;
+; escolha2[7]  ; maior_sensores ; 10.212 ;        ;        ; 10.702 ;
+; escolha2[7]  ; menor_sensores ;        ; 10.324 ; 10.912 ;        ;
+; escolha2[8]  ; igual_sensores ; 10.011 ; 9.900  ; 10.496 ; 10.376 ;
+; escolha2[8]  ; maior_sensores ; 9.938  ;        ;        ; 10.114 ;
+; escolha2[8]  ; menor_sensores ;        ; 9.939  ; 10.694 ;        ;
+; escolha2[9]  ; igual_sensores ; 10.285 ; 10.211 ; 10.796 ; 10.712 ;
+; escolha2[9]  ; maior_sensores ; 10.323 ;        ;        ; 10.743 ;
+; escolha2[9]  ; menor_sensores ;        ; 10.277 ; 10.810 ;        ;
+; escolha2[10] ; igual_sensores ; 9.698  ; 9.543  ; 10.165 ; 10.019 ;
+; escolha2[10] ; maior_sensores ; 9.460  ;        ;        ; 9.643  ;
+; escolha2[10] ; menor_sensores ;        ; 9.204  ; 9.949  ;        ;
+; escolha2[11] ; igual_sensores ; 9.461  ; 9.320  ; 9.954  ; 9.804  ;
+; escolha2[11] ; maior_sensores ; 9.730  ;        ;        ; 10.164 ;
+; escolha2[11] ; menor_sensores ;        ; 9.868  ; 10.412 ;        ;
+; escolha2[12] ; igual_sensores ; 9.259  ; 9.139  ; 9.706  ; 9.619  ;
+; escolha2[12] ; maior_sensores ; 9.280  ;        ;        ; 9.399  ;
+; escolha2[12] ; menor_sensores ;        ; 8.818  ; 9.497  ;        ;
+; escolha2[13] ; igual_sensores ; 9.595  ; 9.515  ; 10.085 ; 9.995  ;
+; escolha2[13] ; maior_sensores ; 8.898  ;        ;        ; 9.293  ;
+; escolha2[13] ; menor_sensores ;        ; 8.787  ; 9.291  ;        ;
+; escolha2[14] ; igual_sensores ; 9.699  ; 9.685  ; 10.262 ; 10.119 ;
+; escolha2[14] ; maior_sensores ; 9.279  ;        ;        ; 9.475  ;
+; escolha2[14] ; menor_sensores ;        ; 9.249  ; 10.015 ;        ;
+; escolha2[15] ; igual_sensores ; 7.437  ; 7.379  ; 7.584  ; 7.470  ;
+; escolha2[15] ; maior_sensores ; 6.654  ;        ;        ; 6.705  ;
+; escolha2[15] ; menor_sensores ;        ; 6.578  ; 6.762  ;        ;
++--------------+----------------+--------+--------+--------+--------+
+
+
++-------------------------------------------------------------------+
+; Minimum Propagation Delay                                         ;
++--------------+----------------+--------+--------+--------+--------+
+; Input Port   ; Output Port    ; RR     ; RF     ; FR     ; FF     ;
++--------------+----------------+--------+--------+--------+--------+
+; data[0]      ; igual_sensores ; 9.809  ; 9.748  ; 10.279 ; 10.209 ;
+; data[0]      ; maior_sensores ;        ; 9.870  ; 10.497 ;        ;
+; data[0]      ; menor_sensores ; 9.751  ;        ;        ; 10.156 ;
+; data[1]      ; igual_sensores ; 10.025 ; 9.987  ; 10.555 ; 10.507 ;
+; data[1]      ; maior_sensores ;        ; 10.190 ; 10.911 ;        ;
+; data[1]      ; menor_sensores ; 10.512 ;        ;        ; 10.981 ;
+; data[2]      ; igual_sensores ; 7.876  ; 7.797  ; 7.962  ; 7.876  ;
+; data[2]      ; maior_sensores ;        ; 7.701  ; 7.933  ;        ;
+; data[2]      ; menor_sensores ; 7.787  ;        ;        ; 7.782  ;
+; data[3]      ; igual_sensores ; 7.646  ; 7.546  ; 7.738  ; 7.629  ;
+; data[3]      ; maior_sensores ;        ; 7.897  ; 8.183  ;        ;
+; data[3]      ; menor_sensores ; 8.068  ;        ;        ; 8.062  ;
+; data[4]      ; igual_sensores ; 10.037 ; 10.024 ; 10.560 ; 10.499 ;
+; data[4]      ; maior_sensores ;        ; 9.691  ; 10.321 ;        ;
+; data[4]      ; menor_sensores ; 9.964  ;        ;        ; 10.364 ;
+; data[5]      ; igual_sensores ; 9.552  ; 9.581  ; 10.074 ; 9.969  ;
+; data[5]      ; maior_sensores ;        ; 8.510  ; 9.101  ;        ;
+; data[5]      ; menor_sensores ; 8.687  ;        ;        ; 8.998  ;
+; data[6]      ; igual_sensores ; 9.660  ; 9.583  ; 10.112 ; 10.066 ;
+; data[6]      ; maior_sensores ;        ; 9.304  ; 9.948  ;        ;
+; data[6]      ; menor_sensores ; 9.435  ;        ;        ; 9.809  ;
+; data[7]      ; igual_sensores ; 9.562  ; 9.572  ; 10.046 ; 9.920  ;
+; data[7]      ; maior_sensores ;        ; 8.440  ; 9.038  ;        ;
+; data[7]      ; menor_sensores ; 8.553  ;        ;        ; 8.882  ;
+; data[8]      ; igual_sensores ; 9.844  ; 9.713  ; 10.341 ; 10.241 ;
+; data[8]      ; maior_sensores ;        ; 9.305  ; 9.956  ;        ;
+; data[8]      ; menor_sensores ; 9.887  ;        ;        ; 10.308 ;
+; data[9]      ; igual_sensores ; 9.685  ; 9.579  ; 10.182 ; 10.066 ;
+; data[9]      ; maior_sensores ;        ; 8.805  ; 9.446  ;        ;
+; data[9]      ; menor_sensores ; 8.951  ;        ;        ; 9.324  ;
+; data[10]     ; igual_sensores ; 9.544  ; 9.403  ; 10.042 ; 9.862  ;
+; data[10]     ; maior_sensores ;        ; 8.771  ; 9.415  ;        ;
+; data[10]     ; menor_sensores ; 9.300  ;        ;        ; 9.699  ;
+; data[11]     ; igual_sensores ; 8.880  ; 8.737  ; 9.342  ; 9.230  ;
+; data[11]     ; maior_sensores ;        ; 8.646  ; 9.296  ;        ;
+; data[11]     ; menor_sensores ; 8.845  ;        ;        ; 9.233  ;
+; data[12]     ; igual_sensores ; 8.927  ; 8.809  ; 9.413  ; 9.286  ;
+; data[12]     ; maior_sensores ;        ; 8.863  ; 9.517  ;        ;
+; data[12]     ; menor_sensores ; 8.979  ;        ;        ; 9.390  ;
+; data[13]     ; igual_sensores ; 9.166  ; 9.071  ; 9.611  ; 9.506  ;
+; data[13]     ; maior_sensores ;        ; 8.216  ; 8.792  ;        ;
+; data[13]     ; menor_sensores ; 8.381  ;        ;        ; 8.698  ;
+; data[14]     ; igual_sensores ; 9.330  ; 9.235  ; 9.816  ; 9.712  ;
+; data[14]     ; maior_sensores ;        ; 8.867  ; 9.514  ;        ;
+; data[14]     ; menor_sensores ; 8.954  ;        ;        ; 9.362  ;
+; data[15]     ; igual_sensores ; 6.888  ; 6.791  ; 7.018  ; 6.952  ;
+; data[15]     ; maior_sensores ;        ; 6.009  ; 6.296  ;        ;
+; data[15]     ; menor_sensores ; 6.117  ;        ;        ; 6.196  ;
+; escolha2[0]  ; igual_sensores ; 9.538  ; 9.475  ; 10.005 ; 9.973  ;
+; escolha2[0]  ; maior_sensores ; 9.420  ;        ;        ; 9.766  ;
+; escolha2[0]  ; menor_sensores ;        ; 9.349  ; 9.914  ;        ;
+; escolha2[1]  ; igual_sensores ; 9.951  ; 9.911  ; 10.488 ; 10.441 ;
+; escolha2[1]  ; maior_sensores ; 9.673  ;        ;        ; 10.021 ;
+; escolha2[1]  ; menor_sensores ;        ; 9.555  ; 10.177 ;        ;
+; escolha2[2]  ; igual_sensores ; 7.838  ; 7.761  ; 7.934  ; 7.847  ;
+; escolha2[2]  ; maior_sensores ; 7.675  ;        ;        ; 7.641  ;
+; escolha2[2]  ; menor_sensores ;        ; 8.079  ; 8.266  ;        ;
+; escolha2[3]  ; igual_sensores ; 9.677  ; 9.575  ; 10.101 ; 10.030 ;
+; escolha2[3]  ; maior_sensores ; 9.137  ;        ;        ; 9.421  ;
+; escolha2[3]  ; menor_sensores ;        ; 8.981  ; 9.521  ;        ;
+; escolha2[4]  ; igual_sensores ; 7.961  ; 7.906  ; 8.024  ; 8.000  ;
+; escolha2[4]  ; maior_sensores ; 7.305  ;        ;        ; 7.270  ;
+; escolha2[4]  ; menor_sensores ;        ; 7.248  ; 7.445  ;        ;
+; escolha2[5]  ; igual_sensores ; 9.604  ; 9.551  ; 10.067 ; 10.005 ;
+; escolha2[5]  ; maior_sensores ; 9.371  ;        ;        ; 9.689  ;
+; escolha2[5]  ; menor_sensores ;        ; 9.366  ; 9.930  ;        ;
+; escolha2[6]  ; igual_sensores ; 9.660  ; 9.625  ; 10.165 ; 10.069 ;
+; escolha2[6]  ; maior_sensores ; 8.808  ;        ;        ; 9.146  ;
+; escolha2[6]  ; menor_sensores ;        ; 8.549  ; 9.065  ;        ;
+; escolha2[7]  ; igual_sensores ; 9.664  ; 9.589  ; 10.167 ; 10.083 ;
+; escolha2[7]  ; maior_sensores ; 9.719  ;        ;        ; 10.116 ;
+; escolha2[7]  ; menor_sensores ;        ; 9.740  ; 10.389 ;        ;
+; escolha2[8]  ; igual_sensores ; 9.617  ; 9.488  ; 10.086 ; 9.948  ;
+; escolha2[8]  ; maior_sensores ; 9.334  ;        ;        ; 9.665  ;
+; escolha2[8]  ; menor_sensores ;        ; 9.502  ; 10.068 ;        ;
+; escolha2[9]  ; igual_sensores ; 9.831  ; 9.723  ; 10.328 ; 10.213 ;
+; escolha2[9]  ; maior_sensores ; 9.829  ;        ;        ; 10.155 ;
+; escolha2[9]  ; menor_sensores ;        ; 9.699  ; 10.292 ;        ;
+; escolha2[10] ; igual_sensores ; 9.315  ; 9.161  ; 9.770  ; 9.625  ;
+; escolha2[10] ; maior_sensores ; 8.870  ;        ;        ; 9.210  ;
+; escolha2[10] ; menor_sensores ;        ; 8.791  ; 9.350  ;        ;
+; escolha2[11] ; igual_sensores ; 9.137  ; 8.996  ; 9.615  ; 9.465  ;
+; escolha2[11] ; maior_sensores ; 9.259  ;        ;        ; 9.597  ;
+; escolha2[11] ; menor_sensores ;        ; 9.304  ; 9.903  ;        ;
+; escolha2[12] ; igual_sensores ; 8.938  ; 8.818  ; 9.374  ; 9.285  ;
+; escolha2[12] ; maior_sensores ; 8.696  ;        ;        ; 8.975  ;
+; escolha2[12] ; menor_sensores ;        ; 8.420  ; 8.916  ;        ;
+; escolha2[13] ; igual_sensores ; 9.212  ; 9.115  ; 9.692  ; 9.588  ;
+; escolha2[13] ; maior_sensores ; 8.455  ;        ;        ; 8.761  ;
+; escolha2[13] ; menor_sensores ;        ; 8.262  ; 8.831  ;        ;
+; escolha2[14] ; igual_sensores ; 9.351  ; 9.338  ; 9.893  ; 9.746  ;
+; escolha2[14] ; maior_sensores ; 8.694  ;        ;        ; 9.047  ;
+; escolha2[14] ; menor_sensores ;        ; 8.832  ; 9.412  ;        ;
+; escolha2[15] ; igual_sensores ; 7.146  ; 7.091  ; 7.321  ; 7.218  ;
+; escolha2[15] ; maior_sensores ; 6.382  ;        ;        ; 6.408  ;
+; escolha2[15] ; menor_sensores ;        ; 6.306  ; 6.499  ;        ;
++--------------+----------------+--------+--------+--------+--------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++-----------------------------------------------------------------+
+; Propagation Delay                                               ;
++--------------+----------------+-------+-------+--------+--------+
+; Input Port   ; Output Port    ; RR    ; RF    ; FR     ; FF     ;
++--------------+----------------+-------+-------+--------+--------+
+; data[0]      ; igual_sensores ; 9.101 ; 8.960 ; 9.473  ; 9.324  ;
+; data[0]      ; maior_sensores ;       ; 9.127 ; 9.819  ;        ;
+; data[0]      ; menor_sensores ; 9.214 ;       ;        ; 9.333  ;
+; data[1]      ; igual_sensores ; 9.345 ; 9.239 ; 9.772  ; 9.659  ;
+; data[1]      ; maior_sensores ;       ; 9.546 ; 10.123 ;        ;
+; data[1]      ; menor_sensores ; 9.835 ;       ;        ; 10.205 ;
+; data[2]      ; igual_sensores ; 7.399 ; 7.264 ; 7.523  ; 7.376  ;
+; data[2]      ; maior_sensores ;       ; 7.167 ; 7.600  ;        ;
+; data[2]      ; menor_sensores ; 7.441 ;       ;        ; 7.297  ;
+; data[3]      ; igual_sensores ; 7.145 ; 6.971 ; 7.271  ; 7.089  ;
+; data[3]      ; maior_sensores ;       ; 7.456 ; 7.751  ;        ;
+; data[3]      ; menor_sensores ; 7.592 ;       ;        ; 7.671  ;
+; data[4]      ; igual_sensores ; 9.367 ; 9.267 ; 9.750  ; 9.602  ;
+; data[4]      ; maior_sensores ;       ; 8.971 ; 9.665  ;        ;
+; data[4]      ; menor_sensores ; 9.434 ;       ;        ; 9.534  ;
+; data[5]      ; igual_sensores ; 8.856 ; 8.796 ; 9.284  ; 9.107  ;
+; data[5]      ; maior_sensores ;       ; 7.950 ; 8.438  ;        ;
+; data[5]      ; menor_sensores ; 8.082 ;       ;        ; 8.364  ;
+; data[6]      ; igual_sensores ; 8.962 ; 8.812 ; 9.316  ; 9.195  ;
+; data[6]      ; maior_sensores ;       ; 8.604 ; 9.322  ;        ;
+; data[6]      ; menor_sensores ; 8.927 ;       ;        ; 9.024  ;
+; data[7]      ; igual_sensores ; 8.865 ; 8.785 ; 9.263  ; 9.079  ;
+; data[7]      ; maior_sensores ;       ; 7.886 ; 8.383  ;        ;
+; data[7]      ; menor_sensores ; 7.969 ;       ;        ; 8.258  ;
+; data[8]      ; igual_sensores ; 9.191 ; 9.001 ; 9.578  ; 9.417  ;
+; data[8]      ; maior_sensores ;       ; 8.614 ; 9.335  ;        ;
+; data[8]      ; menor_sensores ; 9.374 ;       ;        ; 9.495  ;
+; data[9]      ; igual_sensores ; 9.079 ; 8.926 ; 9.466  ; 9.306  ;
+; data[9]      ; maior_sensores ;       ; 8.248 ; 8.773  ;        ;
+; data[9]      ; menor_sensores ; 8.362 ;       ;        ; 8.675  ;
+; data[10]     ; igual_sensores ; 8.896 ; 8.709 ; 9.315  ; 9.074  ;
+; data[10]     ; maior_sensores ;       ; 8.108 ; 8.830  ;        ;
+; data[10]     ; menor_sensores ; 8.812 ;       ;        ; 8.931  ;
+; data[11]     ; igual_sensores ; 8.220 ; 8.016 ; 8.597  ; 8.422  ;
+; data[11]     ; maior_sensores ;       ; 8.107 ; 8.635  ;        ;
+; data[11]     ; menor_sensores ; 8.269 ;       ;        ; 8.594  ;
+; data[12]     ; igual_sensores ; 8.265 ; 8.087 ; 8.659  ; 8.473  ;
+; data[12]     ; maior_sensores ;       ; 8.202 ; 8.934  ;        ;
+; data[12]     ; menor_sensores ; 8.501 ;       ;        ; 8.650  ;
+; data[13]     ; igual_sensores ; 8.532 ; 8.389 ; 8.887  ; 8.737  ;
+; data[13]     ; maior_sensores ;       ; 7.693 ; 8.166  ;        ;
+; data[13]     ; menor_sensores ; 7.826 ;       ;        ; 8.101  ;
+; data[14]     ; igual_sensores ; 8.651 ; 8.489 ; 9.031  ; 8.861  ;
+; data[14]     ; maior_sensores ;       ; 8.221 ; 8.934  ;        ;
+; data[14]     ; menor_sensores ; 8.499 ;       ;        ; 8.626  ;
+; data[15]     ; igual_sensores ; 6.435 ; 6.271 ; 6.577  ; 6.442  ;
+; data[15]     ; maior_sensores ;       ; 5.534 ; 5.872  ;        ;
+; data[15]     ; menor_sensores ; 5.679 ;       ;        ; 5.749  ;
+; escolha2[0]  ; igual_sensores ; 8.840 ; 8.697 ; 9.216  ; 9.102  ;
+; escolha2[0]  ; maior_sensores ; 8.882 ;       ;        ; 8.966  ;
+; escolha2[0]  ; menor_sensores ;       ; 8.625 ; 9.285  ;        ;
+; escolha2[1]  ; igual_sensores ; 9.277 ; 9.175 ; 9.703  ; 9.589  ;
+; escolha2[1]  ; maior_sensores ; 9.022 ;       ;        ; 9.301  ;
+; escolha2[1]  ; menor_sensores ;       ; 8.946 ; 9.435  ;        ;
+; escolha2[2]  ; igual_sensores ; 7.361 ; 7.222 ; 7.495  ; 7.349  ;
+; escolha2[2]  ; maior_sensores ; 7.329 ;       ;        ; 7.151  ;
+; escolha2[2]  ; menor_sensores ;       ; 7.519 ; 7.933  ;        ;
+; escolha2[3]  ; igual_sensores ; 8.974 ; 8.798 ; 9.315  ; 9.168  ;
+; escolha2[3]  ; maior_sensores ; 8.512 ;       ;        ; 8.749  ;
+; escolha2[3]  ; menor_sensores ;       ; 8.403 ; 8.838  ;        ;
+; escolha2[4]  ; igual_sensores ; 7.443 ; 7.309 ; 7.542  ; 7.437  ;
+; escolha2[4]  ; maior_sensores ; 6.987 ;       ;        ; 6.813  ;
+; escolha2[4]  ; menor_sensores ;       ; 6.748 ; 7.156  ;        ;
+; escolha2[5]  ; igual_sensores ; 8.901 ; 8.769 ; 9.272  ; 9.132  ;
+; escolha2[5]  ; maior_sensores ; 8.739 ;       ;        ; 9.001  ;
+; escolha2[5]  ; menor_sensores ;       ; 8.774 ; 9.218  ;        ;
+; escolha2[6]  ; igual_sensores ; 9.007 ; 8.892 ; 9.373  ; 9.210  ;
+; escolha2[6]  ; maior_sensores ; 8.320 ;       ;        ; 8.401  ;
+; escolha2[6]  ; menor_sensores ;       ; 7.878 ; 8.509  ;        ;
+; escolha2[7]  ; igual_sensores ; 8.961 ; 8.813 ; 9.369  ; 9.213  ;
+; escolha2[7]  ; maior_sensores ; 9.088 ;       ;        ; 9.404  ;
+; escolha2[7]  ; menor_sensores ;       ; 9.145 ; 9.649  ;        ;
+; escolha2[8]  ; igual_sensores ; 8.971 ; 8.783 ; 9.333  ; 9.137  ;
+; escolha2[8]  ; maior_sensores ; 8.828 ;       ;        ; 8.885  ;
+; escolha2[8]  ; menor_sensores ;       ; 8.813 ; 9.446  ;        ;
+; escolha2[9]  ; igual_sensores ; 9.211 ; 9.062 ; 9.600  ; 9.439  ;
+; escolha2[9]  ; maior_sensores ; 9.197 ;       ;        ; 9.446  ;
+; escolha2[9]  ; menor_sensores ;       ; 9.112 ; 9.564  ;        ;
+; escolha2[10] ; igual_sensores ; 8.661 ; 8.462 ; 9.025  ; 8.834  ;
+; escolha2[10] ; maior_sensores ; 8.390 ;       ;        ; 8.470  ;
+; escolha2[10] ; menor_sensores ;       ; 8.135 ; 8.783  ;        ;
+; escolha2[11] ; igual_sensores ; 8.469 ; 8.267 ; 8.840  ; 8.630  ;
+; escolha2[11] ; maior_sensores ; 8.661 ;       ;        ; 8.931  ;
+; escolha2[11] ; menor_sensores ;       ; 8.750 ; 9.207  ;        ;
+; escolha2[12] ; igual_sensores ; 8.271 ; 8.091 ; 8.620  ; 8.469  ;
+; escolha2[12] ; maior_sensores ; 8.227 ;       ;        ; 8.250  ;
+; escolha2[12] ; menor_sensores ;       ; 7.772 ; 8.383  ;        ;
+; escolha2[13] ; igual_sensores ; 8.582 ; 8.443 ; 8.955  ; 8.804  ;
+; escolha2[13] ; maior_sensores ; 7.889 ;       ;        ; 8.149  ;
+; escolha2[13] ; menor_sensores ;       ; 7.742 ; 8.207  ;        ;
+; escolha2[14] ; igual_sensores ; 8.671 ; 8.581 ; 9.117  ; 8.910  ;
+; escolha2[14] ; maior_sensores ; 8.234 ;       ;        ; 8.325  ;
+; escolha2[14] ; menor_sensores ;       ; 8.186 ; 8.850  ;        ;
+; escolha2[15] ; igual_sensores ; 6.716 ; 6.586 ; 6.886  ; 6.708  ;
+; escolha2[15] ; maior_sensores ; 5.977 ;       ;        ; 6.012  ;
+; escolha2[15] ; menor_sensores ;       ; 5.874 ; 6.118  ;        ;
++--------------+----------------+-------+-------+--------+--------+
+
+
++---------------------------------------------------------------+
+; Minimum Propagation Delay                                     ;
++--------------+----------------+-------+-------+-------+-------+
+; Input Port   ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
++--------------+----------------+-------+-------+-------+-------+
+; data[0]      ; igual_sensores ; 8.782 ; 8.643 ; 9.145 ; 9.000 ;
+; data[0]      ; maior_sensores ;       ; 8.724 ; 9.250 ;       ;
+; data[0]      ; menor_sensores ; 8.662 ;       ;       ; 8.913 ;
+; data[1]      ; igual_sensores ; 8.975 ; 8.861 ; 9.392 ; 9.266 ;
+; data[1]      ; maior_sensores ;       ; 9.020 ; 9.631 ;       ;
+; data[1]      ; menor_sensores ; 9.363 ;       ;       ; 9.662 ;
+; data[2]      ; igual_sensores ; 7.113 ; 6.966 ; 7.239 ; 7.082 ;
+; data[2]      ; maior_sensores ;       ; 6.847 ; 7.128 ;       ;
+; data[2]      ; menor_sensores ; 6.964 ;       ;       ; 6.969 ;
+; data[3]      ; igual_sensores ; 6.909 ; 6.738 ; 7.036 ; 6.859 ;
+; data[3]      ; maior_sensores ;       ; 7.018 ; 7.365 ;       ;
+; data[3]      ; menor_sensores ; 7.215 ;       ;       ; 7.234 ;
+; data[4]      ; igual_sensores ; 8.992 ; 8.894 ; 9.392 ; 9.254 ;
+; data[4]      ; maior_sensores ;       ; 8.574 ; 9.103 ;       ;
+; data[4]      ; menor_sensores ; 8.874 ;       ;       ; 9.107 ;
+; data[5]      ; igual_sensores ; 8.537 ; 8.480 ; 8.947 ; 8.771 ;
+; data[5]      ; maior_sensores ;       ; 7.486 ; 8.011 ;       ;
+; data[5]      ; menor_sensores ; 7.679 ;       ;       ; 7.893 ;
+; data[6]      ; igual_sensores ; 8.646 ; 8.496 ; 8.992 ; 8.870 ;
+; data[6]      ; maior_sensores ;       ; 8.221 ; 8.773 ;       ;
+; data[6]      ; menor_sensores ; 8.384 ;       ;       ; 8.615 ;
+; data[7]      ; igual_sensores ; 8.541 ; 8.472 ; 8.934 ; 8.743 ;
+; data[7]      ; maior_sensores ;       ; 7.425 ; 7.965 ;       ;
+; data[7]      ; menor_sensores ; 7.572 ;       ;       ; 7.794 ;
+; data[8]      ; igual_sensores ; 8.825 ; 8.622 ; 9.203 ; 9.028 ;
+; data[8]      ; maior_sensores ;       ; 8.231 ; 8.787 ;       ;
+; data[8]      ; menor_sensores ; 8.815 ;       ;       ; 9.068 ;
+; data[9]      ; igual_sensores ; 8.675 ; 8.499 ; 9.054 ; 8.866 ;
+; data[9]      ; maior_sensores ;       ; 7.773 ; 8.334 ;       ;
+; data[9]      ; menor_sensores ; 7.948 ;       ;       ; 8.193 ;
+; data[10]     ; igual_sensores ; 8.527 ; 8.338 ; 8.912 ; 8.688 ;
+; data[10]     ; maior_sensores ;       ; 7.744 ; 8.301 ;       ;
+; data[10]     ; menor_sensores ; 8.275 ;       ;       ; 8.526 ;
+; data[11]     ; igual_sensores ; 7.935 ; 7.735 ; 8.302 ; 8.130 ;
+; data[11]     ; maior_sensores ;       ; 7.637 ; 8.201 ;       ;
+; data[11]     ; menor_sensores ; 7.859 ;       ;       ; 8.113 ;
+; data[12]     ; igual_sensores ; 7.978 ; 7.802 ; 8.361 ; 8.179 ;
+; data[12]     ; maior_sensores ;       ; 7.834 ; 8.400 ;       ;
+; data[12]     ; menor_sensores ; 7.975 ;       ;       ; 8.256 ;
+; data[13]     ; igual_sensores ; 8.193 ; 8.042 ; 8.542 ; 8.379 ;
+; data[13]     ; maior_sensores ;       ; 7.239 ; 7.756 ;       ;
+; data[13]     ; menor_sensores ; 7.434 ;       ;       ; 7.642 ;
+; data[14]     ; igual_sensores ; 8.351 ; 8.190 ; 8.721 ; 8.554 ;
+; data[14]     ; maior_sensores ;       ; 7.855 ; 8.404 ;       ;
+; data[14]     ; menor_sensores ; 7.976 ;       ;       ; 8.235 ;
+; data[15]     ; igual_sensores ; 6.225 ; 6.062 ; 6.369 ; 6.234 ;
+; data[15]     ; maior_sensores ;       ; 5.354 ; 5.688 ;       ;
+; data[15]     ; menor_sensores ; 5.497 ;       ;       ; 5.568 ;
+; escolha2[0]  ; igual_sensores ; 8.530 ; 8.389 ; 8.897 ; 8.784 ;
+; escolha2[0]  ; maior_sensores ; 8.341 ;       ;       ; 8.559 ;
+; escolha2[0]  ; menor_sensores ;       ; 8.241 ; 8.737 ;       ;
+; escolha2[1]  ; igual_sensores ; 8.909 ; 8.794 ; 9.325 ; 9.200 ;
+; escolha2[1]  ; maior_sensores ; 8.581 ;       ;       ; 8.792 ;
+; escolha2[1]  ; menor_sensores ;       ; 8.443 ; 8.974 ;       ;
+; escolha2[2]  ; igual_sensores ; 7.075 ; 6.929 ; 7.212 ; 7.054 ;
+; escolha2[2]  ; maior_sensores ; 6.856 ;       ;       ; 6.828 ;
+; escolha2[2]  ; menor_sensores ;       ; 7.186 ; 7.447 ;       ;
+; escolha2[3]  ; igual_sensores ; 8.659 ; 8.486 ; 8.992 ; 8.847 ;
+; escolha2[3]  ; maior_sensores ; 8.092 ;       ;       ; 8.263 ;
+; escolha2[3]  ; menor_sensores ;       ; 7.922 ; 8.396 ;       ;
+; escolha2[4]  ; igual_sensores ; 7.194 ; 7.059 ; 7.296 ; 7.189 ;
+; escolha2[4]  ; maior_sensores ; 6.528 ;       ;       ; 6.498 ;
+; escolha2[4]  ; menor_sensores ;       ; 6.445 ; 6.700 ;       ;
+; escolha2[5]  ; igual_sensores ; 8.590 ; 8.457 ; 8.951 ; 8.812 ;
+; escolha2[5]  ; maior_sensores ; 8.310 ;       ;       ; 8.503 ;
+; escolha2[5]  ; menor_sensores ;       ; 8.278 ; 8.761 ;       ;
+; escolha2[6]  ; igual_sensores ; 8.647 ; 8.534 ; 9.035 ; 8.873 ;
+; escolha2[6]  ; maior_sensores ; 7.802 ;       ;       ; 8.022 ;
+; escolha2[6]  ; menor_sensores ;       ; 7.524 ; 7.993 ;       ;
+; escolha2[7]  ; igual_sensores ; 8.647 ; 8.499 ; 9.044 ; 8.890 ;
+; escolha2[7]  ; maior_sensores ; 8.645 ;       ;       ; 8.892 ;
+; escolha2[7]  ; menor_sensores ;       ; 8.634 ; 9.180 ;       ;
+; escolha2[8]  ; igual_sensores ; 8.615 ; 8.414 ; 8.968 ; 8.761 ;
+; escolha2[8]  ; maior_sensores ; 8.292 ;       ;       ; 8.489 ;
+; escolha2[8]  ; menor_sensores ;       ; 8.424 ; 8.894 ;       ;
+; escolha2[9]  ; igual_sensores ; 8.804 ; 8.627 ; 9.185 ; 8.998 ;
+; escolha2[9]  ; maior_sensores ; 8.752 ;       ;       ; 8.933 ;
+; escolha2[9]  ; menor_sensores ;       ; 8.604 ; 9.100 ;       ;
+; escolha2[10] ; igual_sensores ; 8.319 ; 8.123 ; 8.676 ; 8.486 ;
+; escolha2[10] ; maior_sensores ; 7.869 ;       ;       ; 8.088 ;
+; escolha2[10] ; menor_sensores ;       ; 7.771 ; 8.255 ;       ;
+; escolha2[11] ; igual_sensores ; 8.175 ; 7.977 ; 8.537 ; 8.333 ;
+; escolha2[11] ; maior_sensores ; 8.237 ;       ;       ; 8.439 ;
+; escolha2[11] ; menor_sensores ;       ; 8.257 ; 8.752 ;       ;
+; escolha2[12] ; igual_sensores ; 7.984 ; 7.806 ; 8.325 ; 8.175 ;
+; escolha2[12] ; maior_sensores ; 7.712 ;       ;       ; 7.877 ;
+; escolha2[12] ; menor_sensores ;       ; 7.422 ; 7.871 ;       ;
+; escolha2[13] ; igual_sensores ; 8.242 ; 8.090 ; 8.607 ; 8.445 ;
+; escolha2[13] ; maior_sensores ; 7.494 ;       ;       ; 7.687 ;
+; escolha2[13] ; menor_sensores ;       ; 7.287 ; 7.795 ;       ;
+; escolha2[14] ; igual_sensores ; 8.358 ; 8.273 ; 8.786 ; 8.582 ;
+; escolha2[14] ; maior_sensores ; 7.719 ;       ;       ; 7.949 ;
+; escolha2[14] ; menor_sensores ;       ; 7.820 ; 8.319 ;       ;
+; escolha2[15] ; igual_sensores ; 6.449 ; 6.323 ; 6.646 ; 6.480 ;
+; escolha2[15] ; maior_sensores ; 5.729 ;       ;       ; 5.745 ;
+; escolha2[15] ; menor_sensores ;       ; 5.630 ; 5.874 ;       ;
++--------------+----------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++---------------------------------------------------------------+
+; Propagation Delay                                             ;
++--------------+----------------+-------+-------+-------+-------+
+; Input Port   ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
++--------------+----------------+-------+-------+-------+-------+
+; data[0]      ; igual_sensores ; 5.833 ; 5.995 ; 6.470 ; 6.625 ;
+; data[0]      ; maior_sensores ;       ; 6.046 ; 6.749 ;       ;
+; data[0]      ; menor_sensores ; 5.972 ;       ;       ; 6.606 ;
+; data[1]      ; igual_sensores ; 6.022 ; 6.193 ; 6.687 ; 6.862 ;
+; data[1]      ; maior_sensores ;       ; 6.356 ; 6.992 ;       ;
+; data[1]      ; menor_sensores ; 6.381 ;       ;       ; 7.231 ;
+; data[2]      ; igual_sensores ; 4.769 ; 4.916 ; 5.019 ; 5.164 ;
+; data[2]      ; maior_sensores ;       ; 4.830 ; 5.114 ;       ;
+; data[2]      ; menor_sensores ; 4.866 ;       ;       ; 5.085 ;
+; data[3]      ; igual_sensores ; 4.593 ; 4.730 ; 4.845 ; 4.975 ;
+; data[3]      ; maior_sensores ;       ; 5.031 ; 5.175 ;       ;
+; data[3]      ; menor_sensores ; 4.973 ;       ;       ; 5.313 ;
+; data[4]      ; igual_sensores ; 5.997 ; 6.172 ; 6.659 ; 6.807 ;
+; data[4]      ; maior_sensores ;       ; 5.948 ; 6.661 ;       ;
+; data[4]      ; menor_sensores ; 6.082 ;       ;       ; 6.752 ;
+; data[5]      ; igual_sensores ; 5.680 ; 5.886 ; 6.335 ; 6.465 ;
+; data[5]      ; maior_sensores ;       ; 5.336 ; 5.821 ;       ;
+; data[5]      ; menor_sensores ; 5.274 ;       ;       ; 5.951 ;
+; data[6]      ; igual_sensores ; 5.733 ; 5.877 ; 6.353 ; 6.515 ;
+; data[6]      ; maior_sensores ;       ; 5.728 ; 6.440 ;       ;
+; data[6]      ; menor_sensores ; 5.763 ;       ;       ; 6.399 ;
+; data[7]      ; igual_sensores ; 5.694 ; 5.881 ; 6.332 ; 6.449 ;
+; data[7]      ; maior_sensores ;       ; 5.294 ; 5.783 ;       ;
+; data[7]      ; menor_sensores ; 5.206 ;       ;       ; 5.886 ;
+; data[8]      ; igual_sensores ; 5.889 ; 6.009 ; 6.540 ; 6.679 ;
+; data[8]      ; maior_sensores ;       ; 5.732 ; 6.437 ;       ;
+; data[8]      ; menor_sensores ; 6.042 ;       ;       ; 6.732 ;
+; data[9]      ; igual_sensores ; 5.812 ; 5.945 ; 6.470 ; 6.607 ;
+; data[9]      ; maior_sensores ;       ; 5.508 ; 6.060 ;       ;
+; data[9]      ; menor_sensores ; 5.435 ;       ;       ; 6.178 ;
+; data[10]     ; igual_sensores ; 5.726 ; 5.807 ; 6.381 ; 6.432 ;
+; data[10]     ; maior_sensores ;       ; 5.402 ; 6.085 ;       ;
+; data[10]     ; menor_sensores ; 5.698 ;       ;       ; 6.344 ;
+; data[11]     ; igual_sensores ; 5.298 ; 5.393 ; 5.916 ; 6.030 ;
+; data[11]     ; maior_sensores ;       ; 5.410 ; 5.963 ;       ;
+; data[11]     ; menor_sensores ; 5.359 ;       ;       ; 6.118 ;
+; data[12]     ; igual_sensores ; 5.329 ; 5.438 ; 5.960 ; 6.062 ;
+; data[12]     ; maior_sensores ;       ; 5.451 ; 6.161 ;       ;
+; data[12]     ; menor_sensores ; 5.495 ;       ;       ; 6.149 ;
+; data[13]     ; igual_sensores ; 5.504 ; 5.622 ; 6.120 ; 6.242 ;
+; data[13]     ; maior_sensores ;       ; 5.153 ; 5.632 ;       ;
+; data[13]     ; menor_sensores ; 5.088 ;       ;       ; 5.775 ;
+; data[14]     ; igual_sensores ; 5.559 ; 5.685 ; 6.210 ; 6.329 ;
+; data[14]     ; maior_sensores ;       ; 5.457 ; 6.161 ;       ;
+; data[14]     ; menor_sensores ; 5.494 ;       ;       ; 6.133 ;
+; data[15]     ; igual_sensores ; 4.120 ; 4.243 ; 4.407 ; 4.548 ;
+; data[15]     ; maior_sensores ;       ; 3.738 ; 3.974 ;       ;
+; data[15]     ; menor_sensores ; 3.692 ;       ;       ; 4.064 ;
+; escolha2[0]  ; igual_sensores ; 5.679 ; 5.837 ; 6.287 ; 6.464 ;
+; escolha2[0]  ; maior_sensores ; 5.765 ;       ;       ; 6.364 ;
+; escolha2[0]  ; menor_sensores ;       ; 5.774 ; 6.424 ;       ;
+; escolha2[1]  ; igual_sensores ; 5.952 ; 6.124 ; 6.622 ; 6.792 ;
+; escolha2[1]  ; maior_sensores ; 5.844 ;       ;       ; 6.600 ;
+; escolha2[1]  ; menor_sensores ;       ; 5.969 ; 6.526 ;       ;
+; escolha2[2]  ; igual_sensores ; 4.730 ; 4.876 ; 4.980 ; 5.130 ;
+; escolha2[2]  ; maior_sensores ; 4.764 ;       ;       ; 4.991 ;
+; escolha2[2]  ; menor_sensores ;       ; 5.077 ; 5.327 ;       ;
+; escolha2[3]  ; igual_sensores ; 5.749 ; 5.882 ; 6.373 ; 6.525 ;
+; escolha2[3]  ; maior_sensores ; 5.529 ;       ;       ; 6.230 ;
+; escolha2[3]  ; menor_sensores ;       ; 5.638 ; 6.136 ;       ;
+; escolha2[4]  ; igual_sensores ; 4.782 ; 4.944 ; 5.022 ; 5.202 ;
+; escolha2[4]  ; maior_sensores ; 4.532 ;       ;       ; 4.774 ;
+; escolha2[4]  ; menor_sensores ;       ; 4.552 ; 4.846 ;       ;
+; escolha2[5]  ; igual_sensores ; 5.704 ; 5.869 ; 6.330 ; 6.488 ;
+; escolha2[5]  ; maior_sensores ; 5.634 ;       ;       ; 6.379 ;
+; escolha2[5]  ; menor_sensores ;       ; 5.831 ; 6.374 ;       ;
+; escolha2[6]  ; igual_sensores ; 5.766 ; 5.924 ; 6.402 ; 6.532 ;
+; escolha2[6]  ; maior_sensores ; 5.404 ;       ;       ; 5.975 ;
+; escolha2[6]  ; menor_sensores ;       ; 5.291 ; 5.891 ;       ;
+; escolha2[7]  ; igual_sensores ; 5.755 ; 5.902 ; 6.412 ; 6.552 ;
+; escolha2[7]  ; maior_sensores ; 5.870 ;       ;       ; 6.672 ;
+; escolha2[7]  ; menor_sensores ;       ; 6.079 ; 6.682 ;       ;
+; escolha2[8]  ; igual_sensores ; 5.739 ; 5.863 ; 6.373 ; 6.490 ;
+; escolha2[8]  ; maior_sensores ; 5.689 ;       ;       ; 6.295 ;
+; escolha2[8]  ; menor_sensores ;       ; 5.843 ; 6.529 ;       ;
+; escolha2[9]  ; igual_sensores ; 5.902 ; 6.036 ; 6.552 ; 6.684 ;
+; escolha2[9]  ; maior_sensores ; 5.921 ;       ;       ; 6.699 ;
+; escolha2[9]  ; menor_sensores ;       ; 6.044 ; 6.619 ;       ;
+; escolha2[10] ; igual_sensores ; 5.592 ; 5.660 ; 6.201 ; 6.276 ;
+; escolha2[10] ; maior_sensores ; 5.425 ;       ;       ; 6.024 ;
+; escolha2[10] ; menor_sensores ;       ; 5.431 ; 6.085 ;       ;
+; escolha2[11] ; igual_sensores ; 5.436 ; 5.535 ; 6.079 ; 6.171 ;
+; escolha2[11] ; maior_sensores ; 5.596 ;       ;       ; 6.344 ;
+; escolha2[11] ; menor_sensores ;       ; 5.815 ; 6.378 ;       ;
+; escolha2[12] ; igual_sensores ; 5.310 ; 5.415 ; 5.912 ; 6.036 ;
+; escolha2[12] ; maior_sensores ; 5.307 ;       ;       ; 5.865 ;
+; escolha2[12] ; menor_sensores ;       ; 5.204 ; 5.806 ;       ;
+; escolha2[13] ; igual_sensores ; 5.511 ; 5.630 ; 6.156 ; 6.273 ;
+; escolha2[13] ; maior_sensores ; 5.086 ;       ;       ; 5.800 ;
+; escolha2[13] ; menor_sensores ;       ; 5.179 ; 5.680 ;       ;
+; escolha2[14] ; igual_sensores ; 5.576 ; 5.743 ; 6.262 ; 6.353 ;
+; escolha2[14] ; maior_sensores ; 5.310 ;       ;       ; 5.923 ;
+; escolha2[14] ; menor_sensores ;       ; 5.454 ; 6.131 ;       ;
+; escolha2[15] ; igual_sensores ; 4.316 ; 4.452 ; 4.612 ; 4.721 ;
+; escolha2[15] ; maior_sensores ; 3.868 ;       ;       ; 4.228 ;
+; escolha2[15] ; menor_sensores ;       ; 3.970 ; 4.169 ;       ;
++--------------+----------------+-------+-------+-------+-------+
+
+
++---------------------------------------------------------------+
+; Minimum Propagation Delay                                     ;
++--------------+----------------+-------+-------+-------+-------+
+; Input Port   ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
++--------------+----------------+-------+-------+-------+-------+
+; data[0]      ; igual_sensores ; 5.626 ; 5.782 ; 6.252 ; 6.401 ;
+; data[0]      ; maior_sensores ;       ; 5.783 ; 6.388 ;       ;
+; data[0]      ; menor_sensores ; 5.626 ;       ;       ; 6.327 ;
+; data[1]      ; igual_sensores ; 5.780 ; 5.943 ; 6.436 ; 6.598 ;
+; data[1]      ; maior_sensores ;       ; 6.012 ; 6.680 ;       ;
+; data[1]      ; menor_sensores ; 6.088 ;       ;       ; 6.870 ;
+; data[2]      ; igual_sensores ; 4.582 ; 4.720 ; 4.838 ; 4.973 ;
+; data[2]      ; maior_sensores ;       ; 4.620 ; 4.822 ;       ;
+; data[2]      ; menor_sensores ; 4.566 ;       ;       ; 4.876 ;
+; data[3]      ; igual_sensores ; 4.440 ; 4.573 ; 4.697 ; 4.823 ;
+; data[3]      ; maior_sensores ;       ; 4.742 ; 4.943 ;       ;
+; data[3]      ; menor_sensores ; 4.738 ;       ;       ; 5.031 ;
+; data[4]      ; igual_sensores ; 5.758 ; 5.932 ; 6.424 ; 6.570 ;
+; data[4]      ; maior_sensores ;       ; 5.688 ; 6.303 ;       ;
+; data[4]      ; menor_sensores ; 5.731 ;       ;       ; 6.467 ;
+; data[5]      ; igual_sensores ; 5.475 ; 5.669 ; 6.110 ; 6.232 ;
+; data[5]      ; maior_sensores ;       ; 5.030 ; 5.554 ;       ;
+; data[5]      ; menor_sensores ; 5.021 ;       ;       ; 5.638 ;
+; data[6]      ; igual_sensores ; 5.530 ; 5.667 ; 6.139 ; 6.296 ;
+; data[6]      ; maior_sensores ;       ; 5.475 ; 6.089 ;       ;
+; data[6]      ; menor_sensores ; 5.422 ;       ;       ; 6.127 ;
+; data[7]      ; igual_sensores ; 5.488 ; 5.667 ; 6.116 ; 6.221 ;
+; data[7]      ; maior_sensores ;       ; 4.989 ; 5.522 ;       ;
+; data[7]      ; menor_sensores ; 4.957 ;       ;       ; 5.576 ;
+; data[8]      ; igual_sensores ; 5.653 ; 5.761 ; 6.292 ; 6.419 ;
+; data[8]      ; maior_sensores ;       ; 5.478 ; 6.086 ;       ;
+; data[8]      ; menor_sensores ; 5.690 ;       ;       ; 6.446 ;
+; data[9]      ; igual_sensores ; 5.550 ; 5.670 ; 6.199 ; 6.318 ;
+; data[9]      ; maior_sensores ;       ; 5.193 ; 5.782 ;       ;
+; data[9]      ; menor_sensores ; 5.174 ;       ;       ; 5.854 ;
+; data[10]     ; igual_sensores ; 5.483 ; 5.561 ; 6.111 ; 6.166 ;
+; data[10]     ; maior_sensores ;       ; 5.160 ; 5.747 ;       ;
+; data[10]     ; menor_sensores ; 5.358 ;       ;       ; 6.073 ;
+; data[11]     ; igual_sensores ; 5.111 ; 5.203 ; 5.719 ; 5.830 ;
+; data[11]     ; maior_sensores ;       ; 5.099 ; 5.688 ;       ;
+; data[11]     ; menor_sensores ; 5.101 ;       ;       ; 5.796 ;
+; data[12]     ; igual_sensores ; 5.141 ; 5.246 ; 5.763 ; 5.861 ;
+; data[12]     ; maior_sensores ;       ; 5.206 ; 5.819 ;       ;
+; data[12]     ; menor_sensores ; 5.162 ;       ;       ; 5.884 ;
+; data[13]     ; igual_sensores ; 5.283 ; 5.395 ; 5.891 ; 6.002 ;
+; data[13]     ; maior_sensores ;       ; 4.851 ; 5.374 ;       ;
+; data[13]     ; menor_sensores ; 4.840 ;       ;       ; 5.467 ;
+; data[14]     ; igual_sensores ; 5.364 ; 5.487 ; 6.003 ; 6.119 ;
+; data[14]     ; maior_sensores ;       ; 5.214 ; 5.819 ;       ;
+; data[14]     ; menor_sensores ; 5.162 ;       ;       ; 5.869 ;
+; data[15]     ; igual_sensores ; 3.985 ; 4.103 ; 4.274 ; 4.412 ;
+; data[15]     ; maior_sensores ;       ; 3.616 ; 3.858 ;       ;
+; data[15]     ; menor_sensores ; 3.573 ;       ;       ; 3.943 ;
+; escolha2[0]  ; igual_sensores ; 5.478 ; 5.629 ; 6.077 ; 6.247 ;
+; escolha2[0]  ; maior_sensores ; 5.426 ;       ;       ; 6.095 ;
+; escolha2[0]  ; menor_sensores ;       ; 5.521 ; 6.076 ;       ;
+; escolha2[1]  ; igual_sensores ; 5.712 ; 5.873 ; 6.373 ; 6.531 ;
+; escolha2[1]  ; maior_sensores ; 5.569 ;       ;       ; 6.263 ;
+; escolha2[1]  ; menor_sensores ;       ; 5.638 ; 6.237 ;       ;
+; escolha2[2]  ; igual_sensores ; 4.543 ; 4.683 ; 4.800 ; 4.939 ;
+; escolha2[2]  ; maior_sensores ; 4.468 ;       ;       ; 4.785 ;
+; escolha2[2]  ; menor_sensores ;       ; 4.856 ; 5.027 ;       ;
+; escolha2[3]  ; igual_sensores ; 5.545 ; 5.673 ; 6.159 ; 6.306 ;
+; escolha2[3]  ; maior_sensores ; 5.266 ;       ;       ; 5.906 ;
+; escolha2[3]  ; menor_sensores ;       ; 5.321 ; 5.857 ;       ;
+; escolha2[4]  ; igual_sensores ; 4.623 ; 4.776 ; 4.866 ; 5.039 ;
+; escolha2[4]  ; maior_sensores ; 4.246 ;       ;       ; 4.572 ;
+; escolha2[4]  ; menor_sensores ;       ; 4.352 ; 4.564 ;       ;
+; escolha2[5]  ; igual_sensores ; 5.502 ; 5.660 ; 6.119 ; 6.270 ;
+; escolha2[5]  ; maior_sensores ; 5.367 ;       ;       ; 6.048 ;
+; escolha2[5]  ; menor_sensores ;       ; 5.505 ; 6.085 ;       ;
+; escolha2[6]  ; igual_sensores ; 5.536 ; 5.694 ; 6.185 ; 6.310 ;
+; escolha2[6]  ; maior_sensores ; 5.076 ;       ;       ; 5.723 ;
+; escolha2[6]  ; menor_sensores ;       ; 5.056 ; 5.563 ;       ;
+; escolha2[7]  ; igual_sensores ; 5.550 ; 5.692 ; 6.197 ; 6.332 ;
+; escolha2[7]  ; maior_sensores ; 5.593 ;       ;       ; 6.330 ;
+; escolha2[7]  ; menor_sensores ;       ; 5.741 ; 6.384 ;       ;
+; escolha2[8]  ; igual_sensores ; 5.509 ; 5.622 ; 6.132 ; 6.238 ;
+; escolha2[8]  ; maior_sensores ; 5.350 ;       ;       ; 6.030 ;
+; escolha2[8]  ; menor_sensores ;       ; 5.587 ; 6.175 ;       ;
+; escolha2[9]  ; igual_sensores ; 5.637 ; 5.755 ; 6.279 ; 6.394 ;
+; escolha2[9]  ; maior_sensores ; 5.643 ;       ;       ; 6.355 ;
+; escolha2[9]  ; menor_sensores ;       ; 5.709 ; 6.324 ;       ;
+; escolha2[10] ; igual_sensores ; 5.368 ; 5.433 ; 5.969 ; 6.041 ;
+; escolha2[10] ; maior_sensores ; 5.095 ;       ;       ; 5.769 ;
+; escolha2[10] ; menor_sensores ;       ; 5.189 ; 5.747 ;       ;
+; escolha2[11] ; igual_sensores ; 5.244 ; 5.341 ; 5.876 ; 5.966 ;
+; escolha2[11] ; maior_sensores ; 5.329 ;       ;       ; 6.013 ;
+; escolha2[11] ; menor_sensores ;       ; 5.488 ; 6.087 ;       ;
+; escolha2[12] ; igual_sensores ; 5.124 ; 5.224 ; 5.717 ; 5.836 ;
+; escolha2[12] ; maior_sensores ; 4.980 ;       ;       ; 5.616 ;
+; escolha2[12] ; menor_sensores ;       ; 4.970 ; 5.479 ;       ;
+; escolha2[13] ; igual_sensores ; 5.289 ; 5.399 ; 5.926 ; 6.033 ;
+; escolha2[13] ; maior_sensores ; 4.838 ;       ;       ; 5.490 ;
+; escolha2[13] ; menor_sensores ;       ; 4.875 ; 5.420 ;       ;
+; escolha2[14] ; igual_sensores ; 5.374 ; 5.533 ; 6.039 ; 6.126 ;
+; escolha2[14] ; maior_sensores ; 4.983 ;       ;       ; 5.670 ;
+; escolha2[14] ; menor_sensores ;       ; 5.209 ; 5.790 ;       ;
+; escolha2[15] ; igual_sensores ; 4.146 ; 4.285 ; 4.461 ; 4.572 ;
+; escolha2[15] ; maior_sensores ; 3.708 ;       ;       ; 4.052 ;
+; escolha2[15] ; menor_sensores ;       ; 3.802 ; 4.012 ;       ;
++--------------+----------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------------+
+; Progagation Delay                                                 ;
++--------------+----------------+--------+--------+--------+--------+
+; Input Port   ; Output Port    ; RR     ; RF     ; FR     ; FF     ;
++--------------+----------------+--------+--------+--------+--------+
+; data[0]      ; igual_sensores ; 10.161 ; 10.104 ; 10.646 ; 10.580 ;
+; data[0]      ; maior_sensores ;        ; 10.321 ; 11.139 ;        ;
+; data[0]      ; menor_sensores ; 10.371 ;        ;        ; 10.631 ;
+; data[1]      ; igual_sensores ; 10.440 ; 10.417 ; 10.983 ; 10.955 ;
+; data[1]      ; maior_sensores ;        ; 10.791 ; 11.460 ;        ;
+; data[1]      ; menor_sensores ; 11.035 ;        ;        ; 11.599 ;
+; data[2]      ; igual_sensores ; 8.194  ; 8.134  ; 8.273  ; 8.203  ;
+; data[2]      ; maior_sensores ;        ; 8.059  ; 8.459  ;        ;
+; data[2]      ; menor_sensores ; 8.321  ;        ;        ; 8.144  ;
+; data[3]      ; igual_sensores ; 7.904  ; 7.807  ; 7.992  ; 7.886  ;
+; data[3]      ; maior_sensores ;        ; 8.394  ; 8.605  ;        ;
+; data[3]      ; menor_sensores ; 8.483  ;        ;        ; 8.554  ;
+; data[4]      ; igual_sensores ; 10.449 ; 10.436 ; 10.963 ; 10.894 ;
+; data[4]      ; maior_sensores ;        ; 10.136 ; 10.957 ;        ;
+; data[4]      ; menor_sensores ; 10.594 ;        ;        ; 10.848 ;
+; data[5]      ; igual_sensores ; 9.907  ; 9.938  ; 10.449 ; 10.351 ;
+; data[5]      ; maior_sensores ;        ; 9.044  ; 9.577  ;        ;
+; data[5]      ; menor_sensores ; 9.137  ;        ;        ; 9.539  ;
+; data[6]      ; igual_sensores ; 10.014 ; 9.940  ; 10.475 ; 10.433 ;
+; data[6]      ; maior_sensores ;        ; 9.738  ; 10.568 ;        ;
+; data[6]      ; menor_sensores ; 10.049 ;        ;        ; 10.273 ;
+; data[7]      ; igual_sensores ; 9.922  ; 9.925  ; 10.411 ; 10.300 ;
+; data[7]      ; maior_sensores ;        ; 8.970  ; 9.504  ;        ;
+; data[7]      ; menor_sensores ; 8.997  ;        ;        ; 9.415  ;
+; data[8]      ; igual_sensores ; 10.249 ; 10.135 ; 10.763 ; 10.682 ;
+; data[8]      ; maior_sensores ;        ; 9.735  ; 10.576 ;        ;
+; data[8]      ; menor_sensores ; 10.515 ;        ;        ; 10.792 ;
+; data[9]      ; igual_sensores ; 10.138 ; 10.061 ; 10.648 ; 10.566 ;
+; data[9]      ; maior_sensores ;        ; 9.352  ; 9.938  ;        ;
+; data[9]      ; menor_sensores ; 9.413  ;        ;        ; 9.877  ;
+; data[10]     ; igual_sensores ; 9.962  ; 9.820  ; 10.499 ; 10.301 ;
+; data[10]     ; maior_sensores ;        ; 9.185  ; 10.014 ;        ;
+; data[10]     ; menor_sensores ; 9.910  ;        ;        ; 10.159 ;
+; data[11]     ; igual_sensores ; 9.199  ; 9.055  ; 9.672  ; 9.561  ;
+; data[11]     ; maior_sensores ;        ; 9.187  ; 9.782  ;        ;
+; data[11]     ; menor_sensores ; 9.304  ;        ;        ; 9.786  ;
+; data[12]     ; igual_sensores ; 9.247  ; 9.130  ; 9.747  ; 9.621  ;
+; data[12]     ; maior_sensores ;        ; 9.281  ; 10.122 ;        ;
+; data[12]     ; menor_sensores ; 9.576  ;        ;        ; 9.839  ;
+; data[13]     ; igual_sensores ; 9.546  ; 9.463  ; 10.001 ; 9.913  ;
+; data[13]     ; maior_sensores ;        ; 8.738  ; 9.250  ;        ;
+; data[13]     ; menor_sensores ; 8.820  ;        ;        ; 9.226  ;
+; data[14]     ; igual_sensores ; 9.661  ; 9.568  ; 10.163 ; 10.061 ;
+; data[14]     ; maior_sensores ;        ; 9.280  ; 10.116 ;        ;
+; data[14]     ; menor_sensores ; 9.545  ;        ;        ; 9.807  ;
+; data[15]     ; igual_sensores ; 7.118  ; 7.023  ; 7.245  ; 7.182  ;
+; data[15]     ; maior_sensores ;        ; 6.207  ; 6.496  ;        ;
+; data[15]     ; menor_sensores ; 6.316  ;        ;        ; 6.395  ;
+; escolha2[0]  ; igual_sensores ; 9.884  ; 9.824  ; 10.363 ; 10.336 ;
+; escolha2[0]  ; maior_sensores ; 10.031 ;        ;        ; 10.227 ;
+; escolha2[0]  ; menor_sensores ;        ; 9.783  ; 10.533 ;        ;
+; escolha2[1]  ; igual_sensores ; 10.364 ; 10.344 ; 10.914 ; 10.884 ;
+; escolha2[1]  ; maior_sensores ; 10.162 ;        ;        ; 10.604 ;
+; escolha2[1]  ; menor_sensores ;        ; 10.130 ; 10.689 ;        ;
+; escolha2[2]  ; igual_sensores ; 8.155  ; 8.092  ; 8.246  ; 8.178  ;
+; escolha2[2]  ; maior_sensores ; 8.205  ;        ;        ; 7.998  ;
+; escolha2[2]  ; menor_sensores ;        ; 8.452  ; 8.807  ;        ;
+; escolha2[3]  ; igual_sensores ; 10.028 ; 9.928  ; 10.463 ; 10.396 ;
+; escolha2[3]  ; maior_sensores ; 9.605  ;        ;        ; 9.977  ;
+; escolha2[3]  ; menor_sensores ;        ; 9.533  ; 10.014 ;        ;
+; escolha2[4]  ; igual_sensores ; 8.234  ; 8.184  ; 8.291  ; 8.273  ;
+; escolha2[4]  ; maior_sensores ; 7.821  ;        ;        ; 7.619  ;
+; escolha2[4]  ; menor_sensores ;        ; 7.587  ; 7.954  ;        ;
+; escolha2[5]  ; igual_sensores ; 9.951  ; 9.903  ; 10.426 ; 10.369 ;
+; escolha2[5]  ; maior_sensores ; 9.850  ;        ;        ; 10.259 ;
+; escolha2[5]  ; menor_sensores ;        ; 9.935  ; 10.440 ;        ;
+; escolha2[6]  ; igual_sensores ; 10.059 ; 10.023 ; 10.543 ; 10.449 ;
+; escolha2[6]  ; maior_sensores ; 9.395  ;        ;        ; 9.575  ;
+; escolha2[6]  ; menor_sensores ;        ; 8.951  ; 9.650  ;        ;
+; escolha2[7]  ; igual_sensores ; 10.015 ; 9.943  ; 10.532 ; 10.451 ;
+; escolha2[7]  ; maior_sensores ; 10.212 ;        ;        ; 10.702 ;
+; escolha2[7]  ; menor_sensores ;        ; 10.324 ; 10.912 ;        ;
+; escolha2[8]  ; igual_sensores ; 10.011 ; 9.900  ; 10.496 ; 10.376 ;
+; escolha2[8]  ; maior_sensores ; 9.938  ;        ;        ; 10.114 ;
+; escolha2[8]  ; menor_sensores ;        ; 9.939  ; 10.694 ;        ;
+; escolha2[9]  ; igual_sensores ; 10.285 ; 10.211 ; 10.796 ; 10.712 ;
+; escolha2[9]  ; maior_sensores ; 10.323 ;        ;        ; 10.743 ;
+; escolha2[9]  ; menor_sensores ;        ; 10.277 ; 10.810 ;        ;
+; escolha2[10] ; igual_sensores ; 9.698  ; 9.543  ; 10.165 ; 10.019 ;
+; escolha2[10] ; maior_sensores ; 9.460  ;        ;        ; 9.643  ;
+; escolha2[10] ; menor_sensores ;        ; 9.204  ; 9.949  ;        ;
+; escolha2[11] ; igual_sensores ; 9.461  ; 9.320  ; 9.954  ; 9.804  ;
+; escolha2[11] ; maior_sensores ; 9.730  ;        ;        ; 10.164 ;
+; escolha2[11] ; menor_sensores ;        ; 9.868  ; 10.412 ;        ;
+; escolha2[12] ; igual_sensores ; 9.259  ; 9.139  ; 9.706  ; 9.619  ;
+; escolha2[12] ; maior_sensores ; 9.280  ;        ;        ; 9.399  ;
+; escolha2[12] ; menor_sensores ;        ; 8.818  ; 9.497  ;        ;
+; escolha2[13] ; igual_sensores ; 9.595  ; 9.515  ; 10.085 ; 9.995  ;
+; escolha2[13] ; maior_sensores ; 8.898  ;        ;        ; 9.293  ;
+; escolha2[13] ; menor_sensores ;        ; 8.787  ; 9.291  ;        ;
+; escolha2[14] ; igual_sensores ; 9.699  ; 9.685  ; 10.262 ; 10.119 ;
+; escolha2[14] ; maior_sensores ; 9.279  ;        ;        ; 9.475  ;
+; escolha2[14] ; menor_sensores ;        ; 9.249  ; 10.015 ;        ;
+; escolha2[15] ; igual_sensores ; 7.437  ; 7.379  ; 7.584  ; 7.470  ;
+; escolha2[15] ; maior_sensores ; 6.654  ;        ;        ; 6.705  ;
+; escolha2[15] ; menor_sensores ;        ; 6.578  ; 6.762  ;        ;
++--------------+----------------+--------+--------+--------+--------+
+
+
++---------------------------------------------------------------+
+; Minimum Progagation Delay                                     ;
++--------------+----------------+-------+-------+-------+-------+
+; Input Port   ; Output Port    ; RR    ; RF    ; FR    ; FF    ;
++--------------+----------------+-------+-------+-------+-------+
+; data[0]      ; igual_sensores ; 5.626 ; 5.782 ; 6.252 ; 6.401 ;
+; data[0]      ; maior_sensores ;       ; 5.783 ; 6.388 ;       ;
+; data[0]      ; menor_sensores ; 5.626 ;       ;       ; 6.327 ;
+; data[1]      ; igual_sensores ; 5.780 ; 5.943 ; 6.436 ; 6.598 ;
+; data[1]      ; maior_sensores ;       ; 6.012 ; 6.680 ;       ;
+; data[1]      ; menor_sensores ; 6.088 ;       ;       ; 6.870 ;
+; data[2]      ; igual_sensores ; 4.582 ; 4.720 ; 4.838 ; 4.973 ;
+; data[2]      ; maior_sensores ;       ; 4.620 ; 4.822 ;       ;
+; data[2]      ; menor_sensores ; 4.566 ;       ;       ; 4.876 ;
+; data[3]      ; igual_sensores ; 4.440 ; 4.573 ; 4.697 ; 4.823 ;
+; data[3]      ; maior_sensores ;       ; 4.742 ; 4.943 ;       ;
+; data[3]      ; menor_sensores ; 4.738 ;       ;       ; 5.031 ;
+; data[4]      ; igual_sensores ; 5.758 ; 5.932 ; 6.424 ; 6.570 ;
+; data[4]      ; maior_sensores ;       ; 5.688 ; 6.303 ;       ;
+; data[4]      ; menor_sensores ; 5.731 ;       ;       ; 6.467 ;
+; data[5]      ; igual_sensores ; 5.475 ; 5.669 ; 6.110 ; 6.232 ;
+; data[5]      ; maior_sensores ;       ; 5.030 ; 5.554 ;       ;
+; data[5]      ; menor_sensores ; 5.021 ;       ;       ; 5.638 ;
+; data[6]      ; igual_sensores ; 5.530 ; 5.667 ; 6.139 ; 6.296 ;
+; data[6]      ; maior_sensores ;       ; 5.475 ; 6.089 ;       ;
+; data[6]      ; menor_sensores ; 5.422 ;       ;       ; 6.127 ;
+; data[7]      ; igual_sensores ; 5.488 ; 5.667 ; 6.116 ; 6.221 ;
+; data[7]      ; maior_sensores ;       ; 4.989 ; 5.522 ;       ;
+; data[7]      ; menor_sensores ; 4.957 ;       ;       ; 5.576 ;
+; data[8]      ; igual_sensores ; 5.653 ; 5.761 ; 6.292 ; 6.419 ;
+; data[8]      ; maior_sensores ;       ; 5.478 ; 6.086 ;       ;
+; data[8]      ; menor_sensores ; 5.690 ;       ;       ; 6.446 ;
+; data[9]      ; igual_sensores ; 5.550 ; 5.670 ; 6.199 ; 6.318 ;
+; data[9]      ; maior_sensores ;       ; 5.193 ; 5.782 ;       ;
+; data[9]      ; menor_sensores ; 5.174 ;       ;       ; 5.854 ;
+; data[10]     ; igual_sensores ; 5.483 ; 5.561 ; 6.111 ; 6.166 ;
+; data[10]     ; maior_sensores ;       ; 5.160 ; 5.747 ;       ;
+; data[10]     ; menor_sensores ; 5.358 ;       ;       ; 6.073 ;
+; data[11]     ; igual_sensores ; 5.111 ; 5.203 ; 5.719 ; 5.830 ;
+; data[11]     ; maior_sensores ;       ; 5.099 ; 5.688 ;       ;
+; data[11]     ; menor_sensores ; 5.101 ;       ;       ; 5.796 ;
+; data[12]     ; igual_sensores ; 5.141 ; 5.246 ; 5.763 ; 5.861 ;
+; data[12]     ; maior_sensores ;       ; 5.206 ; 5.819 ;       ;
+; data[12]     ; menor_sensores ; 5.162 ;       ;       ; 5.884 ;
+; data[13]     ; igual_sensores ; 5.283 ; 5.395 ; 5.891 ; 6.002 ;
+; data[13]     ; maior_sensores ;       ; 4.851 ; 5.374 ;       ;
+; data[13]     ; menor_sensores ; 4.840 ;       ;       ; 5.467 ;
+; data[14]     ; igual_sensores ; 5.364 ; 5.487 ; 6.003 ; 6.119 ;
+; data[14]     ; maior_sensores ;       ; 5.214 ; 5.819 ;       ;
+; data[14]     ; menor_sensores ; 5.162 ;       ;       ; 5.869 ;
+; data[15]     ; igual_sensores ; 3.985 ; 4.103 ; 4.274 ; 4.412 ;
+; data[15]     ; maior_sensores ;       ; 3.616 ; 3.858 ;       ;
+; data[15]     ; menor_sensores ; 3.573 ;       ;       ; 3.943 ;
+; escolha2[0]  ; igual_sensores ; 5.478 ; 5.629 ; 6.077 ; 6.247 ;
+; escolha2[0]  ; maior_sensores ; 5.426 ;       ;       ; 6.095 ;
+; escolha2[0]  ; menor_sensores ;       ; 5.521 ; 6.076 ;       ;
+; escolha2[1]  ; igual_sensores ; 5.712 ; 5.873 ; 6.373 ; 6.531 ;
+; escolha2[1]  ; maior_sensores ; 5.569 ;       ;       ; 6.263 ;
+; escolha2[1]  ; menor_sensores ;       ; 5.638 ; 6.237 ;       ;
+; escolha2[2]  ; igual_sensores ; 4.543 ; 4.683 ; 4.800 ; 4.939 ;
+; escolha2[2]  ; maior_sensores ; 4.468 ;       ;       ; 4.785 ;
+; escolha2[2]  ; menor_sensores ;       ; 4.856 ; 5.027 ;       ;
+; escolha2[3]  ; igual_sensores ; 5.545 ; 5.673 ; 6.159 ; 6.306 ;
+; escolha2[3]  ; maior_sensores ; 5.266 ;       ;       ; 5.906 ;
+; escolha2[3]  ; menor_sensores ;       ; 5.321 ; 5.857 ;       ;
+; escolha2[4]  ; igual_sensores ; 4.623 ; 4.776 ; 4.866 ; 5.039 ;
+; escolha2[4]  ; maior_sensores ; 4.246 ;       ;       ; 4.572 ;
+; escolha2[4]  ; menor_sensores ;       ; 4.352 ; 4.564 ;       ;
+; escolha2[5]  ; igual_sensores ; 5.502 ; 5.660 ; 6.119 ; 6.270 ;
+; escolha2[5]  ; maior_sensores ; 5.367 ;       ;       ; 6.048 ;
+; escolha2[5]  ; menor_sensores ;       ; 5.505 ; 6.085 ;       ;
+; escolha2[6]  ; igual_sensores ; 5.536 ; 5.694 ; 6.185 ; 6.310 ;
+; escolha2[6]  ; maior_sensores ; 5.076 ;       ;       ; 5.723 ;
+; escolha2[6]  ; menor_sensores ;       ; 5.056 ; 5.563 ;       ;
+; escolha2[7]  ; igual_sensores ; 5.550 ; 5.692 ; 6.197 ; 6.332 ;
+; escolha2[7]  ; maior_sensores ; 5.593 ;       ;       ; 6.330 ;
+; escolha2[7]  ; menor_sensores ;       ; 5.741 ; 6.384 ;       ;
+; escolha2[8]  ; igual_sensores ; 5.509 ; 5.622 ; 6.132 ; 6.238 ;
+; escolha2[8]  ; maior_sensores ; 5.350 ;       ;       ; 6.030 ;
+; escolha2[8]  ; menor_sensores ;       ; 5.587 ; 6.175 ;       ;
+; escolha2[9]  ; igual_sensores ; 5.637 ; 5.755 ; 6.279 ; 6.394 ;
+; escolha2[9]  ; maior_sensores ; 5.643 ;       ;       ; 6.355 ;
+; escolha2[9]  ; menor_sensores ;       ; 5.709 ; 6.324 ;       ;
+; escolha2[10] ; igual_sensores ; 5.368 ; 5.433 ; 5.969 ; 6.041 ;
+; escolha2[10] ; maior_sensores ; 5.095 ;       ;       ; 5.769 ;
+; escolha2[10] ; menor_sensores ;       ; 5.189 ; 5.747 ;       ;
+; escolha2[11] ; igual_sensores ; 5.244 ; 5.341 ; 5.876 ; 5.966 ;
+; escolha2[11] ; maior_sensores ; 5.329 ;       ;       ; 6.013 ;
+; escolha2[11] ; menor_sensores ;       ; 5.488 ; 6.087 ;       ;
+; escolha2[12] ; igual_sensores ; 5.124 ; 5.224 ; 5.717 ; 5.836 ;
+; escolha2[12] ; maior_sensores ; 4.980 ;       ;       ; 5.616 ;
+; escolha2[12] ; menor_sensores ;       ; 4.970 ; 5.479 ;       ;
+; escolha2[13] ; igual_sensores ; 5.289 ; 5.399 ; 5.926 ; 6.033 ;
+; escolha2[13] ; maior_sensores ; 4.838 ;       ;       ; 5.490 ;
+; escolha2[13] ; menor_sensores ;       ; 4.875 ; 5.420 ;       ;
+; escolha2[14] ; igual_sensores ; 5.374 ; 5.533 ; 6.039 ; 6.126 ;
+; escolha2[14] ; maior_sensores ; 4.983 ;       ;       ; 5.670 ;
+; escolha2[14] ; menor_sensores ;       ; 5.209 ; 5.790 ;       ;
+; escolha2[15] ; igual_sensores ; 4.146 ; 4.285 ; 4.461 ; 4.572 ;
+; escolha2[15] ; maior_sensores ; 3.708 ;       ;       ; 4.052 ;
+; escolha2[15] ; menor_sensores ;       ; 3.802 ; 4.012 ;       ;
++--------------+----------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                     ;
++----------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin            ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++----------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; maior_sensores ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; igual_sensores ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; menor_sensores ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_NCEO~  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++----------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++-------------------------------------------------------------------+
+; Input Transition Times                                            ;
++----------------+--------------+-----------------+-----------------+
+; Pin            ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++----------------+--------------+-----------------+-----------------+
+; data[15]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[15]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[14]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[14]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[13]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[13]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[12]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[12]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[11]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[11]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[10]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[10]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[9]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[9]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[8]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[8]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[7]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[7]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[6]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[6]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[5]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[5]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[4]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[4]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[3]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[3]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[2]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[2]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[1]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[1]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; data[0]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; escolha2[0]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_NCSO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++----------------+--------------+-----------------+-----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin            ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; maior_sensores ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; igual_sensores ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; menor_sensores ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_NCEO~  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.76e-09 V                   ; 2.4 V               ; -0.034 V            ; 0.102 V                              ; 0.065 V                              ; 2.49e-10 s                  ; 3.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.76e-09 V                  ; 2.4 V              ; -0.034 V           ; 0.102 V                             ; 0.065 V                             ; 2.49e-10 s                 ; 3.49e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.94e-09 V                   ; 2.39 V              ; -0.0344 V           ; 0.156 V                              ; 0.089 V                              ; 2.68e-10 s                  ; 2.6e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.94e-09 V                  ; 2.39 V             ; -0.0344 V          ; 0.156 V                             ; 0.089 V                             ; 2.68e-10 s                 ; 2.6e-10 s                  ; Yes                       ; Yes                       ;
++----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin            ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; maior_sensores ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; igual_sensores ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; menor_sensores ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_NCEO~  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.93e-07 V                   ; 2.37 V              ; -0.0278 V           ; 0.106 V                              ; 0.115 V                              ; 2.69e-10 s                  ; 4.05e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.93e-07 V                  ; 2.37 V             ; -0.0278 V          ; 0.106 V                             ; 0.115 V                             ; 2.69e-10 s                 ; 4.05e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.76e-07 V                   ; 2.36 V              ; -0.00439 V          ; 0.088 V                              ; 0.007 V                              ; 4.05e-10 s                  ; 3.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.76e-07 V                  ; 2.36 V             ; -0.00439 V         ; 0.088 V                             ; 0.007 V                             ; 4.05e-10 s                 ; 3.35e-10 s                 ; Yes                       ; Yes                       ;
++----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin            ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; maior_sensores ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; igual_sensores ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; menor_sensores ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_NCEO~  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.06e-08 V                   ; 2.86 V              ; -0.0341 V           ; 0.364 V                              ; 0.046 V                              ; 1.17e-10 s                  ; 2.6e-10 s                   ; No                         ; Yes                        ; 2.62 V                      ; 3.06e-08 V                  ; 2.86 V             ; -0.0341 V          ; 0.364 V                             ; 0.046 V                             ; 1.17e-10 s                 ; 2.6e-10 s                  ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.81e-08 V                   ; 2.72 V              ; -0.0542 V           ; 0.144 V                              ; 0.087 V                              ; 2.55e-10 s                  ; 2.14e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.81e-08 V                  ; 2.72 V             ; -0.0542 V          ; 0.144 V                             ; 0.087 V                             ; 2.55e-10 s                 ; 2.14e-10 s                 ; Yes                       ; Yes                       ;
++----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 32    ; 32   ;
+; Unconstrained Input Port Paths  ; 96    ; 96   ;
+; Unconstrained Output Ports      ; 3     ; 3    ;
+; Unconstrained Output Port Paths ; 96    ; 96   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Jan 28 11:29:05 2022
+Info: Command: quartus_sta comparador_sensores -c comparador_sensores
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'comparador_sensores.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1200mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4591 megabytes
+    Info: Processing ended: Fri Jan 28 11:29:08 2022
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+

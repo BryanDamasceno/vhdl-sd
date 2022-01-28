@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\mux_sensores
+Emux_sensores
+Z1 w1643326736
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\mux_sensores
+Z5 8mux_sensores.vhd
+Z6 Fmux_sensores.vhd
+l0
+L6
+VzZD07<X5AI6b>LNVZ<]]e2
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1643381022.798000
+Z9 !s90 -reportprogress|300|-explicit|-93|mux_sensores.vhd|
+Z10 !s107 mux_sensores.vhd|
+Z11 o-explicit -93 -O0
+Z12 tExplicit 1
+!s100 9GH8?kfkQz4T7bHjT@OVS1
+!i10b 1
+Acomportamento
+R2
+R3
+DEx4 work 12 mux_sensores 0 22 zZD07<X5AI6b>LNVZ<]]e2
+l15
+L14
+V?hVYLa3WQMJIha[TXYnf21
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 GmPe5En6IF0Q6@]aRS<N_2
+!i10b 1
+Etb_mux
+Z13 w1643379926
+Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z15 8tb_mux.vhd
+Z16 Ftb_mux.vhd
+l0
+L5
+V8H96h`77EljVo1L=Z<7l42
+!s100 IV;WfOFKP6Yji@2VZD7AN1
+R7
+31
+!i10b 1
+Z17 !s108 1643381022.905000
+Z18 !s90 -reportprogress|300|-explicit|-93|tb_mux.vhd|
+Z19 !s107 tb_mux.vhd|
+R11
+R12
+Atestbench
+R14
+R2
+R3
+DEx4 work 6 tb_mux 0 22 8H96h`77EljVo1L=Z<7l42
+l21
+L8
+VKe4Im1>@NahTm;21^`oC02
+!s100 nBDDGTSF83Wl0@L4TMG5g3
+R7
+31
+!i10b 1
+R17
+R18
+R19
+R11
+R12

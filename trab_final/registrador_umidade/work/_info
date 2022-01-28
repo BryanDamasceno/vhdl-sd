@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\registrador_umidade
+Ereg_umidade
+Z1 w1643382526
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\registrador_umidade
+Z6 8reg_umidade.vhd
+Z7 Freg_umidade.vhd
+l0
+L5
+VHkBa0cH7io:QXE3[SEOnV1
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1643383944.621000
+Z10 !s90 -reportprogress|300|-explicit|-93|reg_umidade.vhd|
+Z11 !s107 reg_umidade.vhd|
+Z12 o-explicit -93 -O0
+Z13 tExplicit 1
+!s100 W9fI8`FKIh>S<_FAkWn2Y0
+!i10b 1
+Areg
+R2
+R3
+R4
+DEx4 work 11 reg_umidade 0 22 HkBa0cH7io:QXE3[SEOnV1
+l15
+L14
+V`@l;PTEmUJ4^?InU>MURa0
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 X_DnI3a;MCjVKbolUDhNN2
+!i10b 1
+Etb_reg_umidade
+Z14 w1643383840
+R4
+R3
+R2
+R5
+Z15 8tb_reg_umidade.vhd
+Z16 Ftb_reg_umidade.vhd
+l0
+L5
+VGdzBZPf0[8C7[QQD1GXG<1
+!s100 i;8o^Ya7MX1h0g?jCVnF22
+R8
+31
+!i10b 1
+Z17 !s108 1643383944.730000
+Z18 !s90 -reportprogress|300|-explicit|-93|tb_reg_umidade.vhd|
+Z19 !s107 tb_reg_umidade.vhd|
+R12
+R13
+Atestbench
+R4
+R3
+R2
+DEx4 work 14 tb_reg_umidade 0 22 GdzBZPf0[8C7[QQD1GXG<1
+l25
+L8
+VFNT7c4>QD0m3Zi3lk^KbW3
+!s100 C6lNiNoD]hVQ;jSoOhZN?2
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

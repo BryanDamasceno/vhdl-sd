@@ -1,0 +1,25 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+entity tb_rom is
+end entity tb_rom;
+
+architecture teste of tb_rom is
+component rom is
+  port ( 
+            enable  : in std_logic;
+            address : in std_logic_vector(3 downto 0);
+         data    : out std_logic_vector(15 downto 0) );
+end component;
+
+signal enable: std_logic;
+signal address : std_logic_vector(3 downto 0);
+signal data: std_logic_vector(15 downto 0);
+
+begin
+instance_rom: rom port map (enable=> en, address=> add, data=> dt);
+en<= '1';
+add <= "0001", "0010" after 5ns, "0011" after 10ns;
+end teste;

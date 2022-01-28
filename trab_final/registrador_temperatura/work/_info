@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\registrador_temperatura
+Ereg_temperatura
+Z1 w1643382462
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z5 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\registrador_temperatura
+Z6 8reg_temperatura.vhd
+Z7 Freg_temperatura.vhd
+l0
+L5
+V?ji:VB36MF<a:;0KMCIAM3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1643383182.900000
+Z10 !s90 -reportprogress|300|-explicit|-93|reg_temperatura.vhd|
+Z11 !s107 reg_temperatura.vhd|
+Z12 o-explicit -93 -O0
+Z13 tExplicit 1
+!s100 IKUkl[4b@L5EACiUij^N=0
+!i10b 1
+Areg
+R2
+R3
+R4
+DEx4 work 15 reg_temperatura 0 22 ?ji:VB36MF<a:;0KMCIAM3
+l15
+L14
+VIJNKmd4dJX[O9Cd`QcZ6U3
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 MiQXbCUUc5i3A2c;85I<73
+!i10b 1
+Etb_reg_temperatura
+Z14 w1643383179
+R2
+R3
+R4
+R5
+Z15 8tb_reg_temperatura.vhd
+Z16 Ftb_reg_temperatura.vhd
+l0
+L5
+VzLEGdVZ0F3;R4[P@NeG`L1
+!s100 [mSEQL7QZz322b5[C@f[P0
+R8
+31
+!i10b 1
+Z17 !s108 1643383183.006000
+Z18 !s90 -reportprogress|300|-explicit|-93|tb_reg_temperatura.vhd|
+Z19 !s107 tb_reg_temperatura.vhd|
+R12
+R13
+Atestbench
+R2
+R3
+R4
+DEx4 work 18 tb_reg_temperatura 0 22 zLEGdVZ0F3;R4[P@NeG`L1
+l25
+L8
+V?bI:k3OJLDONi43H3JZX:2
+!s100 >6b6dYcbJ09g[B8nn0`<G0
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

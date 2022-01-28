@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\comparador_temporal
+Ecomparador_temporal
+Z1 w1643326532
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\comparador_temporal
+Z7 8comparador_temporal.vhd
+Z8 Fcomparador_temporal.vhd
+l0
+L6
+VKg4XY7DP9YW<TmaTfKeHL2
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1643380801.067000
+Z11 !s90 -reportprogress|300|-explicit|-93|comparador_temporal.vhd|
+Z12 !s107 comparador_temporal.vhd|
+Z13 o-explicit -93 -O0
+Z14 tExplicit 1
+!s100 Z^k3hTXoEF[g7@z6l8SOU3
+!i10b 1
+Acomportamento
+R2
+R3
+R4
+R5
+DEx4 work 19 comparador_temporal 0 22 Kg4XY7DP9YW<TmaTfKeHL2
+l14
+L13
+VLJ[TAinad[:U1YhGEjz8G0
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 m@HQLRk?^RAZU8QHPVJ:T1
+!i10b 1
+Etb_comparador
+Z15 w1643380758
+Z16 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R4
+R5
+R6
+Z17 8tb_comparador.vhd
+Z18 Ftb_comparador.vhd
+l0
+L5
+VbGeU<>X6nof_e@<oBlA@B3
+!s100 O3Tha@:k^VQmmU^FT<bET0
+R9
+31
+!i10b 1
+Z19 !s108 1643380801.183000
+Z20 !s90 -reportprogress|300|-explicit|-93|tb_comparador.vhd|
+Z21 !s107 tb_comparador.vhd|
+R13
+R14
+Atestbench
+R16
+R4
+R5
+DEx4 work 13 tb_comparador 0 22 bGeU<>X6nof_e@<oBlA@B3
+l21
+L8
+V1h7zRMO3K]3^Bmm@]ebD71
+!s100 ?d1aOYT?OK<AJ9FS0a7TJ3
+R9
+31
+!i10b 1
+R19
+R20
+R21
+R13
+R14

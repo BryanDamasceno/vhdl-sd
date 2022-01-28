@@ -1,0 +1,238 @@
+-- Código principal
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity Data_Path is
+
+	generic
+	(
+		DATA_WIDTH_20 : natural := 20;
+		DATA_WIDTH_03 : natural := 3
+	);
+	
+    port (     
+	 
+        CLOCK   : in    std_logic; -- clock input		
+		  
+		  -- Entradas externas para Data_Path 
+		  
+		  senhaCartao1 	: in std_logic_vector((DATA_WIDTH_20 - 1) downto 0);
+		  saldoCartao1 	: in std_logic_vector((DATA_WIDTH_20 - 1) downto 0);
+		  saldoCartao2 	: in std_logic_vector((DATA_WIDTH_20 - 1) downto 0);
+		  teclado 			: in std_logic_vector((DATA_WIDTH_20 - 1) downto 0);
+		  
+		  -- Entradas da Controladora para Data_Path
+		  
+		  telaS0, telaS1, telaS2, senhaLoad, senhaClear, saldo1_2Load,
+		  saldo1_2Clear, tecladoLoad, tecladoClear, valorTecladoLoad,
+		  valorTecladoClear, muxAtualizarS0, saidaSaldo1_2Load, saidaSaldo1_2Clear 	: in std_logic;
+		  
+		  -- Saídas do Data_Path para controladora
+		
+		  valorGtSaldo, saldoGt9, senhaEqSenha : out std_logic;
+		  
+		  -- Saídas do Data_Path para fora		  
+		  
+		  novoSaldo1, novoSaldo2, saldo1, valorTeclado		: out std_logic_vector((DATA_WIDTH_20 - 1) downto 0)
+		  
+
+		  
+		
+		  
+    );
+	 
+end Data_Path;
+
+architecture arch of Data_Path is
+
+	
+	component Registrador is
+	
+	generic
+	(
+		DATA_WIDTH : natural := 20
+	);
+
+	port 
+	(
+		entrada			: in std_logic_vector  ((DATA_WIDTH-1) downto 0);
+		load				: in std_logic;
+		clear 			: in std_logic;
+		clock				: in std_logic;
+		saida				: out std_logic_vector ((DATA_WIDTH-1) downto 0)
+		
+	);
+	
+	end component;		
+	
+	component Comparador20 is
+
+	generic
+	(
+		DATA_WIDTH : natural := 20
+	);
+
+	port 
+	(
+		valor1	 		  	 	: in std_logic_vector  ((DATA_WIDTH-1) downto 0);
+		valor2	 			 	: in std_logic_vector  ((DATA_WIDTH-1) downto 0);
+		saida 					: out std_logic
+		
+	);
+
+	end component;
+	
+	component ComparadorMag20 is
+
+	generic
+	(
+		DATA_WIDTH : natural := 20
+	);
+
+	port 
+	(
+		valor1	 		  		 : in std_logic_vector  ((DATA_WIDTH-1) downto 0);
+		valor2	 		  		 : in std_logic_vector  ((DATA_WIDTH-1) downto 0);
+		saida						 : out std_logic
+	);
+
+	end component;
+	
+	component Somador is
+
+	generic
+	(
+		DATA_WIDTH : natural := 20
+	);
+
+	port 
+	(
+		valor1	   : in std_logic_vector  ((DATA_WIDTH-1) downto 0);
+		valor2	   : in std_logic_vector   ((DATA_WIDTH-1) downto 0);
+		saida 		: out std_logic_vector ((DATA_WIDTH-1) downto 0)
+	);
+
+	end component;
+
+	component Subtrator is
+
+	generic
+	(
+		DATA_WIDTH : natural := 20
+	);
+
+	port 
+	(
+		valor1	   : in std_logic_vector  ((DATA_WIDTH-1) downto 0);
+		valor2	   : in std_logic_vector  ((DATA_WIDTH-1) downto 0);
+		saida 		: out std_logic_vector ((DATA_WIDTH-1) downto 0)
+	);
+
+	end component;
+	
+	component Mux2p1 is
+	
+	generic
+	(
+		DATA_WIDTH : natural := 20
+	);
+
+	
+    Port ( S0 						: in  std_logic;
+           entrada0   			: in  std_logic_vector ((DATA_WIDTH - 1) downto 0);
+           entrada1   			: in  std_logic_vector ((DATA_WIDTH - 1) downto 0);
+           saida   				: out std_logic_vector ((DATA_WIDTH - 1) downto 0));
+			  
+	end component;
+	
+	-- Sinais para interconexões	
+	
+	-- Registradores
+	
+	signal saida_registrador_teclado 							: std_logic_vector ((DATA_WIDTH_20 - 1) downto 0);	
+	
+	signal saida_registrador_saldo1								: std_logic_vector ((DATA_WIDTH_20 - 1) downto 0);
+	
+	signal saida_registrador_saldo2								: std_logic_vector  ((DATA_WIDTH_20 - 1) downto 0);
+	
+	signal saida_registrador_senhaCorreta						: std_logic_vector ((DATA_WIDTH_20 - 1) downto 0);
+	
+	signal saida_registrador_valorTeclado 						: std_logic_vector ((DATA_WIDTH_20 - 1) downto 0);		
+	
+	
+	-- Somador
+	
+	signal saida_somador												: std_logic_vector ((DATA_WIDTH_20 - 1) downto 0);
+	
+	
+	-- Subtrator
+	
+	signal saida_subtrator											: std_logic_vector ((DATA_WIDTH_20 - 1) downto 0);
+		
+	
+	-- Multiplexadores
+	
+	signal saida_mux_saldo1											: std_logic_vector ((DATA_WIDTH_20 - 1) downto 0);
+	
+	signal saida_mux_saldo2											: std_logic_vector ((DATA_WIDTH_20 - 1) downto 0);
+	
+	
+		
+begin 
+
+	saldo1 <= saida_registrador_saldo1;
+	valorTeclado <= saida_registrador_valorTeclado; 	
+
+	-- Interligações entre os componentes	
+	
+	-- Comparadores	
+
+	
+	COMPARADOR_20: 					Comparador20 	port map (valor1 => saida_registrador_senhaCorreta, valor2 => saida_registrador_teclado, saida => senhaEqSenha);
+	
+	COMPARADOR_MAG_20_saldo1: 		ComparadorMag20 	port map (valor1 => saida_registrador_teclado, valor2 => saida_registrador_saldo1, saida => valorGtSaldo);
+	
+	COMPARADOR_MAG_20_somador: 	ComparadorMag20 	port map (valor1 => saida_somador, valor2 => "11110100001000111111", saida => saldoGt9); -- 999.999 reais = "1111 0100 0010 0011 1111".
+	
+	
+	-- Registradores	
+	
+	REGISTRADOR_senhaCorreta: 		Registrador 	port map (entrada => senhaCartao1, load => senhaLoad, clear => senhaClear, clock => CLOCK, saida => saida_registrador_senhaCorreta);
+	
+	REGISTRADOR_Teclado: 			Registrador 	port map (entrada => teclado, load => tecladoLoad, clear => tecladoClear, clock => CLOCK, saida => saida_registrador_teclado);
+	
+	REGISTRADOR_valorTeclado: 		Registrador 	port map (entrada => saida_registrador_teclado, load => valorTecladoLoad, clear => valorTecladoClear, clock => CLOCK, saida => saida_registrador_valorTeclado);
+	
+	REGISTRADOR_Saldo1: 				Registrador 	port map (entrada => saldoCartao1, load => saldo1_2Load, clear => saldo1_2Clear, clock => CLOCK, saida => saida_registrador_saldo1);
+	
+	REGISTRADOR_Saldo2: 				Registrador 	port map (entrada => saldoCartao2, load => saldo1_2Load, clear => saldo1_2Clear, clock => CLOCK, saida => saida_registrador_saldo2);
+	
+	REGISTRADOR_saidaSaldo1: 		Registrador 	port map (entrada => saida_mux_saldo1, load => saidaSaldo1_2Load, clear => saidaSaldo1_2Clear, clock => CLOCK, saida => novoSaldo1);
+	
+	REGISTRADOR_saidaSaldo2: 		Registrador 	port map (entrada => saida_mux_saldo2, load => saidaSaldo1_2Load, clear => saidaSaldo1_2Clear, clock => CLOCK, saida => novoSaldo2);
+		
+	
+	-- Somadores
+	
+	SOMADOR_saldo1:					Somador 			port map (valor1 => saida_registrador_saldo2, valor2 => saida_registrador_valorTeclado, saida => saida_somador);
+	
+	
+	-- Subtrator
+	
+	SUBTRATOR_saldo2:					Subtrator 		port map (valor1 => saida_registrador_saldo1, valor2 => saida_registrador_valorTeclado, saida => saida_subtrator);
+	
+	
+	-- Multiplexadores
+	
+	MUX_atualizarSaldo1:				Mux2p1 			port map (S0 => muxAtualizarS0, entrada0 => saida_registrador_saldo1, entrada1 => saida_subtrator, saida => saida_mux_saldo1);
+	
+	MUX_atualizarSaldo2: 			Mux2p1 			port map (S0 => muxAtualizarS0, entrada0 => saida_registrador_saldo2, entrada1 => saida_somador, saida => saida_mux_saldo2);
+	
+	
+	
+	
+	
+end arch;
+
+

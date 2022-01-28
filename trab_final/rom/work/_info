@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\rom
+Erom
+Z1 w1643326382
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\rom
+Z6 8rom.vhd
+Z7 From.vhd
+l0
+L6
+VUR2Y[Se?NUV;GXa<^JoHc3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1643383963.690000
+Z10 !s90 -reportprogress|300|-explicit|-93|rom.vhd|
+Z11 !s107 rom.vhd|
+Z12 o-explicit -93 -O0
+Z13 tExplicit 1
+!s100 j2aAgk6nUR0GHDAd?cG6j3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 3 rom 0 22 UR2Y[Se?NUV;GXa<^JoHc3
+l34
+L15
+Vh>[>ZcZ`J3BXlfo@I[X_I2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 cOaBIVP;QA_BQ:dWNQmD72
+!i10b 1
+Etb_rom
+Z14 w1643379326
+R2
+R3
+R4
+R5
+Z15 8tb_rom.vhd
+Z16 Ftb_rom.vhd
+l0
+L6
+VQ5j7LhN<ZLW`A=4B<A7KQ3
+!s100 =Yd96hUU=JAe6Z5U8?Nbe0
+R8
+31
+!i10b 1
+Z17 !s108 1643383963.806000
+Z18 !s90 -reportprogress|300|-explicit|-93|tb_rom.vhd|
+Z19 !s107 tb_rom.vhd|
+R12
+R13
+Ateste
+R2
+R3
+R4
+DEx4 work 6 tb_rom 0 22 Q5j7LhN<ZLW`A=4B<A7KQ3
+l22
+L9
+V634EknEOhSV]EUhFj?7ea1
+!s100 1YR:8z:g6K`lH1maf34M@0
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

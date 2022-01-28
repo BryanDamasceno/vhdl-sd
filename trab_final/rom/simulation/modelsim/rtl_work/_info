@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\rom\simulation\modelsim
+Erom
+Z1 w1642719360
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\rom\simulation\modelsim
+Z6 8C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/rom/rom.vhd
+Z7 FC:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/rom/rom.vhd
+l0
+L6
+V_cd[CHEff5i:YgNm<`bGl2
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1642720073.555000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/rom/rom.vhd|
+Z11 !s107 C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/rom/rom.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 iaWK1XPQ=9PEXRl;fdfP]3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 3 rom 0 22 _cd[CHEff5i:YgNm<`bGl2
+l34
+L15
+Ve7YPmiiWZ]:o9TRYKX[]Z3
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 cOaBIVP;QA_BQ:dWNQmD72
+!i10b 1
+Etb_rom
+Z14 w1642720042
+R2
+R3
+R4
+R5
+Z15 8C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/rom/tb_rom.vhd
+Z16 FC:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/rom/tb_rom.vhd
+l0
+L6
+VQ5^E>n3VO1O[CWDOfaN_E1
+!s100 =Yd96hUU=JAe6Z5U8?Nbe0
+R8
+31
+!i10b 1
+Z17 !s108 1642720073.663000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/rom/tb_rom.vhd|
+Z19 !s107 C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/rom/tb_rom.vhd|
+R12
+R13
+Ateste
+R2
+R3
+R4
+DEx4 work 6 tb_rom 0 22 Q5^E>n3VO1O[CWDOfaN_E1
+l21
+L9
+VP53CVnAkm8O2>cTZQ?ibO2
+!s100 oB>hN02H;7I:kJibOf2J^1
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

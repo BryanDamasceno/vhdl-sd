@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\registrador_tempo
+Ereg_tempo
+Z1 w1643382500
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\registrador_tempo
+Z6 8reg_tempo.vhd
+Z7 Freg_tempo.vhd
+l0
+L5
+V3_B7BRZANJjYVH@QzgOk60
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1643383744.657000
+Z10 !s90 -reportprogress|300|-explicit|-93|reg_tempo.vhd|
+Z11 !s107 reg_tempo.vhd|
+Z12 o-explicit -93 -O0
+Z13 tExplicit 1
+!s100 2=Y:ULD?=_X0WlN<7W97l3
+!i10b 1
+Areg
+R2
+R3
+R4
+DEx4 work 9 reg_tempo 0 22 3_B7BRZANJjYVH@QzgOk60
+l15
+L14
+VLZ6@Pke<Y[<j4SjDMo06W1
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 0Bd1mmY`M>F]Ph[U?oIh_1
+!i10b 1
+Etb_reg_tempo
+Z14 w1643383742
+R4
+R3
+R2
+R5
+Z15 8tb_reg_tempo.vhd
+Z16 Ftb_reg_tempo.vhd
+l0
+L5
+VeAGUU>PVUi;ocMJ0TDHKi1
+!s100 ;M_0hKo>VjjK?XPFe9:kl0
+R8
+31
+!i10b 1
+Z17 !s108 1643383744.758000
+Z18 !s90 -reportprogress|300|-explicit|-93|tb_reg_tempo.vhd|
+Z19 !s107 tb_reg_tempo.vhd|
+R12
+R13
+Atestbench
+R4
+R3
+R2
+DEx4 work 12 tb_reg_tempo 0 22 eAGUU>PVUi;ocMJ0TDHKi1
+l25
+L8
+V:gZA`TQ2jg4m_IH=Z9e_g2
+!s100 j1lj>NoiUQ2Ezz6HHhBTK3
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13
