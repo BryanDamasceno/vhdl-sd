@@ -30,7 +30,7 @@ entity datapath is
 			
 		  -- Saídas do datapth para controladora
 			
-			GT_TEMPORAL, LT_TEMPORAL, EQ_TEMPORAL, GT_SENSORES, LT_SENSORES, EQ_SENSORES : out std_logic;
+			GT_TEMPORAL, LT_TEMPORAL, EQ_TEMPORAL, GT_SENSORES, LT_SENSORES, EQ_SENSORES : out std_logic
 			
 		  -- Saídas do datapath para fora		  
     );
