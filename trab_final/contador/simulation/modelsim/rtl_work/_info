@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\contador\simulation\modelsim
 Econtador
-Z1 w1642717651
+Z1 w1643663959
 Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
@@ -13,67 +13,30 @@ Z6 8C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/contador/co
 Z7 FC:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/contador/contador.vhd
 l0
 L5
-VY9A8?c1=ZKhlWb<Vb:h9m1
+VU[iSkLIh>g`TFi]E^08a]0
+!s100 Ylh>dOBEW3Gn_C^PZiP=U1
 Z8 OV;C;10.1d;51
 31
-Z9 !s108 1642717734.952000
+!i10b 1
+Z9 !s108 1643663974.085000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/contador/contador.vhd|
 Z11 !s107 C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/contador/contador.vhd|
 Z12 o-93 -work work -O0
 Z13 tExplicit 1
-!s100 2;fz8KR?`<lhjnbLL>1ID2
-!i10b 1
 Acomportamento
 R2
 R3
 R4
-DEx4 work 8 contador 0 22 Y9A8?c1=ZKhlWb<Vb:h9m1
+DEx4 work 8 contador 0 22 U[iSkLIh>g`TFi]E^08a]0
 l24
 L23
-Vz]G_e0TWdJeFjff_mb=GS1
+V6]zCYU^4Sj=:5f2ZALDU02
+!s100 TD;C=ZAe8HK7Jc<HLd3>f3
 R8
 31
+!i10b 1
 R9
 R10
 R11
-R12
-R13
-!s100 =Q`IAd_Hz@CIKV>:?1`OU1
-!i10b 1
-Etb_contador
-Z14 w1642717720
-R2
-R3
-R4
-R5
-Z15 8C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/contador/tb_contador.vhd
-Z16 FC:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/contador/tb_contador.vhd
-l0
-L5
-V_Pe7U;Q[9U6b;3@J^ki]]1
-!s100 9gV6cA0ZLL=AaNDfaO:FN2
-R8
-31
-!i10b 1
-Z17 !s108 1642717735.172000
-Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/contador/tb_contador.vhd|
-Z19 !s107 C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/contador/tb_contador.vhd|
-R12
-R13
-Atestbench
-R2
-R3
-R4
-DEx4 work 11 tb_contador 0 22 _Pe7U;Q[9U6b;3@J^ki]]1
-l26
-L8
-VIjlWN3JzKRMBg:^Qon:U:1
-!s100 SXlOzIc4G1;[W6ONL8oAX3
-R8
-31
-!i10b 1
-R17
-R18
-R19
 R12
 R13

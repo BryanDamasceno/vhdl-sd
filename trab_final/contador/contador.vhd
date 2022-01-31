@@ -7,7 +7,7 @@ entity contador is
 	generic
 	(
 		MIN_COUNT : natural := 0;
-		MAX_COUNT : natural := 65535
+		MAX_COUNT : natural := 65355
 	);
 
 	port
@@ -24,7 +24,8 @@ architecture comportamento of contador is
 begin
 
 	process (clock)
-		variable   cnt		   : integer range MIN_COUNT to MAX_COUNT;
+		variable   cnt		   : integer;
+		variable   seg 		   : integer range MIN_COUNT to MAX_COUNT := 0;
 	begin
 		if (rising_edge(clock)) then
 
@@ -37,10 +38,17 @@ begin
 				cnt := cnt + 1;
 
 			end if;
+			
+			if (cnt = 400000000) then
+				seg := seg +1;
+				cnt := 0;
+			end if;
+			
+			
 		end if;
 
 		-- Output the current count
-		count <= cnt;
+		count <= seg;
 	end process;
 
 end comportamento;

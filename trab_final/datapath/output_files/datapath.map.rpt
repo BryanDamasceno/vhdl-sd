@@ -1,5 +1,5 @@
-Analysis & Elaboration report for datapath
-Fri Jan 28 13:24:19 2022
+Analysis & Synthesis report for datapath
+Mon Jan 31 18:42:07 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -7,18 +7,24 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |datapath
-  5. Parameter Settings for User Entity Instance: reg_umidade:RG_UMIDADE
-  6. Parameter Settings for User Entity Instance: reg_temperatura:RG_TEMPERATURA
-  7. Parameter Settings for User Entity Instance: reg_tempo:RG_TEMPO
-  8. Parameter Settings for User Entity Instance: reg_intervalo:RG_INTERVALO
-  9. Parameter Settings for User Entity Instance: contador:CNT_T
- 10. Analysis & Elaboration Settings
- 11. Port Connectivity Checks: "comparador_sensores:COMP_SENSORES"
- 12. Port Connectivity Checks: "comparador_temporal:COMP_TEMPORAL"
- 13. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |datapath
+ 13. Parameter Settings for User Entity Instance: reg_umidade:RG_UMIDADE
+ 14. Parameter Settings for User Entity Instance: reg_temperatura:RG_TEMPERATURA
+ 15. Parameter Settings for User Entity Instance: reg_tempo:RG_TEMPO
+ 16. Parameter Settings for User Entity Instance: reg_intervalo:RG_INTERVALO
+ 17. Parameter Settings for User Entity Instance: contador:CNT_T
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -42,99 +48,27 @@ applicable agreement for further details.
 
 
 +--------------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                       ;
+; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Fri Jan 28 13:24:19 2022           ;
+; Analysis & Synthesis Status        ; Successful - Mon Jan 31 18:42:07 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; datapath                                        ;
 ; Top-level Entity Name              ; datapath                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 270                                             ;
+;     Total combinational functions  ; 222                                             ;
+;     Dedicated logic registers      ; 108                                             ;
+; Total registers                    ; 108                                             ;
+; Total pins                         ; 72                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 8      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
-
-
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |datapath ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; data_width16   ; 15    ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: reg_umidade:RG_UMIDADE ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; N              ; 16    ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: reg_temperatura:RG_TEMPERATURA ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; N              ; 16    ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: reg_tempo:RG_TEMPO ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; N              ; 16    ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: reg_intervalo:RG_INTERVALO ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; N              ; 16    ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: contador:CNT_T ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; MIN_COUNT      ; 0     ; Signed Integer                     ;
-; MAX_COUNT      ; 65535 ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                      ;
+; Analysis & Synthesis Settings                                                                                        ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
@@ -218,55 +152,216 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "comparador_sensores:COMP_SENSORES"                                                            ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; maior_sensores ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; igual_sensores ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; menor_sensores ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "comparador_temporal:COMP_TEMPORAL"                                                            ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; maior_temporal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; igual_temporal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; menor_temporal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                      ; Library ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------+---------+
+; datapath.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/datapath/datapath.vhd            ;         ;
+; reg_umidade.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/datapath/reg_umidade.vhd         ;         ;
+; reg_temperatura.vhd              ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/datapath/reg_temperatura.vhd     ;         ;
+; reg_tempo.vhd                    ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/datapath/reg_tempo.vhd           ;         ;
+; reg_intervalo.vhd                ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/datapath/reg_intervalo.vhd       ;         ;
+; rom.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/datapath/rom.vhd                 ;         ;
+; mux_temporal.vhd                 ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/datapath/mux_temporal.vhd        ;         ;
+; mux_sensores.vhd                 ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/datapath/mux_sensores.vhd        ;         ;
+; comparador_temporal.vhd          ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/datapath/comparador_temporal.vhd ;         ;
+; comparador_sensores.vhd          ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/datapath/comparador_sensores.vhd ;         ;
+; contador.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/datapath/contador.vhd            ;         ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 270   ;
+;                                             ;       ;
+; Total combinational functions               ; 222   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 56    ;
+;     -- 3 input functions                    ; 88    ;
+;     -- <=2 input functions                  ; 78    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 122   ;
+;     -- arithmetic mode                      ; 100   ;
+;                                             ;       ;
+; Total registers                             ; 108   ;
+;     -- Dedicated logic registers            ; 108   ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 72    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clock ;
+; Maximum fan-out                             ; 108   ;
+; Total fan-out                               ; 999   ;
+; Average fan-out                             ; 2.49  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                             ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
+; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Library Name ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
+; |datapath                              ; 222 (0)           ; 108 (0)      ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |datapath                                   ; work         ;
+;    |comparador_sensores:COMP_SENSORES| ; 42 (42)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|comparador_sensores:COMP_SENSORES ; work         ;
+;    |comparador_temporal:COMP_TEMPORAL| ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|comparador_temporal:COMP_TEMPORAL ; work         ;
+;    |contador:CNT_T|                    ; 95 (95)           ; 48 (48)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|contador:CNT_T                    ; work         ;
+;    |mux_sensores:M_SENSORES|           ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mux_sensores:M_SENSORES           ; work         ;
+;    |mux_temporal:M_TEMPORAL|           ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mux_temporal:M_TEMPORAL           ; work         ;
+;    |reg_intervalo:RG_INTERVALO|        ; 0 (0)             ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|reg_intervalo:RG_INTERVALO        ; work         ;
+;    |reg_temperatura:RG_TEMPERATURA|    ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|reg_temperatura:RG_TEMPERATURA    ; work         ;
+;    |reg_tempo:RG_TEMPO|                ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|reg_tempo:RG_TEMPO                ; work         ;
+;    |reg_umidade:RG_UMIDADE|            ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|reg_umidade:RG_UMIDADE            ; work         ;
+;    |rom:RM|                            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|rom:RM                            ; work         ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                             ;
++---------------------------------------------------+------------------------------------------------------------+
+; Register name                                     ; Reason for Removal                                         ;
++---------------------------------------------------+------------------------------------------------------------+
+; reg_intervalo:RG_INTERVALO|saida_intervalo[0,8,9] ; Stuck at GND due to stuck port data_in                     ;
+; reg_intervalo:RG_INTERVALO|saida_intervalo[7]     ; Merged with reg_intervalo:RG_INTERVALO|saida_intervalo[15] ;
+; Total Number of Removed Registers = 4             ;                                                            ;
++---------------------------------------------------+------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 108   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 60    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 75    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; contador:CNT_T|cnt[0]                  ; 1       ;
+; contador:CNT_T|cnt[31]                 ; 1       ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |datapath|contador:CNT_T|cnt ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |datapath ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width16   ; 15    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_umidade:RG_UMIDADE ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; N              ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_temperatura:RG_TEMPERATURA ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; N              ; 16    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_tempo:RG_TEMPO ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; N              ; 16    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_intervalo:RG_INTERVALO ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; N              ; 16    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: contador:CNT_T ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; MIN_COUNT      ; 0     ; Signed Integer                     ;
+; MAX_COUNT      ; 65355 ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Elaboration
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Jan 28 13:24:17 2022
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off datapath -c datapath --analysis_and_elaboration
+    Info: Processing started: Mon Jan 31 18:42:06 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off datapath -c datapath
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (12125): Using design file datapath.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: datapath-arch
+    Info (12022): Found design unit 1: datapath-behaviour
     Info (12023): Found entity 1: datapath
 Info (12127): Elaborating entity "datapath" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at datapath.vhd(33): used implicit default value for signal "GT_TEMPORAL" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at datapath.vhd(33): used implicit default value for signal "LT_TEMPORAL" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at datapath.vhd(33): used implicit default value for signal "EQ_TEMPORAL" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at datapath.vhd(33): used implicit default value for signal "GT_SENSORES" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at datapath.vhd(33): used implicit default value for signal "LT_SENSORES" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at datapath.vhd(33): used implicit default value for signal "EQ_SENSORES" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (12125): Using design file comparador_temporal.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: comparador_temporal-comportamento
-    Info (12023): Found entity 1: comparador_temporal
-Info (12128): Elaborating entity "comparador_temporal" for hierarchy "comparador_temporal:COMP_TEMPORAL"
-Warning (12125): Using design file comparador_sensores.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: comparador_sensores-comportamento
-    Info (12023): Found entity 1: comparador_sensores
-Info (12128): Elaborating entity "comparador_sensores" for hierarchy "comparador_sensores:COMP_SENSORES"
+Warning (10540): VHDL Signal Declaration warning at datapath.vhd(140): used explicit default value for signal "x" because signal was never assigned a value
 Warning (12125): Using design file reg_umidade.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: reg_umidade-reg
     Info (12023): Found entity 1: reg_umidade
@@ -291,6 +386,10 @@ Warning (12125): Using design file reg_intervalo.vhd, which is not specified as 
 Info (12128): Elaborating entity "reg_intervalo" for hierarchy "reg_intervalo:RG_INTERVALO"
 Warning (10492): VHDL Process Statement warning at reg_intervalo.vhd(18): signal "reg_intervalo_ld" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at reg_intervalo.vhd(21): signal "reg_intervalo_cl" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (12125): Using design file rom.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: rom-behavioral
+    Info (12023): Found entity 1: rom
+Info (12128): Elaborating entity "rom" for hierarchy "rom:RM"
 Warning (12125): Using design file mux_temporal.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: mux_temporal-comportamento
     Info (12023): Found entity 1: mux_temporal
@@ -299,18 +398,30 @@ Warning (12125): Using design file mux_sensores.vhd, which is not specified as a
     Info (12022): Found design unit 1: mux_sensores-comportamento
     Info (12023): Found entity 1: mux_sensores
 Info (12128): Elaborating entity "mux_sensores" for hierarchy "mux_sensores:M_SENSORES"
+Warning (12125): Using design file comparador_temporal.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: comparador_temporal-comportamento
+    Info (12023): Found entity 1: comparador_temporal
+Info (12128): Elaborating entity "comparador_temporal" for hierarchy "comparador_temporal:COMP_TEMPORAL"
+Warning (12125): Using design file comparador_sensores.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: comparador_sensores-comportamento
+    Info (12023): Found entity 1: comparador_sensores
+Info (12128): Elaborating entity "comparador_sensores" for hierarchy "comparador_sensores:COMP_SENSORES"
 Warning (12125): Using design file contador.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: contador-comportamento
     Info (12023): Found entity 1: contador
 Info (12128): Elaborating entity "contador" for hierarchy "contador:CNT_T"
-Warning (12125): Using design file rom.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: rom-behavioral
-    Info (12023): Found entity 1: rom
-Info (12128): Elaborating entity "rom" for hierarchy "rom:RM"
-Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 4623 megabytes
-    Info: Processing ended: Fri Jan 28 13:24:19 2022
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "EN_ROM"
+Info (21057): Implemented 357 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 66 input pins
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 285 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 4637 megabytes
+    Info: Processing ended: Mon Jan 31 18:42:07 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

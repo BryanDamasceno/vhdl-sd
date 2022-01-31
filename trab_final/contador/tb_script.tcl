@@ -22,6 +22,6 @@ add wave sim:/tb_contador/*
 view wave
 view structure
 view signals
-run 200ns
+run 4000 ms
 #quit -force
 

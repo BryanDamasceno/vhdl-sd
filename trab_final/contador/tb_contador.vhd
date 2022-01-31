@@ -19,9 +19,9 @@ signal clk, rst, e : std_logic := '0';
 signal contagem : integer range 0 to 65535;
 	
 	-- Clock period definitions
- 	constant PERIOD     : time := 10 ns;
+ 	constant PERIOD     : time := 10 3s;
   	constant DUTY_CYCLE : real := 0.5;
-  	constant OFFSET     : time := 5 ns;
+  	constant OFFSET     : time := 5 3s;
 
 	begin
 instance_contador : contador port map (clock => clk, reset_contador=>rst, enable_contador=>e, count =>contagem);
@@ -41,8 +41,8 @@ instance_contador : contador port map (clock => clk, reset_contador=>rst, enable
 					END LOOP CLOCK_LOOP;
         END PROCESS;
 		  
-			rst <= '1', '0' after 10 ns, '1' after 120 ns, '0' after 130 ns;
-			e <= '1', '0' after 170 ns;
+			rst <= '1', '0' after 10 ns;
+			e <= '1';
 end testbench;
 
 

@@ -1,5 +1,5 @@
 Flow report for contador
-Fri Jan 28 11:22:40 2022
+Mon Jan 31 18:37:53 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Jan 28 11:22:40 2022           ;
+; Flow Status                        ; Successful - Mon Jan 31 18:37:52 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; contador                                        ;
 ; Top-level Entity Name              ; contador                                        ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/28/2022 11:22:39 ;
+; Start date & time ; 01/31/2022 18:37:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; contador            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 4459184785501.164337975908448         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 4459184785501.164366507224520         ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; tb_contador    ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_contador                           ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --            ; --          ; eda_simulation ;
@@ -101,8 +101,8 @@ applicable agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:02     ; 1.0                     ; 4623 MB             ; 00:00:01                           ;
-; Total                  ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
+; Analysis & Elaboration ; 00:00:01     ; 1.0                     ; 4623 MB             ; 00:00:01                           ;
+; Total                  ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
