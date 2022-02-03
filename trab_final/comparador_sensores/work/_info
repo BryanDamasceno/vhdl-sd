@@ -17,7 +17,7 @@ L6
 Vd9dLk0I8:z5j4a2@<aYH]1
 Z9 OV;C;10.1d;51
 31
-Z10 !s108 1643380505.899000
+Z10 !s108 1643854864.092000
 Z11 !s90 -reportprogress|300|-explicit|-93|comparador_sensores.vhd|
 Z12 !s107 comparador_sensores.vhd|
 Z13 o-explicit -93 -O0
@@ -57,7 +57,7 @@ VbGeU<>X6nof_e@<oBlA@B3
 R9
 31
 !i10b 1
-Z19 !s108 1643380506.009000
+Z19 !s108 1643854864.310000
 Z20 !s90 -reportprogress|300|-explicit|-93|tb_comparador.vhd|
 Z21 !s107 tb_comparador.vhd|
 R13

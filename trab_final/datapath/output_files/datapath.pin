@@ -88,7 +88,7 @@ GND*                         : A18       :        :                   :         
 GND*                         : A19       :        :                   :         : 4         :                
 GND*                         : A20       :        :                   :         : 4         :                
 GND*                         : A21       :        :                   :         : 4         :                
-DT_UMID[5]                   : A22       : input  : 3.3-V LVTTL       :         : 4         : N              
+DT_TEMP[5]                   : A22       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : A23       :        :                   :         : 4         :                
 VCCIO4                       : A24       : power  :                   : 3.3V    : 4         :                
 GND                          : A25       : gnd    :                   :         :           :                
@@ -267,10 +267,10 @@ GND*                         : B18       :        :                   :         
 GND*                         : B19       :        :                   :         : 4         :                
 GND*                         : B20       :        :                   :         : 4         :                
 GND*                         : B21       :        :                   :         : 4         :                
-DT_UMID[3]                   : B22       : input  : 3.3-V LVTTL       :         : 4         : N              
+DT_TEMP[3]                   : B22       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : B23       :        :                   :         : 4         :                
-DT_UMID[10]                  : B24       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_TEMP[5]                   : B25       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_TEMP[10]                  : B24       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_UMID[5]                   : B25       : input  : 3.3-V LVTTL       :         : 5         : N              
 GND                          : B26       : gnd    :                   :         :           :                
 VCCIO2                       : C1        : power  :                   : 3.3V    : 2         :                
 GND*                         : C2        :        :                   :         : 2         :                
@@ -292,11 +292,11 @@ GND*                         : C17       :        :                   :         
 GND                          : C18       : gnd    :                   :         :           :                
 GND*                         : C19       :        :                   :         : 4         :                
 VCCIO4                       : C20       : power  :                   : 3.3V    : 4         :                
-DT_UMID[6]                   : C21       : input  : 3.3-V LVTTL       :         : 4         : N              
-DT_UMID[4]                   : C22       : input  : 3.3-V LVTTL       :         : 4         : N              
-DT_TEMP[10]                  : C23       : input  : 3.3-V LVTTL       :         : 4         : N              
-DT_UMID[14]                  : C24       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_TEMP[14]                  : C25       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_TEMP[6]                   : C21       : input  : 3.3-V LVTTL       :         : 4         : N              
+DT_TEMP[4]                   : C22       : input  : 3.3-V LVTTL       :         : 4         : N              
+DT_UMID[10]                  : C23       : input  : 3.3-V LVTTL       :         : 4         : N              
+DT_TEMP[14]                  : C24       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_UMID[14]                  : C25       : input  : 3.3-V LVTTL       :         : 5         : N              
 VCCIO5                       : C26       : power  :                   : 3.3V    : 5         :                
 GND*                         : D1        :        :                   :         : 2         :                
 GND*                         : D2        :        :                   :         : 2         :                
@@ -318,12 +318,12 @@ GND*                         : D17       :        :                   :         
 GND*                         : D18       :        :                   :         : 4         :                
 GND*                         : D19       :        :                   :         : 4         :                
 GND*                         : D20       :        :                   :         : 4         :                
-DT_TEMP[4]                   : D21       : input  : 3.3-V LVTTL       :         : 4         : N              
+DT_UMID[4]                   : D21       : input  : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : D22       : power  :                   : 3.3V    : 4         :                
 EQ_SENSORES                  : D23       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : D24       : gnd    :                   :         :           :                
-DT_UMID[11]                  : D25       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_UMID[1]                   : D26       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_TEMP[11]                  : D25       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_TEMP[1]                   : D26       : input  : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : E1        :        :                   :         : 2         :                
 GND*                         : E2        :        :                   :         : 2         :                
 ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E3        : input  : 3.3-V LVTTL       :         : 2         : N              
@@ -345,11 +345,11 @@ GND*                         : E18       :        :                   :         
 GND                          : E19       : gnd    :                   :         :           :                
 GND*                         : E20       :        :                   :         : 4         :                
 GND_PLL2                     : E21       : gnd    :                   :         :           :                
-DT_UMID[12]                  : E22       : input  : 3.3-V LVTTL       :         : 5         : N              
-LD_UMIDADE                   : E23       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_UMID[7]                   : E24       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_UMID[13]                  : E25       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_TEMP[15]                  : E26       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_TEMP[12]                  : E22       : input  : 3.3-V LVTTL       :         : 5         : N              
+LD_TEMPERATURA               : E23       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_TEMP[7]                   : E24       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_TEMP[13]                  : E25       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_UMID[15]                  : E26       : input  : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : F1        :        :                   :         : 2         :                
 GND*                         : F2        :        :                   :         : 2         :                
 GND*                         : F3        :        :                   :         : 2         :                
@@ -369,13 +369,13 @@ GND*                         : F16       :        :                   :         
 GND*                         : F17       :        :                   :         : 4         :                
 GND*                         : F18       :        :                   :         : 4         :                
 GNDA_PLL2                    : F19       : gnd    :                   :         :           :                
-DT_UMID[0]                   : F20       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_TEMP[1]                   : F21       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_TEMP[0]                   : F20       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_UMID[1]                   : F21       : input  : 3.3-V LVTTL       :         : 5         : N              
 VCCIO5                       : F22       : power  :                   : 3.3V    : 5         :                
-DT_TEMP[12]                  : F23       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_UMID[15]                  : F24       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_UMID[2]                   : F25       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_TEMP[8]                   : F26       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_UMID[12]                  : F23       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_TEMP[15]                  : F24       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_TEMP[2]                   : F25       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_UMID[8]                   : F26       : input  : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : G1        :        :                   :         : 2         :                
 GND*                         : G2        :        :                   :         : 2         :                
 GND*                         : G3        :        :                   :         : 2         :                
@@ -396,12 +396,12 @@ GND*                         : G17       :        :                   :         
 GND*                         : G18       :        :                   :         : 4         :                
 VCCA_PLL2                    : G19       : power  :                   : 1.2V    :           :                
 GND_PLL2                     : G20       : gnd    :                   :         :           :                
-LD_TEMPERATURA               : G21       : input  : 3.3-V LVTTL       :         : 5         : N              
+LD_UMIDADE                   : G21       : input  : 3.3-V LVTTL       :         : 5         : N              
 SW2                          : G22       : input  : 3.3-V LVTTL       :         : 5         : N              
 LT_SENSORES                  : G23       : output : 3.3-V LVTTL       :         : 5         : N              
 GT_SENSORES                  : G24       : output : 3.3-V LVTTL       :         : 5         : N              
-DT_TEMP[6]                   : G25       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_UMID[8]                   : G26       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_UMID[6]                   : G25       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_TEMP[8]                   : G26       : input  : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : H1        :        :                   :         : 2         :                
 GND*                         : H2        :        :                   :         : 2         :                
 GND*                         : H3        :        :                   :         : 2         :                
@@ -422,10 +422,10 @@ GND*                         : H17       :        :                   :         
 VCCIO4                       : H18       : power  :                   : 3.3V    : 4         :                
 DT_TEMPO[14]                 : H19       : input  : 3.3-V LVTTL       :         : 5         : N              
 VCCD_PLL2                    : H20       : power  :                   : 1.2V    :           :                
-DT_TEMP[3]                   : H21       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_UMID[3]                   : H21       : input  : 3.3-V LVTTL       :         : 5         : N              
 GND                          : H22       : gnd    :                   :         :           :                
 LD_INTERVALO                 : H23       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_UMID[9]                   : H24       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_TEMP[9]                   : H24       : input  : 3.3-V LVTTL       :         : 5         : N              
 ADD[1]                       : H25       : input  : 3.3-V LVTTL       :         : 5         : N              
 ADD[2]                       : H26       : input  : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : J1        :        :                   :         : 2         :                
@@ -447,9 +447,9 @@ GND*                         : J16       :        :                   :         
 GND*                         : J17       :        :                   :         : 4         :                
 GND*                         : J18       :        :                   :         : 4         :                
 VCCIO5                       : J19       : power  :                   : 3.3V    : 5         :                
-DT_TEMP[11]                  : J20       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_TEMP[13]                  : J21       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_TEMP[0]                   : J22       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_UMID[11]                  : J20       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_UMID[13]                  : J21       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_UMID[0]                   : J22       : input  : 3.3-V LVTTL       :         : 5         : N              
 ADD[0]                       : J23       : input  : 3.3-V LVTTL       :         : 5         : N              
 DT_TEMPO[13]                 : J24       : input  : 3.3-V LVTTL       :         : 5         : N              
 DT_TEMPO[7]                  : J25       : input  : 3.3-V LVTTL       :         : 5         : N              
@@ -475,7 +475,7 @@ DT_TEMPO[0]                  : K18       : input  : 3.3-V LVTTL       :         
 LD_TEMPO                     : K19       : input  : 3.3-V LVTTL       :         : 5         : N              
 GND                          : K20       : gnd    :                   :         :           :                
 ADD[3]                       : K21       : input  : 3.3-V LVTTL       :         : 5         : N              
-DT_TEMP[2]                   : K22       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_UMID[2]                   : K22       : input  : 3.3-V LVTTL       :         : 5         : N              
 DT_TEMPO[2]                  : K23       : input  : 3.3-V LVTTL       :         : 5         : N              
 DT_TEMPO[6]                  : K24       : input  : 3.3-V LVTTL       :         : 5         : N              
 DT_TEMPO[5]                  : K25       : input  : 3.3-V LVTTL       :         : 5         : N              
@@ -549,7 +549,7 @@ GND                          : N14       : gnd    :                   :         
 GND                          : N15       : gnd    :                   :         :           :                
 GND                          : N16       : gnd    :                   :         :           :                
 VCCINT                       : N17       : power  :                   : 1.2V    :           :                
-DT_TEMP[9]                   : N18       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_UMID[9]                   : N18       : input  : 3.3-V LVTTL       :         : 5         : N              
 GND                          : N19       : gnd    :                   :         :           :                
 EQ_TEMPORAL                  : N20       : output : 3.3-V LVTTL       :         : 5         : N              
 NC                           : N21       :        :                   :         :           :                
@@ -575,7 +575,7 @@ GND                          : P14       : gnd    :                   :         
 GND                          : P15       : gnd    :                   :         :           :                
 GND                          : P16       : gnd    :                   :         :           :                
 GND*                         : P17       :        :                   :         : 6         :                
-DT_TEMP[7]                   : P18       : input  : 3.3-V LVTTL       :         : 5         : N              
+DT_UMID[7]                   : P18       : input  : 3.3-V LVTTL       :         : 5         : N              
 GND                          : P19       : gnd    :                   :         :           :                
 MSEL0                        : P20       :        :                   :         : 6         :                
 MSEL1                        : P21       :        :                   :         : 6         :                

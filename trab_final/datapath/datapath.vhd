@@ -16,7 +16,7 @@ entity datapath is
         clock   : in    std_logic; -- clock input		
 		  
 		  -- Entradas externas para datapath
-		  
+		  DT_UMID, DT_TEMP, DT_TEMPO : in std_logic_vector (data_width16 downto 0);
 		  -- Entradas da Controladora para datapah
 			
 			LD_TEMPERATURA, CL_TEMPERATURA, LD_UMIDADE, CL_UMIDADE, LD_TEMPO, CL_TEMPO, LD_INTERVALO, CL_INTERVALO : in std_logic;
@@ -25,7 +25,7 @@ entity datapath is
 			
 			EN_CONTADOR, RST_CONTADOR, EN_ROM : in std_logic;
 			
-			DT_UMID, DT_TEMP, DT_TEMPO : in std_logic_vector (data_width16 downto 0);
+			
 			ADD : in std_logic_vector (3 downto 0);
 			
 		  -- Saídas do datapth para controladora

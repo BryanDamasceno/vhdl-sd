@@ -13,10 +13,10 @@ entity datapath is
 	
     port (     
 	 
-        CLOCK   : in    std_logic; -- clock input		
+        clock   : in    std_logic; -- clock input		
 		  
 		  -- Entradas externas para datapath
-		  
+		  DT_UMID, DT_TEMP, DT_TEMPO : in std_logic_vector (data_width16 downto 0);
 		  -- Entradas da Controladora para datapah
 			
 			LD_TEMPERATURA, CL_TEMPERATURA, LD_UMIDADE, CL_UMIDADE, LD_TEMPO, CL_TEMPO, LD_INTERVALO, CL_INTERVALO : in std_logic;
@@ -25,7 +25,7 @@ entity datapath is
 			
 			EN_CONTADOR, RST_CONTADOR, EN_ROM : in std_logic;
 			
-			DT_UMID, DT_TEMP, DT_TEMPO : in std_logic_vector (data_width16 downto 0);
+			
 			ADD : in std_logic_vector (3 downto 0);
 			
 		  -- Saídas do datapth para controladora
@@ -33,6 +33,7 @@ entity datapath is
 			GT_TEMPORAL, LT_TEMPORAL, EQ_TEMPORAL, GT_SENSORES, LT_SENSORES, EQ_SENSORES : out std_logic
 			
 		  -- Saídas do datapath para fora		  
+		  
     );
 	 
 end datapath;
@@ -122,44 +123,51 @@ architecture behaviour of datapath is
 	
 	-- Registradores
 	signal OUT_TEMPERATURA, OUT_UMIDADE, OUT_INTERVALO, OUT_TEMPO : std_logic_vector (data_width16 downto 0) := std_logic_vector(to_unsigned (0, 16));
+	--signal saida_temperatura, saida_umidade, saida_intervalo, saida_tempo : std_logic_vector (data_width16 downto 0);
 	
-	signal CNT : integer range 0 to 65535 := 0;
+	signal CNT : integer range 0 to 65535 ;
+	--signal count : std_logic_vector (data_width16 downto 0);
 	
 	signal DT : std_logic_vector (data_width16 downto 0) := std_logic_vector(to_unsigned (0, 16));
+	--signal data : std_logic_vector (data_width16 downto 0);
 	
 	-- Multiplexadores
 	
 	signal ES1, ES2 : std_logic_vector (data_width16 downto 0) := std_logic_vector(to_unsigned (0, 16));
+	--signal escolha1, escolha2									: std_logic_vector (data_width16 downto 0);
 
-	
+--CRIEI ESSE SINAL PRA CONVERTER DE INTEIRO PRA STD_VECTOR	
+signal x: std_logic_vector (data_width16 downto 0) := std_logic_vector(to_unsigned (CNT, 16));
+
 begin 
 
 	-- Interligações entre os componentes	
 	
-	-- Comparadores	
-	
-	 COMP_TEMPORAL: comparador_temporal port map (escolha1 => ES1, count => std_logic_vector(to_unsigned(CNT, 16)));
-	 COMP_SENSORES : comparador_sensores port map (escolha2 => ES2, data => DT);
 	-- Registradores	
 	
 	 RG_UMIDADE: reg_umidade port map (reg_umidade_ld => LD_UMIDADE, reg_umidade_cl => CL_UMIDADE, data_umid => DT_UMID, saida_umidade => OUT_UMIDADE, clk => CLOCK);
 	 RG_TEMPERATURA: reg_temperatura port map (reg_temperatura_ld => LD_TEMPERATURA, reg_temperatura_cl => CL_TEMPERATURA, data_temp => DT_TEMP, saida_temperatura=> OUT_TEMPERATURA, clk => CLOCK);
 	 RG_TEMPO: reg_tempo port map (reg_tempo_ld => LD_TEMPO, reg_tempo_cl => CL_TEMPO, data_tempo => DT_TEMPO, saida_tempo=> OUT_TEMPO, clk => CLOCK);
 	 RG_INTERVALO: reg_intervalo port map (reg_intervalo_ld => LD_INTERVALO, reg_intervalo_cl => CL_INTERVALO, data_intervalo => DT, saida_intervalo=> OUT_INTERVALO, clk => CLOCK);
-	
+	 
+	 -- Rom
+	 RM: rom port map (enable_rom=> EN_ROM, address => ADD, data => DT);
+	 
 	-- Multiplexadores
 	
 	 M_TEMPORAL: mux_temporal port map ( saida_tempo => OUT_TEMPO, saida_intervalo => OUT_INTERVALO, escolha1 => ES1, selecao1 => SW1);
 	 M_SENSORES: mux_sensores port map ( saida_temperatura => OUT_TEMPERATURA, saida_umidade => OUT_UMIDADE, escolha2 => ES2, selecao2 => SW2);
 
+	-- Comparadores	
+	
+	--ADICIONEI AS PORTAS DE SAIDAS 
+	COMP_TEMPORAL: comparador_temporal port map (escolha1 => ES1, count => x, maior_temporal => GT_TEMPORAL, igual_temporal => EQ_TEMPORAL, menor_temporal => LT_TEMPORAL);
+	COMP_SENSORES : comparador_sensores port map (escolha2 => ES2, data => DT, maior_sensores => GT_SENSORES, igual_sensores => EQ_SENSORES, menor_sensores => LT_SENSORES);
+
 	-- Contador 
 	
 	 CNT_T: contador port map (enable_contador => EN_CONTADOR, reset_contador => RST_CONTADOR, count => CNT, clock => CLOCK);
-	
-	-- Rom
-	
-	 RM: rom port map (enable_rom=> EN_ROM, address => ADD, data => DT);
-	
+	 
 end behaviour;
 
 

@@ -2,4 +2,100 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'controlunit:CONTROL|this_state.S2'
+Slack : -4.340
+TNS   : -8.409
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_P'
+Slack : -0.826
+TNS   : -2.666
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_P'
+Slack : -0.035
+TNS   : -0.035
+
+Type  : Slow 1200mV 85C Model Hold 'controlunit:CONTROL|this_state.S2'
+Slack : 0.012
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CLOCK_P'
+Slack : -0.472
+TNS   : -6.310
+
+Type  : Slow 1200mV 85C Model Removal 'CLOCK_P'
+Slack : 0.903
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_P'
+Slack : -3.000
+TNS   : -23.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S2'
+Slack : 0.464
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S2'
+Slack : -3.878
+TNS   : -7.503
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_P'
+Slack : -0.637
+TNS   : -1.819
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_P'
+Slack : 0.015
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S2'
+Slack : 0.041
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CLOCK_P'
+Slack : -0.309
+TNS   : -3.846
+
+Type  : Slow 1200mV 0C Model Removal 'CLOCK_P'
+Slack : 0.815
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_P'
+Slack : -3.000
+TNS   : -23.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S2'
+Slack : 0.470
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S2'
+Slack : -2.188
+TNS   : -4.194
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_P'
+Slack : -0.282
+TNS   : -0.443
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_P'
+Slack : -0.118
+TNS   : -0.403
+
+Type  : Fast 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S2'
+Slack : -0.117
+TNS   : -0.121
+
+Type  : Fast 1200mV 0C Model Recovery 'CLOCK_P'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'CLOCK_P'
+Slack : 0.496
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_P'
+Slack : -3.000
+TNS   : -23.520
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S2'
+Slack : 0.460
+TNS   : 0.000
+
 ------------------------------------------------------------

@@ -79,92 +79,92 @@ GND                          : A1        : gnd    :                   :         
 GND                          : A2        : gnd    :                   :         :           :                
 GND                          : A3        : gnd    :                   :         :           :                
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : A4        : input  : 2.5 V             :         : 9         : N              
-DT_TEMPO_P[3]                : A5        : bidir  : 2.5 V             :         : 8         : N              
-DISP_TEMP_P[10]              : A6        : output : 2.5 V             :         : 8         : N              
-DT_TEMPO_P[5]                : A7        : bidir  : 2.5 V             :         : 8         : N              
-DT_TEMPO_P[8]                : A8        : bidir  : 2.5 V             :         : 8         : N              
-DT_TEMPO_P[13]               : A9        : bidir  : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : A10       :        :                   :         : 8         :                
-DISP_TEMPO_P[4]              : A11       : output : 2.5 V             :         : 8         : N              
-GND+                         : A12       :        :                   :         : 7         :                
-DISP_UMID_P[2]               : A13       : output : 2.5 V             :         : 7         : N              
-DT_TEMPO_P[11]               : A14       : bidir  : 2.5 V             :         : 7         : N              
-DT_TEMP_P[2]                 : A15       : bidir  : 2.5 V             :         : 7         : N              
-DT_TEMPO_P[0]                : A16       : bidir  : 2.5 V             :         : 7         : N              
-DISP_TEMP_P[7]               : A17       : output : 2.5 V             :         : 7         : N              
-IRRIGA_P                     : A18       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A6        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A7        :        :                   :         : 8         :                
+DISP_TEMP_P[9]               : A8        : output : 2.5 V             :         : 8         : N              
+DISP_TEMP_P[15]              : A9        : output : 2.5 V             :         : 8         : N              
+DISP_TEMP_P[7]               : A10       : output : 2.5 V             :         : 8         : N              
+DISP_TEMPO_P[3]              : A11       : output : 2.5 V             :         : 8         : N              
+DT_TEMPO_P[6]                : A12       : input  : 2.5 V             :         : 7         : N              
+DT_TEMP_P[11]                : A13       : input  : 2.5 V             :         : 7         : N              
+DISP_TEMP_P[6]               : A14       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A15       :        :                   :         : 7         :                
+DT_TEMPO_P[13]               : A16       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A17       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A18       :        :                   :         : 7         :                
 GXB_NC                       : B1        :        :                   :         : QL0       :                
 GXB_NC                       : B2        :        :                   :         : QL0       :                
 GND                          : B3        : gnd    :                   :         :           :                
 ~ALTERA_ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : B4        : input  : 2.5 V             :         : 9         : N              
-DISP_TEMP_P[5]               : B5        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : B6        :        :                   :         : 8         :                
-DT_TEMPO_P[6]                : B7        : bidir  : 2.5 V             :         : 8         : N              
+DISP_TEMP_P[1]               : B5        : output : 2.5 V             :         : 8         : N              
+DISP_TEMPO_P[5]              : B6        : output : 2.5 V             :         : 8         : N              
+DT_TEMPO_P[0]                : B7        : input  : 2.5 V             :         : 8         : N              
 GND                          : B8        : gnd    :                   :         :           :                
-DT_TEMP_P[14]                : B9        : bidir  : 2.5 V             :         : 8         : N              
-DT_TEMPO_P[7]                : B10       : bidir  : 2.5 V             :         : 8         : N              
+DISP_UMID_P[4]               : B9        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B10       :        :                   :         : 8         :                
 GND                          : B11       : gnd    :                   :         :           :                
-GND+                         : B12       :        :                   :         : 7         :                
-DT_TEMP_P[13]                : B13       : bidir  : 2.5 V             :         : 7         : N              
+DT_TEMPO_P[5]                : B12       : input  : 2.5 V             :         : 7         : N              
+DISP_TEMP_P[14]              : B13       : output : 2.5 V             :         : 7         : N              
 GND                          : B14       : gnd    :                   :         :           :                
-DISP_TEMP_P[14]              : B15       : output : 2.5 V             :         : 7         : N              
-DT_UMID_P[14]                : B16       : bidir  : 2.5 V             :         : 7         : N              
+DT_TEMP_P[3]                 : B15       : input  : 2.5 V             :         : 7         : N              
+DT_TEMP_P[4]                 : B16       : input  : 2.5 V             :         : 7         : N              
 GND                          : B17       : gnd    :                   :         :           :                
-DT_UMID_P[1]                 : B18       : bidir  : 2.5 V             :         : 7         : N              
+DISP_TEMP_P[10]              : B18       : output : 2.5 V             :         : 7         : N              
 GND                          : C1        : gnd    :                   :         :           :                
 GND                          : C2        : gnd    :                   :         :           :                
 GND                          : C3        : gnd    :                   :         :           :                
 nCONFIG                      : C4        :        :                   :         : 9         :                
 ~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C5        : input  : 2.5 V             :         : 9         : N              
-DT_TEMP_P[1]                 : C6        : bidir  : 2.5 V             :         : 8         : N              
-DT_TEMPO_P[9]                : C7        : bidir  : 2.5 V             :         : 8         : N              
-DISP_UMID_P[10]              : C8        : output : 2.5 V             :         : 8         : N              
-DISP_UMID_P[1]               : C9        : output : 2.5 V             :         : 8         : N              
-DISP_TEMP_P[15]              : C10       : output : 2.5 V             :         : 8         : N              
-DT_TEMP_P[11]                : C11       : bidir  : 2.5 V             :         : 8         : N              
-DT_TEMPO_P[12]               : C12       : bidir  : 2.5 V             :         : 7         : N              
-DISP_TEMPO_P[10]             : C13       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C14       :        :                   :         : 7         :                
-DISP_UMID_P[13]              : C15       : output : 2.5 V             :         : 7         : N              
-DISP_UMID_P[7]               : C16       : output : 2.5 V             :         : 7         : N              
-DISP_TEMPO_P[15]             : C17       : output : 2.5 V             :         : 7         : N              
-DISP_TEMP_P[3]               : C18       : output : 2.5 V             :         : 7         : N              
+DISP_TEMPO_P[9]              : C6        : output : 2.5 V             :         : 8         : N              
+DT_TEMPO_P[12]               : C7        : input  : 2.5 V             :         : 8         : N              
+ESTADO_P[3]                  : C8        : output : 2.5 V             :         : 8         : N              
+DISP_TEMPO_P[15]             : C9        : output : 2.5 V             :         : 8         : N              
+DT_TEMP_P[9]                 : C10       : input  : 2.5 V             :         : 8         : N              
+IRRIGA_P                     : C11       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C12       :        :                   :         : 7         :                
+DISP_TEMP_P[11]              : C13       : output : 2.5 V             :         : 7         : N              
+DISP_TEMPO_P[8]              : C14       : output : 2.5 V             :         : 7         : N              
+DISP_UMID_P[8]               : C15       : output : 2.5 V             :         : 7         : N              
+DISP_UMID_P[13]              : C16       : output : 2.5 V             :         : 7         : N              
+DISP_TEMP_P[3]               : C17       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C18       :        :                   :         : 7         :                
 GXB_GND*                     : D1        :        :                   :         : QL0       :                
 GXB_GND*                     : D2        :        :                   :         : QL0       :                
 nCE                          : D3        :        :                   :         : 9         :                
 TDI                          : D4        : input  :                   :         : 9         :                
 ~ALTERA_DCLK~                : D5        : output : 2.5 V             :         : 9         : N              
-DT_UMID_P[15]                : D6        : bidir  : 2.5 V             :         : 8         : N              
-DISP_UMID_P[14]              : D7        : output : 2.5 V             :         : 8         : N              
-DT_UMID_P[11]                : D8        : bidir  : 2.5 V             :         : 8         : N              
-DT_TEMPO_P[1]                : D9        : bidir  : 2.5 V             :         : 8         : N              
-DT_TEMP_P[7]                 : D10       : bidir  : 2.5 V             :         : 7         : N              
-DISP_TEMPO_P[9]              : D11       : output : 2.5 V             :         : 7         : N              
-DT_UMID_P[0]                 : D12       : bidir  : 2.5 V             :         : 7         : N              
-DT_TEMP_P[12]                : D13       : bidir  : 2.5 V             :         : 7         : N              
-DISP_TEMP_P[4]               : D14       : output : 2.5 V             :         : 7         : N              
-DT_UMID_P[4]                 : D15       : bidir  : 2.5 V             :         : 7         : N              
-DISP_TEMPO_P[3]              : D16       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D17       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D18       :        :                   :         : 6         :                
+DISP_UMID_P[14]              : D6        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8         :                
+DT_TEMPO_P[9]                : D8        : input  : 2.5 V             :         : 8         : N              
+DISP_UMID_P[12]              : D9        : output : 2.5 V             :         : 8         : N              
+DISP_UMID_P[0]               : D10       : output : 2.5 V             :         : 7         : N              
+DT_TEMPO_P[4]                : D11       : input  : 2.5 V             :         : 7         : N              
+DT_TEMP_P[7]                 : D12       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D13       :        :                   :         : 7         :                
+DISP_UMID_P[9]               : D14       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D15       :        :                   :         : 7         :                
+DT_TEMP_P[13]                : D16       : input  : 2.5 V             :         : 7         : N              
+DT_UMID_P[1]                 : D17       : input  : 2.5 V             :         : 6         : N              
+DISP_UMID_P[11]              : D18       : output : 2.5 V             :         : 6         : N              
 GND                          : E1        : gnd    :                   :         :           :                
 GND                          : E2        : gnd    :                   :         :           :                
 TMS                          : E3        : input  :                   :         : 9         :                
 TDO                          : E4        : output :                   :         : 9         :                
 TCK                          : E5        : input  :                   :         : 9         :                
-DISP_TEMP_P[11]              : E6        : output : 2.5 V             :         : 8         : N              
+DT_TEMPO_P[10]               : E6        : input  : 2.5 V             :         : 8         : N              
 VCCIO8                       : E7        : power  :                   : 2.5V    : 8         :                
 GND                          : E8        : gnd    :                   :         :           :                
 VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
-DT_TEMP_P[8]                 : E10       : bidir  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E10       :        :                   :         : 7         :                
 GND                          : E11       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E12       :        :                   :         : 7         :                
+DT_TEMP_P[12]                : E12       : input  : 2.5 V             :         : 7         : N              
 VCCIO7                       : E13       : power  :                   : 2.5V    : 7         :                
 GND                          : E14       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E15       :        :                   :         : 6         :                
+DISP_TEMPO_P[6]              : E15       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E16       :        :                   :         : 6         :                
 GND                          : E17       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E18       :        :                   :         : 6         :                
+DT_UMID_P[2]                 : E18       : input  : 2.5 V             :         : 6         : N              
 GXB_NC                       : F1        :        :                   :         : QL0       :                
 GXB_NC                       : F2        :        :                   :         : QL0       :                
 VCCL_GXB                     : F3        : power  :                   : 1.2V    :           :                
@@ -179,10 +179,10 @@ VCCIO7                       : F11       : power  :                   : 2.5V    
 VCCIO7                       : F12       : power  :                   : 2.5V    : 7         :                
 GND                          : F13       : gnd    :                   :         :           :                
 VCCD_PLL                     : F14       : power  :                   : 1.2V    :           :                
-DISP_TEMP_P[13]              : F15       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : F16       :        :                   :         : 6         :                
-DT_UMID_P[3]                 : F17       : bidir  : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 6         :                
+DISP_TEMPO_P[4]              : F15       : output : 2.5 V             :         : 6         : N              
+DISP_UMID_P[3]               : F16       : output : 2.5 V             :         : 6         : N              
+DT_UMID_P[12]                : F17       : input  : 2.5 V             :         : 6         : N              
+DT_UMID_P[5]                 : F18       : input  : 2.5 V             :         : 6         : N              
 GND                          : G1        : gnd    :                   :         :           :                
 GND                          : G2        : gnd    :                   :         :           :                
 VCCH_GXB                     : G3        : power  :                   : 2.5V    :           :                
@@ -197,10 +197,10 @@ GND                          : G11       : gnd    :                   :         
 VCCINT                       : G12       : power  :                   : 1.2V    :           :                
 VCCA                         : G13       : power  :                   : 2.5V    :           :                
 VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
-DISP_TEMPO_P[12]             : G15       : output : 2.5 V             :         : 6         : N              
-DISP_TEMP_P[6]               : G16       : output : 2.5 V             :         : 6         : N              
-DT_TEMPO_P[10]               : G17       : bidir  : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : G18       :        :                   :         : 6         :                
+DT_UMID_P[0]                 : G15       : input  : 2.5 V             :         : 6         : N              
+DT_UMID_P[9]                 : G16       : input  : 2.5 V             :         : 6         : N              
+ESTADO_P[0]                  : G17       : output : 2.5 V             :         : 6         : N              
+DT_UMID_P[10]                : G18       : input  : 2.5 V             :         : 6         : N              
 GXB_GND*                     : H1        :        :                   :         : QL0       :                
 GXB_GND*                     : H2        :        :                   :         : QL0       :                
 VCCL_GXB                     : H3        : power  :                   : 1.2V    :           :                
@@ -216,9 +216,9 @@ GND                          : H12       : gnd    :                   :         
 VCCINT                       : H13       : power  :                   : 1.2V    :           :                
 GND                          : H14       : gnd    :                   :         :           :                
 VCCIO6                       : H15       : power  :                   : 2.5V    : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H16       :        :                   :         : 6         :                
+DT_UMID_P[8]                 : H16       : input  : 2.5 V             :         : 6         : N              
 GND                          : H17       : gnd    :                   :         :           :                
-E_P                          : H18       : input  : 2.5 V             :         : 6         : N              
+GND+                         : H18       :        :                   :         : 6         :                
 GND                          : J1        : gnd    :                   :         :           :                
 GND                          : J2        : gnd    :                   :         :           :                
 VCCA_GXB                     : J3        : power  :                   : 2.5V    :           :                
@@ -234,9 +234,9 @@ VCCINT                       : J12       : power  :                   : 1.2V    
 GND                          : J13       : gnd    :                   :         :           :                
 VCCINT                       : J14       : power  :                   : 1.2V    :           :                
 VCCIO6                       : J15       : power  :                   : 2.5V    : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J16       :        :                   :         : 6         :                
-DT_UMID_P[10]                : J17       : bidir  : 2.5 V             :         : 6         : N              
-CLOCK_P                      : J18       : input  : 2.5 V             :         : 6         : N              
+ERROR_P                      : J16       : output : 2.5 V             :         : 6         : N              
+DT_UMID_P[15]                : J17       : input  : 2.5 V             :         : 6         : N              
+GND+                         : J18       :        :                   :         : 6         :                
 GXB_NC                       : K1        :        :                   :         : QL0       :                
 GXB_NC                       : K2        :        :                   :         : QL0       :                
 VCCL_GXB                     : K3        : power  :                   : 1.2V    :           :                
@@ -251,8 +251,8 @@ VCCINT                       : K11       : power  :                   : 1.2V    
 GND                          : K12       : gnd    :                   :         :           :                
 VCCINT                       : K13       : power  :                   : 1.2V    :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K15       :        :                   :         : 5         :                
-DISP_TEMPO_P[13]             : K16       : output : 2.5 V             :         : 5         : N              
+DT_UMID_P[14]                : K15       : input  : 2.5 V             :         : 5         : N              
+DT_UMID_P[3]                 : K16       : input  : 2.5 V             :         : 5         : N              
 GND+                         : K17       :        :                   :         : 5         :                
 GND+                         : K18       :        :                   :         : 5         :                
 GND                          : L1        : gnd    :                   :         :           :                
@@ -269,35 +269,35 @@ GND                          : L11       : gnd    :                   :         
 VCCINT                       : L12       : power  :                   : 1.2V    :           :                
 VCCA                         : L13       : power  :                   : 2.5V    :           :                
 GND                          : L14       : gnd    :                   :         :           :                
-DT_TEMPO_P[14]               : L15       : bidir  : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : L16       :        :                   :         : 5         :                
+DT_TEMP_P[5]                 : L15       : input  : 2.5 V             :         : 5         : N              
+DT_UMID_P[6]                 : L16       : input  : 2.5 V             :         : 5         : N              
 GND                          : L17       : gnd    :                   :         :           :                
-DT_UMID_P[8]                 : L18       : bidir  : 2.5 V             :         : 5         : N              
+DT_UMID_P[7]                 : L18       : input  : 2.5 V             :         : 5         : N              
 GXB_GND*                     : M1        :        :                   :         : QL0       :                
 GXB_GND*                     : M2        :        :                   :         : QL0       :                
 VCCL_GXB                     : M3        : power  :                   : 1.2V    :           :                
 GND                          : M4        : gnd    :                   :         :           :                
 VCCD_PLL                     : M5        : power  :                   : 1.2V    :           :                
 GND                          : M6        : gnd    :                   :         :           :                
-DT_TEMP_P[9]                 : M7        : bidir  : 2.5 V             :         : 3         : N              
+DT_TEMP_P[10]                : M7        : input  : 2.5 V             :         : 3         : N              
 GND                          : M8        : gnd    :                   :         :           :                
 GXB_GND*                     : M9        :        :                   :         : 3A        :                
-GXB_GND*                     : M10       :        :                   :         : 3A        :                
+CLOCK_P                      : M10       : input  : 2.5 V             :         : 3A        : N              
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
 GND                          : M12       : gnd    :                   :         :           :                
 GND                          : M13       : gnd    :                   :         :           :                
 VCCD_PLL                     : M14       : power  :                   : 1.2V    :           :                
 VCCIO5                       : M15       : power  :                   : 2.5V    : 5         :                
-DISP_TEMP_P[9]               : M16       : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : M17       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : M18       :        :                   :         : 5         :                
+DT_UMID_P[13]                : M16       : input  : 2.5 V             :         : 5         : N              
+DT_UMID_P[11]                : M17       : input  : 2.5 V             :         : 5         : N              
+E_P                          : M18       : input  : 2.5 V             :         : 5         : N              
 GND                          : N1        : gnd    :                   :         :           :                
 GND                          : N2        : gnd    :                   :         :           :                
 VCCA_GXB                     : N3        : power  :                   : 2.5V    :           :                
 VCCINT                       : N4        : power  :                   : 1.2V    :           :                
-DT_TEMPO_P[4]                : N5        : bidir  : 2.5 V             :         : 3         : N              
-DT_TEMP_P[4]                 : N6        : bidir  : 2.5 V             :         : 3         : N              
-DISP_UMID_P[4]               : N7        : output : 2.5 V             :         : 3         : N              
+DT_TEMPO_P[7]                : N5        : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N6        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N7        :        :                   :         : 3         :                
 VCCIO3                       : N8        : power  :                   : 2.5V    : 3         :                
 VCC_CLKIN3A                  : N9        : power  :                   : 2.5V    : 3A        :                
 GND                          : N10       : gnd    :                   :         :           :                
@@ -305,97 +305,97 @@ VCCIO4                       : N11       : power  :                   : 2.5V    
 VCCIO4                       : N12       : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : N13       : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : N14       : power  :                   : 2.5V    : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N15       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N16       :        :                   :         : 5         :                
-DISP_TEMP_P[8]               : N17       : output : 2.5 V             :         : 5         : N              
-DISP_TEMPO_P[5]              : N18       : output : 2.5 V             :         : 5         : N              
+DISP_UMID_P[2]               : N15       : output : 2.5 V             :         : 5         : N              
+DT_TEMPO_P[14]               : N16       : input  : 2.5 V             :         : 5         : N              
+DT_UMID_P[4]                 : N17       : input  : 2.5 V             :         : 5         : N              
+ESTADO_P[1]                  : N18       : output : 2.5 V             :         : 5         : N              
 GXB_NC                       : P1        :        :                   :         : QL0       :                
 GXB_NC                       : P2        :        :                   :         : QL0       :                
 GND                          : P3        : gnd    :                   :         :           :                
 MSEL2                        : P4        :        :                   :         : 3         :                
 GND                          : P5        : gnd    :                   :         :           :                
-DISP_TEMP_P[12]              : P6        : output : 2.5 V             :         : 3         : N              
+DISP_UMID_P[10]              : P6        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
 GND                          : P8        : gnd    :                   :         :           :                
 VCCIO3                       : P9        : power  :                   : 2.5V    : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P10       :        :                   :         : 3         :                
+DT_TEMPO_P[3]                : P10       : input  : 2.5 V             :         : 3         : N              
 GND                          : P11       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P12       :        :                   :         : 4         :                
-DT_UMID_P[9]                 : P13       : bidir  : 2.5 V             :         : 4         : N              
+DISP_UMID_P[6]               : P12       : output : 2.5 V             :         : 4         : N              
+DISP_TEMP_P[0]               : P13       : output : 2.5 V             :         : 4         : N              
 GND                          : P14       : gnd    :                   :         :           :                
-DISP_TEMPO_P[6]              : P15       : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : P16       :        :                   :         : 5         :                
+DT_TEMP_P[15]                : P15       : input  : 2.5 V             :         : 4         : N              
+DISP_TEMPO_P[13]             : P16       : output : 2.5 V             :         : 5         : N              
 GND                          : P17       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P18       :        :                   :         : 5         :                
+ESTADO_P[2]                  : P18       : output : 2.5 V             :         : 5         : N              
 GND                          : R1        : gnd    :                   :         :           :                
 GND                          : R2        : gnd    :                   :         :           :                
 GND                          : R3        : gnd    :                   :         :           :                
 VCCL_GXB                     : R4        : power  :                   : 1.2V    :           :                
 MSEL1                        : R5        :        :                   :         : 3         :                
 ~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : R6        : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R7        :        :                   :         : 3         :                
-ERROR_P                      : R8        : output : 2.5 V             :         : 3         : N              
-DT_UMID_P[12]                : R9        : bidir  : 2.5 V             :         : 3         : N              
-DISP_UMID_P[5]               : R10       : output : 2.5 V             :         : 3         : N              
-DISP_TEMPO_P[1]              : R11       : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R12       :        :                   :         : 4         :                
-DISP_UMID_P[6]               : R13       : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 4         :                
-DISP_TEMP_P[2]               : R15       : output : 2.5 V             :         : 4         : N              
+DISP_TEMP_P[8]               : R7        : output : 2.5 V             :         : 3         : N              
+DISP_UMID_P[5]               : R8        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :         : 3         :                
+DISP_TEMP_P[13]              : R10       : output : 2.5 V             :         : 3         : N              
+DISP_UMID_P[7]               : R11       : output : 2.5 V             :         : 4         : N              
+ALARME_P                     : R12       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R13       :        :                   :         : 4         :                
+DISP_TEMPO_P[0]              : R14       : output : 2.5 V             :         : 4         : N              
+DISP_UMID_P[15]              : R15       : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : R16       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R17       :        :                   :         : 5         :                
-DISP_TEMPO_P[8]              : R18       : output : 2.5 V             :         : 5         : N              
+DT_TEMP_P[6]                 : R18       : input  : 2.5 V             :         : 5         : N              
 GXB_GND*                     : T1        :        :                   :         : QL0       :                
 GXB_GND*                     : T2        :        :                   :         : QL0       :                
 GND                          : T3        : gnd    :                   :         :           :                
 VCCA_GXB                     : T4        : power  :                   : 2.5V    :           :                
 MSEL0                        : T5        :        :                   :         : 3         :                
-DISP_TEMPO_P[14]             : T6        : output : 2.5 V             :         : 3         : N              
-DT_TEMP_P[3]                 : T7        : bidir  : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : T8        :        :                   :         : 3         :                
-DISP_UMID_P[11]              : T9        : output : 2.5 V             :         : 3         : N              
-DT_TEMPO_P[2]                : T10       : bidir  : 2.5 V             :         : 3         : N              
-DT_TEMP_P[6]                 : T11       : bidir  : 2.5 V             :         : 4         : N              
-DT_TEMP_P[5]                 : T12       : bidir  : 2.5 V             :         : 4         : N              
-DISP_TEMPO_P[11]             : T13       : output : 2.5 V             :         : 4         : N              
-DISP_UMID_P[8]               : T14       : output : 2.5 V             :         : 4         : N              
+DISP_TEMPO_P[2]              : T6        : output : 2.5 V             :         : 3         : N              
+DT_TEMPO_P[8]                : T7        : input  : 2.5 V             :         : 3         : N              
+DT_TEMP_P[8]                 : T8        : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :         : 3         :                
+DISP_TEMPO_P[12]             : T10       : output : 2.5 V             :         : 3         : N              
+DT_TEMPO_P[2]                : T11       : input  : 2.5 V             :         : 4         : N              
+DISP_TEMP_P[4]               : T12       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T13       :        :                   :         : 4         :                
+DT_TEMP_P[1]                 : T14       : input  : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T15       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T16       :        :                   :         : 4         :                
-DT_TEMP_P[15]                : T17       : bidir  : 2.5 V             :         : 4         : N              
-DT_UMID_P[2]                 : T18       : bidir  : 2.5 V             :         : 5         : N              
+DISP_TEMPO_P[11]             : T16       : output : 2.5 V             :         : 4         : N              
+DISP_TEMPO_P[14]             : T17       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T18       :        :                   :         : 5         :                
 GND                          : U1        : gnd    :                   :         :           :                
 GND                          : U2        : gnd    :                   :         :           :                
 NC                           : U3        :        :                   :         :           :                
 CONF_DONE                    : U4        :        :                   :         : 3         :                
 GND                          : U5        : gnd    :                   :         :           :                
-DT_UMID_P[13]                : U6        : bidir  : 2.5 V             :         : 3         : N              
-DT_UMID_P[7]                 : U7        : bidir  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U6        :        :                   :         : 3         :                
+DT_TEMP_P[0]                 : U7        : input  : 2.5 V             :         : 3         : N              
 GND                          : U8        : gnd    :                   :         :           :                
-ALARME_P                     : U9        : output : 2.5 V             :         : 3         : N              
-DISP_UMID_P[3]               : U10       : output : 2.5 V             :         : 3         : N              
+DISP_TEMP_P[5]               : U9        : output : 2.5 V             :         : 3         : N              
+DISP_TEMPO_P[1]              : U10       : output : 2.5 V             :         : 3         : N              
 GND                          : U11       : gnd    :                   :         :           :                
-DT_TEMP_P[0]                 : U12       : bidir  : 2.5 V             :         : 4         : N              
-DISP_TEMPO_P[0]              : U13       : output : 2.5 V             :         : 4         : N              
+DT_TEMPO_P[1]                : U12       : input  : 2.5 V             :         : 4         : N              
+DISP_TEMP_P[12]              : U13       : output : 2.5 V             :         : 4         : N              
 GND                          : U14       : gnd    :                   :         :           :                
-DISP_UMID_P[15]              : U15       : output : 2.5 V             :         : 4         : N              
-DISP_TEMPO_P[2]              : U16       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U15       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U16       :        :                   :         : 4         :                
 GND                          : U17       : gnd    :                   :         :           :                
-DISP_TEMP_P[1]               : U18       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U18       :        :                   :         : 4         :                
 RREF                         : V1        :        :                   :         :           :                
 GND                          : V2        : gnd    :                   :         :           :                
 NC                           : V3        :        :                   :         :           :                
 nSTATUS                      : V4        :        :                   :         : 3         :                
-DT_TEMPO_P[15]               : V5        : bidir  : 2.5 V             :         : 3         : N              
-DISP_UMID_P[0]               : V6        : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : V7        :        :                   :         : 3         :                
-DISP_UMID_P[9]               : V8        : output : 2.5 V             :         : 3         : N              
-DISP_UMID_P[12]              : V9        : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : V10       :        :                   :         : 3         :                
+DISP_TEMPO_P[7]              : V5        : output : 2.5 V             :         : 3         : N              
+DT_TEMPO_P[11]               : V6        : input  : 2.5 V             :         : 3         : N              
+DT_TEMPO_P[15]               : V7        : input  : 2.5 V             :         : 3         : N              
+DISP_TEMP_P[2]               : V8        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :         : 3         :                
+DT_TEMP_P[2]                 : V10       : input  : 2.5 V             :         : 3         : N              
 GND+                         : V11       :        :                   :         : 4         :                
 GND+                         : V12       :        :                   :         : 4         :                
-DT_UMID_P[5]                 : V13       : bidir  : 2.5 V             :         : 4         : N              
-DT_UMID_P[6]                 : V14       : bidir  : 2.5 V             :         : 4         : N              
-DISP_TEMPO_P[7]              : V15       : output : 2.5 V             :         : 4         : N              
-DT_TEMP_P[10]                : V16       : bidir  : 2.5 V             :         : 4         : N              
-DISP_TEMP_P[0]               : V17       : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : V18       :        :                   :         : 4         :                
+DISP_UMID_P[1]               : V13       : output : 2.5 V             :         : 4         : N              
+DT_TEMP_P[14]                : V14       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V15       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V16       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V17       :        :                   :         : 4         :                
+DISP_TEMPO_P[10]             : V18       : output : 2.5 V             :         : 4         : N              

@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\mux_sensores
 Emux_sensores
-Z1 w1643326736
+Z1 w1643665883
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z4 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\mux_sensores
@@ -15,7 +15,7 @@ L6
 VzZD07<X5AI6b>LNVZ<]]e2
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1643381022.798000
+Z8 !s108 1643859523.287000
 Z9 !s90 -reportprogress|300|-explicit|-93|mux_sensores.vhd|
 Z10 !s107 mux_sensores.vhd|
 Z11 o-explicit -93 -O0
@@ -28,7 +28,7 @@ R3
 DEx4 work 12 mux_sensores 0 22 zZD07<X5AI6b>LNVZ<]]e2
 l15
 L14
-V?hVYLa3WQMJIha[TXYnf21
+Vi`ZWaoR0Gf_o>=U4bUC:50
 R7
 31
 R8
@@ -36,7 +36,7 @@ R9
 R10
 R11
 R12
-!s100 GmPe5En6IF0Q6@]aRS<N_2
+!s100 `iH=_HFmGlfHHe]?Rh[U90
 !i10b 1
 Etb_mux
 Z13 w1643379926
@@ -53,7 +53,7 @@ V8H96h`77EljVo1L=Z<7l42
 R7
 31
 !i10b 1
-Z17 !s108 1643381022.905000
+Z17 !s108 1643859523.397000
 Z18 !s90 -reportprogress|300|-explicit|-93|tb_mux.vhd|
 Z19 !s107 tb_mux.vhd|
 R11

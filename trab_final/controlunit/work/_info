@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\controlunit
+Econtrolunit
+Z1 w1643857276
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\dmroh\Documents\ere_ufmg\quar_semestre\labsd\trab_final\controlunit
+Z6 8controlunit.vhd
+Z7 Fcontrolunit.vhd
+l0
+L7
+VUznIDhM^F3?@G5bfhj8Fi1
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1643857323.239000
+Z10 !s90 -reportprogress|300|-explicit|-93|controlunit.vhd|
+Z11 !s107 controlunit.vhd|
+Z12 o-explicit -93 -O0
+Z13 tExplicit 1
+!s100 Q2IXf]ZUMZE3YdXQMN06m0
+!i10b 1
+Abehaviour
+R2
+R3
+R4
+DEx4 work 11 controlunit 0 22 UznIDhM^F3?@G5bfhj8Fi1
+l69
+L52
+VZb:J4OcU]Bb=Jz:T8VTLi2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 ^H>h0:kIERo6MBBX7nl>@1
+!i10b 1
+Etb_controlunit
+Z14 w1643857316
+R2
+R3
+R4
+R5
+Z15 8tb_controlunit.vhd
+Z16 Ftb_controlunit.vhd
+l0
+L5
+VdjiZ6Y[FiFI:9zjFUfO5N1
+!s100 g]KIfCC]V8<k78S?4=2KD0
+R8
+31
+!i10b 1
+Z17 !s108 1643857323.352000
+Z18 !s90 -reportprogress|300|-explicit|-93|tb_controlunit.vhd|
+Z19 !s107 tb_controlunit.vhd|
+R12
+R13
+Ateste
+R2
+R3
+R4
+DEx4 work 14 tb_controlunit 0 22 djiZ6Y[FiFI:9zjFUfO5N1
+l63
+L8
+VU39fzjbEQNJMeJc>Xed2Y1
+!s100 [`@oiYH<I=DSfVAT`[K@L0
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

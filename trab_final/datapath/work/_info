@@ -17,7 +17,7 @@ L6
 Vd9dLk0I8:z5j4a2@<aYH]1
 Z9 OV;C;10.1d;51
 31
-Z10 !s108 1643665421.908000
+Z10 !s108 1643826252.640000
 Z11 !s90 -reportprogress|300|-explicit|-93|comparador_sensores.vhd|
 Z12 !s107 comparador_sensores.vhd|
 Z13 o-explicit -93 -O0
@@ -56,7 +56,7 @@ L6
 VKg4XY7DP9YW<TmaTfKeHL2
 R9
 31
-Z18 !s108 1643665422.132000
+Z18 !s108 1643826252.868000
 Z19 !s90 -reportprogress|300|-explicit|-93|comparador_temporal.vhd|
 Z20 !s107 comparador_temporal.vhd|
 R13
@@ -94,7 +94,7 @@ L5
 VC5eTec[1l3[OghbHPefeC3
 R9
 31
-Z25 !s108 1643665422.330000
+Z25 !s108 1643826253.080000
 Z26 !s90 -reportprogress|300|-explicit|-93|contador.vhd|
 Z27 !s107 contador.vhd|
 R13
@@ -119,7 +119,7 @@ R14
 !s100 `jHZf6Kc`Wd^AEB`6:HUh2
 !i10b 1
 Edatapath
-Z28 w1643660169
+Z28 w1643820535
 R22
 R4
 R5
@@ -128,21 +128,21 @@ Z29 8datapath.vhd
 Z30 Fdatapath.vhd
 l0
 L7
-VGH]BYUdDJIO5@[R=0J@0l2
+VjG:1OY?Sc7@ozVSj><<A13
 R9
 31
-Z31 !s108 1643665421.674000
+Z31 !s108 1643826252.427000
 Z32 !s90 -reportprogress|300|-explicit|-93|datapath.vhd|
 Z33 !s107 datapath.vhd|
 R13
 R14
-!s100 BEim_GXX?nG0[6X<dPBbY1
+!s100 aech4P>XGldNK794g7aIG0
 !i10b 1
 Abehaviour
 R22
 R4
 R5
-DEx4 work 8 datapath 0 22 GH]BYUdDJIO5@[R=0J@0l2
+DEx4 work 8 datapath 0 22 jG:1OY?Sc7@ozVSj><<A13
 l142
 L41
 V0;CU7;XPlf;J[dcDBO<lZ1
@@ -156,7 +156,7 @@ R14
 !s100 `JCV?2_i>9jd4Q;iVY`@A3
 !i10b 1
 Emux_sensores
-Z34 w1643326736
+Z34 w1643665883
 R4
 R5
 R6
@@ -167,7 +167,7 @@ L6
 VzZD07<X5AI6b>LNVZ<]]e2
 R9
 31
-Z37 !s108 1643665422.441000
+Z37 !s108 1643826253.276000
 Z38 !s90 -reportprogress|300|-explicit|-93|mux_sensores.vhd|
 Z39 !s107 mux_sensores.vhd|
 R13
@@ -180,7 +180,7 @@ R5
 DEx4 work 12 mux_sensores 0 22 zZD07<X5AI6b>LNVZ<]]e2
 l15
 L14
-V?hVYLa3WQMJIha[TXYnf21
+Vi`ZWaoR0Gf_o>=U4bUC:50
 R9
 31
 R37
@@ -188,7 +188,7 @@ R38
 R39
 R13
 R14
-!s100 GmPe5En6IF0Q6@]aRS<N_2
+!s100 `iH=_HFmGlfHHe]?Rh[U90
 !i10b 1
 Emux_temporal
 Z40 w1643326673
@@ -202,7 +202,7 @@ L6
 VRMTfWGdjE=fY7T?S^Kc?f1
 R9
 31
-Z43 !s108 1643665422.533000
+Z43 !s108 1643826253.423000
 Z44 !s90 -reportprogress|300|-explicit|-93|mux_temporal.vhd|
 Z45 !s107 mux_temporal.vhd|
 R13
@@ -238,7 +238,7 @@ L5
 VE=;1^i6^VocJ6>QIC[O]K3
 R9
 31
-Z49 !s108 1643665423.311000
+Z49 !s108 1643826254.360000
 Z50 !s90 -reportprogress|300|-explicit|-93|reg_intervalo.vhd|
 Z51 !s107 reg_intervalo.vhd|
 R13
@@ -275,7 +275,7 @@ L5
 V?ji:VB36MF<a:;0KMCIAM3
 R9
 31
-Z55 !s108 1643665422.681000
+Z55 !s108 1643826253.628000
 Z56 !s90 -reportprogress|300|-explicit|-93|reg_temperatura.vhd|
 Z57 !s107 reg_temperatura.vhd|
 R13
@@ -312,7 +312,7 @@ L5
 V3_B7BRZANJjYVH@QzgOk60
 R9
 31
-Z61 !s108 1643665423.113000
+Z61 !s108 1643826254.175000
 Z62 !s90 -reportprogress|300|-explicit|-93|reg_tempo.vhd|
 Z63 !s107 reg_tempo.vhd|
 R13
@@ -349,7 +349,7 @@ L5
 VHkBa0cH7io:QXE3[SEOnV1
 R9
 31
-Z67 !s108 1643665422.887000
+Z67 !s108 1643826253.894000
 Z68 !s90 -reportprogress|300|-explicit|-93|reg_umidade.vhd|
 Z69 !s107 reg_umidade.vhd|
 R13
@@ -386,7 +386,7 @@ L6
 VUR2Y[Se?NUV;GXa<^JoHc3
 R9
 31
-Z73 !s108 1643665423.403000
+Z73 !s108 1643826254.468000
 Z74 !s90 -reportprogress|300|-explicit|-93|rom.vhd|
 Z75 !s107 rom.vhd|
 R13
@@ -425,7 +425,7 @@ VJ_LAQTebzGUzzjZ`FWlbi3
 R9
 31
 !i10b 1
-Z79 !s108 1643665423.514000
+Z79 !s108 1643826254.722000
 Z80 !s90 -reportprogress|300|-explicit|-93|tb_datapath.vhd|
 Z81 !s107 tb_datapath.vhd|
 R13

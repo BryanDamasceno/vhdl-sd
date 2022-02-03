@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "01/31/2022 18:42:20"
+-- DATE "02/02/2022 13:52:51"
 
 -- 
 -- Device: Altera EP2C35F672C6 Package FBGA672
@@ -34,6 +34,9 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	datapath IS
     PORT (
 	clock : IN std_logic;
+	DT_UMID : IN std_logic_vector(15 DOWNTO 0);
+	DT_TEMP : IN std_logic_vector(15 DOWNTO 0);
+	DT_TEMPO : IN std_logic_vector(15 DOWNTO 0);
 	LD_TEMPERATURA : IN std_logic;
 	CL_TEMPERATURA : IN std_logic;
 	LD_UMIDADE : IN std_logic;
@@ -47,9 +50,6 @@ ENTITY 	datapath IS
 	EN_CONTADOR : IN std_logic;
 	RST_CONTADOR : IN std_logic;
 	EN_ROM : IN std_logic;
-	DT_UMID : IN std_logic_vector(15 DOWNTO 0);
-	DT_TEMP : IN std_logic_vector(15 DOWNTO 0);
-	DT_TEMPO : IN std_logic_vector(15 DOWNTO 0);
 	ADD : IN std_logic_vector(3 DOWNTO 0);
 	GT_TEMPORAL : OUT std_logic;
 	LT_TEMPORAL : OUT std_logic;
@@ -97,42 +97,42 @@ END datapath;
 -- DT_TEMPO[2]	=>  Location: PIN_K23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- DT_TEMPO[1]	=>  Location: PIN_L25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- DT_TEMPO[0]	=>  Location: PIN_K18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[15]	=>  Location: PIN_E26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- CL_TEMPERATURA	=>  Location: PIN_P1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- LD_TEMPERATURA	=>  Location: PIN_G21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[15]	=>  Location: PIN_F24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[15]	=>  Location: PIN_E26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 -- CL_UMIDADE	=>  Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- LD_UMIDADE	=>  Location: PIN_E23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[14]	=>  Location: PIN_C25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[14]	=>  Location: PIN_C24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[13]	=>  Location: PIN_J21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[13]	=>  Location: PIN_E25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[12]	=>  Location: PIN_F23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[12]	=>  Location: PIN_E22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[11]	=>  Location: PIN_J20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[11]	=>  Location: PIN_D25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[10]	=>  Location: PIN_C23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[10]	=>  Location: PIN_B24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[7]	=>  Location: PIN_P18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[7]	=>  Location: PIN_E24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[6]	=>  Location: PIN_G25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[6]	=>  Location: PIN_C21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[5]	=>  Location: PIN_B25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[5]	=>  Location: PIN_A22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[4]	=>  Location: PIN_D21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[4]	=>  Location: PIN_C22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[3]	=>  Location: PIN_H21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[3]	=>  Location: PIN_B22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[2]	=>  Location: PIN_K22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[2]	=>  Location: PIN_F25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[1]	=>  Location: PIN_F21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[1]	=>  Location: PIN_D26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[0]	=>  Location: PIN_J22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[0]	=>  Location: PIN_F20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[9]	=>  Location: PIN_H24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[8]	=>  Location: PIN_F26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_TEMP[9]	=>  Location: PIN_N18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- DT_UMID[8]	=>  Location: PIN_G26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- LD_UMIDADE	=>  Location: PIN_G21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[15]	=>  Location: PIN_F24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- CL_TEMPERATURA	=>  Location: PIN_P1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- LD_TEMPERATURA	=>  Location: PIN_E23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[14]	=>  Location: PIN_C25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[14]	=>  Location: PIN_C24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[13]	=>  Location: PIN_J21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[13]	=>  Location: PIN_E25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[12]	=>  Location: PIN_F23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[12]	=>  Location: PIN_E22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[11]	=>  Location: PIN_J20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[11]	=>  Location: PIN_D25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[10]	=>  Location: PIN_C23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[10]	=>  Location: PIN_B24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[7]	=>  Location: PIN_P18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[7]	=>  Location: PIN_E24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[6]	=>  Location: PIN_G25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[6]	=>  Location: PIN_C21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[5]	=>  Location: PIN_B25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[5]	=>  Location: PIN_A22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[4]	=>  Location: PIN_D21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[4]	=>  Location: PIN_C22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[3]	=>  Location: PIN_H21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[3]	=>  Location: PIN_B22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[2]	=>  Location: PIN_K22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[2]	=>  Location: PIN_F25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[1]	=>  Location: PIN_F21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[1]	=>  Location: PIN_D26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[0]	=>  Location: PIN_J22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[0]	=>  Location: PIN_F20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[9]	=>  Location: PIN_H24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[8]	=>  Location: PIN_F26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_UMID[9]	=>  Location: PIN_N18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- DT_TEMP[8]	=>  Location: PIN_G26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF datapath IS
@@ -146,6 +146,9 @@ SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
 SIGNAL ww_clock : std_logic;
+SIGNAL ww_DT_UMID : std_logic_vector(15 DOWNTO 0);
+SIGNAL ww_DT_TEMP : std_logic_vector(15 DOWNTO 0);
+SIGNAL ww_DT_TEMPO : std_logic_vector(15 DOWNTO 0);
 SIGNAL ww_LD_TEMPERATURA : std_logic;
 SIGNAL ww_CL_TEMPERATURA : std_logic;
 SIGNAL ww_LD_UMIDADE : std_logic;
@@ -159,9 +162,6 @@ SIGNAL ww_SW2 : std_logic;
 SIGNAL ww_EN_CONTADOR : std_logic;
 SIGNAL ww_RST_CONTADOR : std_logic;
 SIGNAL ww_EN_ROM : std_logic;
-SIGNAL ww_DT_UMID : std_logic_vector(15 DOWNTO 0);
-SIGNAL ww_DT_TEMP : std_logic_vector(15 DOWNTO 0);
-SIGNAL ww_DT_TEMPO : std_logic_vector(15 DOWNTO 0);
 SIGNAL ww_ADD : std_logic_vector(3 DOWNTO 0);
 SIGNAL ww_GT_TEMPORAL : std_logic;
 SIGNAL ww_LT_TEMPORAL : std_logic;
@@ -222,12 +222,12 @@ SIGNAL \clock~combout\ : std_logic;
 SIGNAL \EN_CONTADOR~combout\ : std_logic;
 SIGNAL \clock~clkctrl_outclk\ : std_logic;
 SIGNAL \RG_TEMPO|saida_tempo[7]~feeder_combout\ : std_logic;
-SIGNAL \RG_UMIDADE|saida_umidade[13]~feeder_combout\ : std_logic;
-SIGNAL \RG_UMIDADE|saida_umidade[11]~feeder_combout\ : std_logic;
-SIGNAL \RG_UMIDADE|saida_umidade[10]~feeder_combout\ : std_logic;
-SIGNAL \RG_UMIDADE|saida_umidade[6]~feeder_combout\ : std_logic;
-SIGNAL \RG_UMIDADE|saida_umidade[3]~feeder_combout\ : std_logic;
-SIGNAL \RG_UMIDADE|saida_umidade[1]~feeder_combout\ : std_logic;
+SIGNAL \RG_TEMPERATURA|saida_temperatura[13]~feeder_combout\ : std_logic;
+SIGNAL \RG_TEMPERATURA|saida_temperatura[11]~feeder_combout\ : std_logic;
+SIGNAL \RG_TEMPERATURA|saida_temperatura[10]~feeder_combout\ : std_logic;
+SIGNAL \RG_TEMPERATURA|saida_temperatura[6]~feeder_combout\ : std_logic;
+SIGNAL \RG_TEMPERATURA|saida_temperatura[3]~feeder_combout\ : std_logic;
+SIGNAL \RG_TEMPERATURA|saida_temperatura[1]~feeder_combout\ : std_logic;
 SIGNAL \RST_CONTADOR~combout\ : std_logic;
 SIGNAL \CNT_T|Add0~81_combout\ : std_logic;
 SIGNAL \CNT_T|Add0~83_combout\ : std_logic;
@@ -425,16 +425,16 @@ SIGNAL \COMP_TEMPORAL|Equal0~9_combout\ : std_logic;
 SIGNAL \COMP_TEMPORAL|Equal0~2_combout\ : std_logic;
 SIGNAL \COMP_TEMPORAL|Equal0~4_combout\ : std_logic;
 SIGNAL \COMP_TEMPORAL|Equal0~10_combout\ : std_logic;
-SIGNAL \RG_UMIDADE|saida_umidade[15]~feeder_combout\ : std_logic;
-SIGNAL \CL_UMIDADE~combout\ : std_logic;
-SIGNAL \CL_UMIDADE~clkctrl_outclk\ : std_logic;
-SIGNAL \LD_UMIDADE~combout\ : std_logic;
+SIGNAL \RG_TEMPERATURA|saida_temperatura[15]~feeder_combout\ : std_logic;
 SIGNAL \CL_TEMPERATURA~combout\ : std_logic;
 SIGNAL \CL_TEMPERATURA~clkctrl_outclk\ : std_logic;
 SIGNAL \LD_TEMPERATURA~combout\ : std_logic;
+SIGNAL \CL_UMIDADE~combout\ : std_logic;
+SIGNAL \CL_UMIDADE~clkctrl_outclk\ : std_logic;
+SIGNAL \LD_UMIDADE~combout\ : std_logic;
 SIGNAL \SW2~combout\ : std_logic;
 SIGNAL \M_SENSORES|escolha2[15]~0_combout\ : std_logic;
-SIGNAL \RG_UMIDADE|saida_umidade[14]~feeder_combout\ : std_logic;
+SIGNAL \RG_TEMPERATURA|saida_temperatura[14]~feeder_combout\ : std_logic;
 SIGNAL \M_SENSORES|escolha2[14]~1_combout\ : std_logic;
 SIGNAL \M_SENSORES|escolha2[12]~3_combout\ : std_logic;
 SIGNAL \COMP_SENSORES|LessThan0~18_cout\ : std_logic;
@@ -445,7 +445,7 @@ SIGNAL \COMP_SENSORES|LessThan0~26_cout\ : std_logic;
 SIGNAL \COMP_SENSORES|LessThan0~28_cout\ : std_logic;
 SIGNAL \COMP_SENSORES|LessThan0~29_combout\ : std_logic;
 SIGNAL \COMP_SENSORES|LessThan1~0_combout\ : std_logic;
-SIGNAL \RG_UMIDADE|saida_umidade[9]~feeder_combout\ : std_logic;
+SIGNAL \RG_TEMPERATURA|saida_temperatura[9]~feeder_combout\ : std_logic;
 SIGNAL \COMP_SENSORES|LessThan1~15_combout\ : std_logic;
 SIGNAL \COMP_SENSORES|LessThan1~17_cout\ : std_logic;
 SIGNAL \COMP_SENSORES|LessThan1~19_cout\ : std_logic;
@@ -454,17 +454,17 @@ SIGNAL \COMP_SENSORES|LessThan1~23_cout\ : std_logic;
 SIGNAL \COMP_SENSORES|LessThan1~25_cout\ : std_logic;
 SIGNAL \COMP_SENSORES|LessThan1~27_cout\ : std_logic;
 SIGNAL \COMP_SENSORES|LessThan1~28_combout\ : std_logic;
-SIGNAL \RG_UMIDADE|saida_umidade[0]~feeder_combout\ : std_logic;
+SIGNAL \RG_TEMPERATURA|saida_temperatura[0]~feeder_combout\ : std_logic;
 SIGNAL \M_SENSORES|escolha2[0]~13_combout\ : std_logic;
 SIGNAL \COMP_SENSORES|Equal0~8_combout\ : std_logic;
-SIGNAL \RG_UMIDADE|saida_umidade[4]~feeder_combout\ : std_logic;
+SIGNAL \RG_TEMPERATURA|saida_temperatura[4]~feeder_combout\ : std_logic;
 SIGNAL \M_SENSORES|escolha2[4]~9_combout\ : std_logic;
-SIGNAL \RG_UMIDADE|saida_umidade[5]~feeder_combout\ : std_logic;
+SIGNAL \RG_TEMPERATURA|saida_temperatura[5]~feeder_combout\ : std_logic;
 SIGNAL \M_SENSORES|escolha2[5]~8_combout\ : std_logic;
 SIGNAL \COMP_SENSORES|Equal0~6_combout\ : std_logic;
 SIGNAL \RM|Mux1~0_combout\ : std_logic;
 SIGNAL \COMP_SENSORES|Equal0~2_combout\ : std_logic;
-SIGNAL \RG_UMIDADE|saida_umidade[7]~feeder_combout\ : std_logic;
+SIGNAL \RG_TEMPERATURA|saida_temperatura[7]~feeder_combout\ : std_logic;
 SIGNAL \M_SENSORES|escolha2[7]~6_combout\ : std_logic;
 SIGNAL \M_SENSORES|escolha2[2]~11_combout\ : std_logic;
 SIGNAL \COMP_SENSORES|Equal0~0_combout\ : std_logic;
@@ -488,6 +488,9 @@ SIGNAL \RG_UMIDADE|saida_umidade\ : std_logic_vector(15 DOWNTO 0);
 BEGIN
 
 ww_clock <= clock;
+ww_DT_UMID <= DT_UMID;
+ww_DT_TEMP <= DT_TEMP;
+ww_DT_TEMPO <= DT_TEMPO;
 ww_LD_TEMPERATURA <= LD_TEMPERATURA;
 ww_CL_TEMPERATURA <= CL_TEMPERATURA;
 ww_LD_UMIDADE <= LD_UMIDADE;
@@ -501,9 +504,6 @@ ww_SW2 <= SW2;
 ww_EN_CONTADOR <= EN_CONTADOR;
 ww_RST_CONTADOR <= RST_CONTADOR;
 ww_EN_ROM <= EN_ROM;
-ww_DT_UMID <= DT_UMID;
-ww_DT_TEMP <= DT_TEMP;
-ww_DT_TEMPO <= DT_TEMPO;
 ww_ADD <= ADD;
 GT_TEMPORAL <= ww_GT_TEMPORAL;
 LT_TEMPORAL <= ww_LT_TEMPORAL;
@@ -1015,32 +1015,32 @@ PORT MAP (
 	combout => \COMP_TEMPORAL|Equal0~6_combout\);
 
 -- Location: LCFF_X64_Y30_N5
-\RG_TEMPERATURA|saida_temperatura[13]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_TEMP~combout\(13),
-	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
-	sload => VCC,
-	ena => \LD_TEMPERATURA~combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \RG_TEMPERATURA|saida_temperatura\(13));
-
--- Location: LCFF_X64_Y30_N27
 \RG_UMIDADE|saida_umidade[13]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	datain => \RG_UMIDADE|saida_umidade[13]~feeder_combout\,
+	sdata => \DT_UMID~combout\(13),
 	aclr => \CL_UMIDADE~clkctrl_outclk\,
+	sload => VCC,
 	ena => \LD_UMIDADE~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \RG_UMIDADE|saida_umidade\(13));
 
+-- Location: LCFF_X64_Y30_N27
+\RG_TEMPERATURA|saida_temperatura[13]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clock~clkctrl_outclk\,
+	datain => \RG_TEMPERATURA|saida_temperatura[13]~feeder_combout\,
+	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
+	ena => \LD_TEMPERATURA~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \RG_TEMPERATURA|saida_temperatura\(13));
+
 -- Location: LCCOMB_X64_Y30_N4
 \M_SENSORES|escolha2[13]~2\ : cycloneii_lcell_comb
 -- Equation(s):
--- \M_SENSORES|escolha2[13]~2_combout\ = (\SW2~combout\ & ((\RG_TEMPERATURA|saida_temperatura\(13)))) # (!\SW2~combout\ & (\RG_UMIDADE|saida_umidade\(13)))
+-- \M_SENSORES|escolha2[13]~2_combout\ = (\SW2~combout\ & ((\RG_UMIDADE|saida_umidade\(13)))) # (!\SW2~combout\ & (\RG_TEMPERATURA|saida_temperatura\(13)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1048,60 +1048,60 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \RG_UMIDADE|saida_umidade\(13),
-	datac => \RG_TEMPERATURA|saida_temperatura\(13),
+	datab => \RG_TEMPERATURA|saida_temperatura\(13),
+	datac => \RG_UMIDADE|saida_umidade\(13),
 	datad => \SW2~combout\,
 	combout => \M_SENSORES|escolha2[13]~2_combout\);
 
 -- Location: LCFF_X64_Y30_N7
-\RG_UMIDADE|saida_umidade[11]\ : cycloneii_lcell_ff
+\RG_TEMPERATURA|saida_temperatura[11]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	datain => \RG_UMIDADE|saida_umidade[11]~feeder_combout\,
-	aclr => \CL_UMIDADE~clkctrl_outclk\,
-	ena => \LD_UMIDADE~combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \RG_UMIDADE|saida_umidade\(11));
-
--- Location: LCFF_X64_Y32_N7
-\RG_UMIDADE|saida_umidade[10]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clock~clkctrl_outclk\,
-	datain => \RG_UMIDADE|saida_umidade[10]~feeder_combout\,
-	aclr => \CL_UMIDADE~clkctrl_outclk\,
-	ena => \LD_UMIDADE~combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \RG_UMIDADE|saida_umidade\(10));
-
--- Location: LCFF_X64_Y29_N21
-\RG_TEMPERATURA|saida_temperatura[6]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_TEMP~combout\(6),
+	datain => \RG_TEMPERATURA|saida_temperatura[11]~feeder_combout\,
 	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
-	sload => VCC,
 	ena => \LD_TEMPERATURA~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \RG_TEMPERATURA|saida_temperatura\(6));
+	regout => \RG_TEMPERATURA|saida_temperatura\(11));
 
--- Location: LCFF_X64_Y29_N23
+-- Location: LCFF_X64_Y32_N7
+\RG_TEMPERATURA|saida_temperatura[10]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clock~clkctrl_outclk\,
+	datain => \RG_TEMPERATURA|saida_temperatura[10]~feeder_combout\,
+	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
+	ena => \LD_TEMPERATURA~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \RG_TEMPERATURA|saida_temperatura\(10));
+
+-- Location: LCFF_X64_Y29_N21
 \RG_UMIDADE|saida_umidade[6]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	datain => \RG_UMIDADE|saida_umidade[6]~feeder_combout\,
+	sdata => \DT_UMID~combout\(6),
 	aclr => \CL_UMIDADE~clkctrl_outclk\,
+	sload => VCC,
 	ena => \LD_UMIDADE~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \RG_UMIDADE|saida_umidade\(6));
 
+-- Location: LCFF_X64_Y29_N23
+\RG_TEMPERATURA|saida_temperatura[6]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clock~clkctrl_outclk\,
+	datain => \RG_TEMPERATURA|saida_temperatura[6]~feeder_combout\,
+	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
+	ena => \LD_TEMPERATURA~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \RG_TEMPERATURA|saida_temperatura\(6));
+
 -- Location: LCCOMB_X64_Y29_N20
 \M_SENSORES|escolha2[6]~7\ : cycloneii_lcell_comb
 -- Equation(s):
--- \M_SENSORES|escolha2[6]~7_combout\ = (\SW2~combout\ & ((\RG_TEMPERATURA|saida_temperatura\(6)))) # (!\SW2~combout\ & (\RG_UMIDADE|saida_umidade\(6)))
+-- \M_SENSORES|escolha2[6]~7_combout\ = (\SW2~combout\ & ((\RG_UMIDADE|saida_umidade\(6)))) # (!\SW2~combout\ & (\RG_TEMPERATURA|saida_temperatura\(6)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1109,38 +1109,38 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \RG_UMIDADE|saida_umidade\(6),
-	datac => \RG_TEMPERATURA|saida_temperatura\(6),
+	datab => \RG_TEMPERATURA|saida_temperatura\(6),
+	datac => \RG_UMIDADE|saida_umidade\(6),
 	datad => \SW2~combout\,
 	combout => \M_SENSORES|escolha2[6]~7_combout\);
 
 -- Location: LCFF_X64_Y32_N29
-\RG_TEMPERATURA|saida_temperatura[3]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_TEMP~combout\(3),
-	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
-	sload => VCC,
-	ena => \LD_TEMPERATURA~combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \RG_TEMPERATURA|saida_temperatura\(3));
-
--- Location: LCFF_X64_Y32_N19
 \RG_UMIDADE|saida_umidade[3]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	datain => \RG_UMIDADE|saida_umidade[3]~feeder_combout\,
+	sdata => \DT_UMID~combout\(3),
 	aclr => \CL_UMIDADE~clkctrl_outclk\,
+	sload => VCC,
 	ena => \LD_UMIDADE~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \RG_UMIDADE|saida_umidade\(3));
 
+-- Location: LCFF_X64_Y32_N19
+\RG_TEMPERATURA|saida_temperatura[3]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clock~clkctrl_outclk\,
+	datain => \RG_TEMPERATURA|saida_temperatura[3]~feeder_combout\,
+	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
+	ena => \LD_TEMPERATURA~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \RG_TEMPERATURA|saida_temperatura\(3));
+
 -- Location: LCCOMB_X64_Y32_N28
 \M_SENSORES|escolha2[3]~10\ : cycloneii_lcell_comb
 -- Equation(s):
--- \M_SENSORES|escolha2[3]~10_combout\ = (\SW2~combout\ & ((\RG_TEMPERATURA|saida_temperatura\(3)))) # (!\SW2~combout\ & (\RG_UMIDADE|saida_umidade\(3)))
+-- \M_SENSORES|escolha2[3]~10_combout\ = (\SW2~combout\ & ((\RG_UMIDADE|saida_umidade\(3)))) # (!\SW2~combout\ & (\RG_TEMPERATURA|saida_temperatura\(3)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1148,38 +1148,38 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \RG_UMIDADE|saida_umidade\(3),
-	datac => \RG_TEMPERATURA|saida_temperatura\(3),
+	datab => \RG_TEMPERATURA|saida_temperatura\(3),
+	datac => \RG_UMIDADE|saida_umidade\(3),
 	datad => \SW2~combout\,
 	combout => \M_SENSORES|escolha2[3]~10_combout\);
 
 -- Location: LCFF_X64_Y30_N17
-\RG_TEMPERATURA|saida_temperatura[1]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_TEMP~combout\(1),
-	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
-	sload => VCC,
-	ena => \LD_TEMPERATURA~combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \RG_TEMPERATURA|saida_temperatura\(1));
-
--- Location: LCFF_X64_Y30_N15
 \RG_UMIDADE|saida_umidade[1]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	datain => \RG_UMIDADE|saida_umidade[1]~feeder_combout\,
+	sdata => \DT_UMID~combout\(1),
 	aclr => \CL_UMIDADE~clkctrl_outclk\,
+	sload => VCC,
 	ena => \LD_UMIDADE~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \RG_UMIDADE|saida_umidade\(1));
 
+-- Location: LCFF_X64_Y30_N15
+\RG_TEMPERATURA|saida_temperatura[1]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clock~clkctrl_outclk\,
+	datain => \RG_TEMPERATURA|saida_temperatura[1]~feeder_combout\,
+	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
+	ena => \LD_TEMPERATURA~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \RG_TEMPERATURA|saida_temperatura\(1));
+
 -- Location: LCCOMB_X64_Y30_N16
 \M_SENSORES|escolha2[1]~12\ : cycloneii_lcell_comb
 -- Equation(s):
--- \M_SENSORES|escolha2[1]~12_combout\ = (\SW2~combout\ & ((\RG_TEMPERATURA|saida_temperatura\(1)))) # (!\SW2~combout\ & (\RG_UMIDADE|saida_umidade\(1)))
+-- \M_SENSORES|escolha2[1]~12_combout\ = (\SW2~combout\ & ((\RG_UMIDADE|saida_umidade\(1)))) # (!\SW2~combout\ & (\RG_TEMPERATURA|saida_temperatura\(1)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1187,27 +1187,27 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \RG_UMIDADE|saida_umidade\(1),
-	datac => \RG_TEMPERATURA|saida_temperatura\(1),
+	datab => \RG_TEMPERATURA|saida_temperatura\(1),
+	datac => \RG_UMIDADE|saida_umidade\(1),
 	datad => \SW2~combout\,
 	combout => \M_SENSORES|escolha2[1]~12_combout\);
 
 -- Location: LCFF_X64_Y29_N11
-\RG_UMIDADE|saida_umidade[8]\ : cycloneii_lcell_ff
+\RG_TEMPERATURA|saida_temperatura[8]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_UMID~combout\(8),
-	aclr => \CL_UMIDADE~clkctrl_outclk\,
+	sdata => \DT_TEMP~combout\(8),
+	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
 	sload => VCC,
-	ena => \LD_UMIDADE~combout\,
+	ena => \LD_TEMPERATURA~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \RG_UMIDADE|saida_umidade\(8));
+	regout => \RG_TEMPERATURA|saida_temperatura\(8));
 
 -- Location: LCCOMB_X64_Y29_N16
 \COMP_SENSORES|LessThan0~16\ : cycloneii_lcell_comb
 -- Equation(s):
--- \COMP_SENSORES|LessThan0~16_combout\ = (\COMP_SENSORES|LessThan0~14_combout\) # (((\RG_UMIDADE|saida_umidade\(9) & !\SW2~combout\)) # (!\COMP_SENSORES|LessThan1~0_combout\))
+-- \COMP_SENSORES|LessThan0~16_combout\ = (\COMP_SENSORES|LessThan0~14_combout\) # (((\RG_TEMPERATURA|saida_temperatura\(9) & !\SW2~combout\)) # (!\COMP_SENSORES|LessThan1~0_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1217,7 +1217,7 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \COMP_SENSORES|LessThan0~14_combout\,
 	datab => \COMP_SENSORES|LessThan1~0_combout\,
-	datac => \RG_UMIDADE|saida_umidade\(9),
+	datac => \RG_TEMPERATURA|saida_temperatura\(9),
 	datad => \SW2~combout\,
 	combout => \COMP_SENSORES|LessThan0~16_combout\);
 
@@ -1242,7 +1242,7 @@ PORT MAP (
 -- Location: LCCOMB_X64_Y29_N6
 \COMP_SENSORES|Equal0~4\ : cycloneii_lcell_comb
 -- Equation(s):
--- \COMP_SENSORES|Equal0~4_combout\ = (\COMP_SENSORES|Equal0~3_combout\ & (\COMP_SENSORES|LessThan1~0_combout\ & ((\SW2~combout\) # (!\RG_UMIDADE|saida_umidade\(9)))))
+-- \COMP_SENSORES|Equal0~4_combout\ = (\COMP_SENSORES|Equal0~3_combout\ & (\COMP_SENSORES|LessThan1~0_combout\ & ((\SW2~combout\) # (!\RG_TEMPERATURA|saida_temperatura\(9)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1252,7 +1252,7 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \COMP_SENSORES|Equal0~3_combout\,
 	datab => \COMP_SENSORES|LessThan1~0_combout\,
-	datac => \RG_UMIDADE|saida_umidade\(9),
+	datac => \RG_TEMPERATURA|saida_temperatura\(9),
 	datad => \SW2~combout\,
 	combout => \COMP_SENSORES|Equal0~4_combout\);
 
@@ -1683,32 +1683,6 @@ PORT MAP (
 	combout => \DT_TEMPO~combout\(0));
 
 -- Location: PIN_J21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_TEMP[13]~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_DT_TEMP(13),
-	combout => \DT_TEMP~combout\(13));
-
--- Location: PIN_E25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \DT_UMID[13]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -1734,8 +1708,8 @@ PORT MAP (
 	padio => ww_DT_UMID(13),
 	combout => \DT_UMID~combout\(13));
 
--- Location: PIN_D25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_UMID[11]~I\ : cycloneii_io
+-- Location: PIN_E25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_TEMP[13]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
 	input_async_reset => "none",
@@ -1757,11 +1731,37 @@ PORT MAP (
 	devpor => ww_devpor,
 	devoe => ww_devoe,
 	oe => GND,
-	padio => ww_DT_UMID(11),
-	combout => \DT_UMID~combout\(11));
+	padio => ww_DT_TEMP(13),
+	combout => \DT_TEMP~combout\(13));
+
+-- Location: PIN_D25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_TEMP[11]~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_DT_TEMP(11),
+	combout => \DT_TEMP~combout\(11));
 
 -- Location: PIN_B24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_UMID[10]~I\ : cycloneii_io
+\DT_TEMP[10]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
 	input_async_reset => "none",
@@ -1783,36 +1783,10 @@ PORT MAP (
 	devpor => ww_devpor,
 	devoe => ww_devoe,
 	oe => GND,
-	padio => ww_DT_UMID(10),
-	combout => \DT_UMID~combout\(10));
+	padio => ww_DT_TEMP(10),
+	combout => \DT_TEMP~combout\(10));
 
 -- Location: PIN_G25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_TEMP[6]~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_DT_TEMP(6),
-	combout => \DT_TEMP~combout\(6));
-
--- Location: PIN_C21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \DT_UMID[6]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -1838,8 +1812,8 @@ PORT MAP (
 	padio => ww_DT_UMID(6),
 	combout => \DT_UMID~combout\(6));
 
--- Location: PIN_H21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_TEMP[3]~I\ : cycloneii_io
+-- Location: PIN_C21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_TEMP[6]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
 	input_async_reset => "none",
@@ -1861,10 +1835,10 @@ PORT MAP (
 	devpor => ww_devpor,
 	devoe => ww_devoe,
 	oe => GND,
-	padio => ww_DT_TEMP(3),
-	combout => \DT_TEMP~combout\(3));
+	padio => ww_DT_TEMP(6),
+	combout => \DT_TEMP~combout\(6));
 
--- Location: PIN_B22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_H21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \DT_UMID[3]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -1890,8 +1864,8 @@ PORT MAP (
 	padio => ww_DT_UMID(3),
 	combout => \DT_UMID~combout\(3));
 
--- Location: PIN_F21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_TEMP[1]~I\ : cycloneii_io
+-- Location: PIN_B22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_TEMP[3]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
 	input_async_reset => "none",
@@ -1913,10 +1887,10 @@ PORT MAP (
 	devpor => ww_devpor,
 	devoe => ww_devoe,
 	oe => GND,
-	padio => ww_DT_TEMP(1),
-	combout => \DT_TEMP~combout\(1));
+	padio => ww_DT_TEMP(3),
+	combout => \DT_TEMP~combout\(3));
 
--- Location: PIN_D26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_F21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \DT_UMID[1]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -1942,8 +1916,8 @@ PORT MAP (
 	padio => ww_DT_UMID(1),
 	combout => \DT_UMID~combout\(1));
 
--- Location: PIN_G26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_UMID[8]~I\ : cycloneii_io
+-- Location: PIN_D26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_TEMP[1]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
 	input_async_reset => "none",
@@ -1965,8 +1939,34 @@ PORT MAP (
 	devpor => ww_devpor,
 	devoe => ww_devoe,
 	oe => GND,
-	padio => ww_DT_UMID(8),
-	combout => \DT_UMID~combout\(8));
+	padio => ww_DT_TEMP(1),
+	combout => \DT_TEMP~combout\(1));
+
+-- Location: PIN_G26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_TEMP[8]~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_DT_TEMP(8),
+	combout => \DT_TEMP~combout\(8));
 
 -- Location: CLKCTRL_G3
 \clock~clkctrl\ : cycloneii_clkctrl
@@ -1996,9 +1996,9 @@ PORT MAP (
 	combout => \RG_TEMPO|saida_tempo[7]~feeder_combout\);
 
 -- Location: LCCOMB_X64_Y30_N26
-\RG_UMIDADE|saida_umidade[13]~feeder\ : cycloneii_lcell_comb
+\RG_TEMPERATURA|saida_temperatura[13]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
--- \RG_UMIDADE|saida_umidade[13]~feeder_combout\ = \DT_UMID~combout\(13)
+-- \RG_TEMPERATURA|saida_temperatura[13]~feeder_combout\ = \DT_TEMP~combout\(13)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2006,13 +2006,13 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \DT_UMID~combout\(13),
-	combout => \RG_UMIDADE|saida_umidade[13]~feeder_combout\);
+	datad => \DT_TEMP~combout\(13),
+	combout => \RG_TEMPERATURA|saida_temperatura[13]~feeder_combout\);
 
 -- Location: LCCOMB_X64_Y30_N6
-\RG_UMIDADE|saida_umidade[11]~feeder\ : cycloneii_lcell_comb
+\RG_TEMPERATURA|saida_temperatura[11]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
--- \RG_UMIDADE|saida_umidade[11]~feeder_combout\ = \DT_UMID~combout\(11)
+-- \RG_TEMPERATURA|saida_temperatura[11]~feeder_combout\ = \DT_TEMP~combout\(11)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2020,13 +2020,13 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \DT_UMID~combout\(11),
-	combout => \RG_UMIDADE|saida_umidade[11]~feeder_combout\);
+	datad => \DT_TEMP~combout\(11),
+	combout => \RG_TEMPERATURA|saida_temperatura[11]~feeder_combout\);
 
 -- Location: LCCOMB_X64_Y32_N6
-\RG_UMIDADE|saida_umidade[10]~feeder\ : cycloneii_lcell_comb
+\RG_TEMPERATURA|saida_temperatura[10]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
--- \RG_UMIDADE|saida_umidade[10]~feeder_combout\ = \DT_UMID~combout\(10)
+-- \RG_TEMPERATURA|saida_temperatura[10]~feeder_combout\ = \DT_TEMP~combout\(10)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2034,13 +2034,13 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \DT_UMID~combout\(10),
-	combout => \RG_UMIDADE|saida_umidade[10]~feeder_combout\);
+	datad => \DT_TEMP~combout\(10),
+	combout => \RG_TEMPERATURA|saida_temperatura[10]~feeder_combout\);
 
 -- Location: LCCOMB_X64_Y29_N22
-\RG_UMIDADE|saida_umidade[6]~feeder\ : cycloneii_lcell_comb
+\RG_TEMPERATURA|saida_temperatura[6]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
--- \RG_UMIDADE|saida_umidade[6]~feeder_combout\ = \DT_UMID~combout\(6)
+-- \RG_TEMPERATURA|saida_temperatura[6]~feeder_combout\ = \DT_TEMP~combout\(6)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2048,13 +2048,13 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \DT_UMID~combout\(6),
-	combout => \RG_UMIDADE|saida_umidade[6]~feeder_combout\);
+	datad => \DT_TEMP~combout\(6),
+	combout => \RG_TEMPERATURA|saida_temperatura[6]~feeder_combout\);
 
 -- Location: LCCOMB_X64_Y32_N18
-\RG_UMIDADE|saida_umidade[3]~feeder\ : cycloneii_lcell_comb
+\RG_TEMPERATURA|saida_temperatura[3]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
--- \RG_UMIDADE|saida_umidade[3]~feeder_combout\ = \DT_UMID~combout\(3)
+-- \RG_TEMPERATURA|saida_temperatura[3]~feeder_combout\ = \DT_TEMP~combout\(3)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2062,13 +2062,13 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \DT_UMID~combout\(3),
-	combout => \RG_UMIDADE|saida_umidade[3]~feeder_combout\);
+	datad => \DT_TEMP~combout\(3),
+	combout => \RG_TEMPERATURA|saida_temperatura[3]~feeder_combout\);
 
 -- Location: LCCOMB_X64_Y30_N14
-\RG_UMIDADE|saida_umidade[1]~feeder\ : cycloneii_lcell_comb
+\RG_TEMPERATURA|saida_temperatura[1]~feeder\ : cycloneii_lcell_comb
 -- Equation(s):
--- \RG_UMIDADE|saida_umidade[1]~feeder_combout\ = \DT_UMID~combout\(1)
+-- \RG_TEMPERATURA|saida_temperatura[1]~feeder_combout\ = \DT_TEMP~combout\(1)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2076,8 +2076,8 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \DT_UMID~combout\(1),
-	combout => \RG_UMIDADE|saida_umidade[1]~feeder_combout\);
+	datad => \DT_TEMP~combout\(1),
+	combout => \RG_TEMPERATURA|saida_temperatura[1]~feeder_combout\);
 
 -- Location: PIN_M22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \RST_CONTADOR~I\ : cycloneii_io
@@ -5754,122 +5754,6 @@ PORT MAP (
 	combout => \COMP_TEMPORAL|Equal0~10_combout\);
 
 -- Location: PIN_F24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_UMID[15]~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_DT_UMID(15),
-	combout => \DT_UMID~combout\(15));
-
--- Location: LCCOMB_X64_Y30_N22
-\RG_UMIDADE|saida_umidade[15]~feeder\ : cycloneii_lcell_comb
--- Equation(s):
--- \RG_UMIDADE|saida_umidade[15]~feeder_combout\ = \DT_UMID~combout\(15)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datad => \DT_UMID~combout\(15),
-	combout => \RG_UMIDADE|saida_umidade[15]~feeder_combout\);
-
--- Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\CL_UMIDADE~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_CL_UMIDADE,
-	combout => \CL_UMIDADE~combout\);
-
--- Location: CLKCTRL_G11
-\CL_UMIDADE~clkctrl\ : cycloneii_clkctrl
--- pragma translate_off
-GENERIC MAP (
-	clock_type => "global clock",
-	ena_register_mode => "none")
--- pragma translate_on
-PORT MAP (
-	inclk => \CL_UMIDADE~clkctrl_INCLK_bus\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	outclk => \CL_UMIDADE~clkctrl_outclk\);
-
--- Location: PIN_E23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\LD_UMIDADE~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_LD_UMIDADE,
-	combout => \LD_UMIDADE~combout\);
-
--- Location: LCFF_X64_Y30_N23
-\RG_UMIDADE|saida_umidade[15]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clock~clkctrl_outclk\,
-	datain => \RG_UMIDADE|saida_umidade[15]~feeder_combout\,
-	aclr => \CL_UMIDADE~clkctrl_outclk\,
-	ena => \LD_UMIDADE~combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \RG_UMIDADE|saida_umidade\(15));
-
--- Location: PIN_E26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \DT_TEMP[15]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -5894,6 +5778,20 @@ PORT MAP (
 	oe => GND,
 	padio => ww_DT_TEMP(15),
 	combout => \DT_TEMP~combout\(15));
+
+-- Location: LCCOMB_X64_Y30_N22
+\RG_TEMPERATURA|saida_temperatura[15]~feeder\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \RG_TEMPERATURA|saida_temperatura[15]~feeder_combout\ = \DT_TEMP~combout\(15)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datad => \DT_TEMP~combout\(15),
+	combout => \RG_TEMPERATURA|saida_temperatura[15]~feeder_combout\);
 
 -- Location: PIN_P1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \CL_TEMPERATURA~I\ : cycloneii_io
@@ -5934,7 +5832,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	outclk => \CL_TEMPERATURA~clkctrl_outclk\);
 
--- Location: PIN_G21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_E23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \LD_TEMPERATURA~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -5960,17 +5858,119 @@ PORT MAP (
 	padio => ww_LD_TEMPERATURA,
 	combout => \LD_TEMPERATURA~combout\);
 
--- Location: LCFF_X64_Y30_N9
+-- Location: LCFF_X64_Y30_N23
 \RG_TEMPERATURA|saida_temperatura[15]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_TEMP~combout\(15),
+	datain => \RG_TEMPERATURA|saida_temperatura[15]~feeder_combout\,
 	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
-	sload => VCC,
 	ena => \LD_TEMPERATURA~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \RG_TEMPERATURA|saida_temperatura\(15));
+
+-- Location: PIN_E26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_UMID[15]~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_DT_UMID(15),
+	combout => \DT_UMID~combout\(15));
+
+-- Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\CL_UMIDADE~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_CL_UMIDADE,
+	combout => \CL_UMIDADE~combout\);
+
+-- Location: CLKCTRL_G11
+\CL_UMIDADE~clkctrl\ : cycloneii_clkctrl
+-- pragma translate_off
+GENERIC MAP (
+	clock_type => "global clock",
+	ena_register_mode => "none")
+-- pragma translate_on
+PORT MAP (
+	inclk => \CL_UMIDADE~clkctrl_INCLK_bus\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	outclk => \CL_UMIDADE~clkctrl_outclk\);
+
+-- Location: PIN_G21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\LD_UMIDADE~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_LD_UMIDADE,
+	combout => \LD_UMIDADE~combout\);
+
+-- Location: LCFF_X64_Y30_N9
+\RG_UMIDADE|saida_umidade[15]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clock~clkctrl_outclk\,
+	sdata => \DT_UMID~combout\(15),
+	aclr => \CL_UMIDADE~clkctrl_outclk\,
+	sload => VCC,
+	ena => \LD_UMIDADE~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \RG_UMIDADE|saida_umidade\(15));
 
 -- Location: PIN_G22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \SW2~I\ : cycloneii_io
@@ -6001,7 +6001,7 @@ PORT MAP (
 -- Location: LCCOMB_X64_Y30_N8
 \M_SENSORES|escolha2[15]~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \M_SENSORES|escolha2[15]~0_combout\ = (\SW2~combout\ & ((\RG_TEMPERATURA|saida_temperatura\(15)))) # (!\SW2~combout\ & (\RG_UMIDADE|saida_umidade\(15)))
+-- \M_SENSORES|escolha2[15]~0_combout\ = (\SW2~combout\ & ((\RG_UMIDADE|saida_umidade\(15)))) # (!\SW2~combout\ & (\RG_TEMPERATURA|saida_temperatura\(15)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6009,63 +6009,12 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \RG_UMIDADE|saida_umidade\(15),
-	datac => \RG_TEMPERATURA|saida_temperatura\(15),
+	datab => \RG_TEMPERATURA|saida_temperatura\(15),
+	datac => \RG_UMIDADE|saida_umidade\(15),
 	datad => \SW2~combout\,
 	combout => \M_SENSORES|escolha2[15]~0_combout\);
 
 -- Location: PIN_C24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_UMID[14]~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_DT_UMID(14),
-	combout => \DT_UMID~combout\(14));
-
--- Location: LCCOMB_X64_Y32_N26
-\RG_UMIDADE|saida_umidade[14]~feeder\ : cycloneii_lcell_comb
--- Equation(s):
--- \RG_UMIDADE|saida_umidade[14]~feeder_combout\ = \DT_UMID~combout\(14)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datad => \DT_UMID~combout\(14),
-	combout => \RG_UMIDADE|saida_umidade[14]~feeder_combout\);
-
--- Location: LCFF_X64_Y32_N27
-\RG_UMIDADE|saida_umidade[14]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clock~clkctrl_outclk\,
-	datain => \RG_UMIDADE|saida_umidade[14]~feeder_combout\,
-	aclr => \CL_UMIDADE~clkctrl_outclk\,
-	ena => \LD_UMIDADE~combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \RG_UMIDADE|saida_umidade\(14));
-
--- Location: PIN_C25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \DT_TEMP[14]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -6091,36 +6040,33 @@ PORT MAP (
 	padio => ww_DT_TEMP(14),
 	combout => \DT_TEMP~combout\(14));
 
--- Location: LCFF_X64_Y32_N5
+-- Location: LCCOMB_X64_Y32_N26
+\RG_TEMPERATURA|saida_temperatura[14]~feeder\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \RG_TEMPERATURA|saida_temperatura[14]~feeder_combout\ = \DT_TEMP~combout\(14)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datad => \DT_TEMP~combout\(14),
+	combout => \RG_TEMPERATURA|saida_temperatura[14]~feeder_combout\);
+
+-- Location: LCFF_X64_Y32_N27
 \RG_TEMPERATURA|saida_temperatura[14]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_TEMP~combout\(14),
+	datain => \RG_TEMPERATURA|saida_temperatura[14]~feeder_combout\,
 	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
-	sload => VCC,
 	ena => \LD_TEMPERATURA~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \RG_TEMPERATURA|saida_temperatura\(14));
 
--- Location: LCCOMB_X64_Y32_N4
-\M_SENSORES|escolha2[14]~1\ : cycloneii_lcell_comb
--- Equation(s):
--- \M_SENSORES|escolha2[14]~1_combout\ = (\SW2~combout\ & ((\RG_TEMPERATURA|saida_temperatura\(14)))) # (!\SW2~combout\ & (\RG_UMIDADE|saida_umidade\(14)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \RG_UMIDADE|saida_umidade\(14),
-	datac => \RG_TEMPERATURA|saida_temperatura\(14),
-	datad => \SW2~combout\,
-	combout => \M_SENSORES|escolha2[14]~1_combout\);
-
--- Location: PIN_E22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_UMID[12]~I\ : cycloneii_io
+-- Location: PIN_C25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_UMID[14]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
 	input_async_reset => "none",
@@ -6142,22 +6088,38 @@ PORT MAP (
 	devpor => ww_devpor,
 	devoe => ww_devoe,
 	oe => GND,
-	padio => ww_DT_UMID(12),
-	combout => \DT_UMID~combout\(12));
+	padio => ww_DT_UMID(14),
+	combout => \DT_UMID~combout\(14));
 
--- Location: LCFF_X64_Y30_N3
-\RG_UMIDADE|saida_umidade[12]\ : cycloneii_lcell_ff
+-- Location: LCFF_X64_Y32_N5
+\RG_UMIDADE|saida_umidade[14]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_UMID~combout\(12),
+	sdata => \DT_UMID~combout\(14),
 	aclr => \CL_UMIDADE~clkctrl_outclk\,
 	sload => VCC,
 	ena => \LD_UMIDADE~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \RG_UMIDADE|saida_umidade\(12));
+	regout => \RG_UMIDADE|saida_umidade\(14));
 
--- Location: PIN_F23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: LCCOMB_X64_Y32_N4
+\M_SENSORES|escolha2[14]~1\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \M_SENSORES|escolha2[14]~1_combout\ = (\SW2~combout\ & ((\RG_UMIDADE|saida_umidade\(14)))) # (!\SW2~combout\ & (\RG_TEMPERATURA|saida_temperatura\(14)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111000011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \RG_TEMPERATURA|saida_temperatura\(14),
+	datac => \RG_UMIDADE|saida_umidade\(14),
+	datad => \SW2~combout\,
+	combout => \M_SENSORES|escolha2[14]~1_combout\);
+
+-- Location: PIN_E22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \DT_TEMP[12]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -6183,7 +6145,7 @@ PORT MAP (
 	padio => ww_DT_TEMP(12),
 	combout => \DT_TEMP~combout\(12));
 
--- Location: LCFF_X64_Y30_N13
+-- Location: LCFF_X64_Y30_N3
 \RG_TEMPERATURA|saida_temperatura[12]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
@@ -6195,10 +6157,48 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \RG_TEMPERATURA|saida_temperatura\(12));
 
+-- Location: PIN_F23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_UMID[12]~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_DT_UMID(12),
+	combout => \DT_UMID~combout\(12));
+
+-- Location: LCFF_X64_Y30_N13
+\RG_UMIDADE|saida_umidade[12]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clock~clkctrl_outclk\,
+	sdata => \DT_UMID~combout\(12),
+	aclr => \CL_UMIDADE~clkctrl_outclk\,
+	sload => VCC,
+	ena => \LD_UMIDADE~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \RG_UMIDADE|saida_umidade\(12));
+
 -- Location: LCCOMB_X64_Y30_N12
 \M_SENSORES|escolha2[12]~3\ : cycloneii_lcell_comb
 -- Equation(s):
--- \M_SENSORES|escolha2[12]~3_combout\ = (\SW2~combout\ & ((\RG_TEMPERATURA|saida_temperatura\(12)))) # (!\SW2~combout\ & (\RG_UMIDADE|saida_umidade\(12)))
+-- \M_SENSORES|escolha2[12]~3_combout\ = (\SW2~combout\ & ((\RG_UMIDADE|saida_umidade\(12)))) # (!\SW2~combout\ & (\RG_TEMPERATURA|saida_temperatura\(12)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6206,8 +6206,8 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \RG_UMIDADE|saida_umidade\(12),
-	datac => \RG_TEMPERATURA|saida_temperatura\(12),
+	datab => \RG_TEMPERATURA|saida_temperatura\(12),
+	datac => \RG_UMIDADE|saida_umidade\(12),
 	datad => \SW2~combout\,
 	combout => \M_SENSORES|escolha2[12]~3_combout\);
 
@@ -6328,99 +6328,6 @@ PORT MAP (
 	combout => \COMP_SENSORES|LessThan0~29_combout\);
 
 -- Location: PIN_N18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_TEMP[9]~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_DT_TEMP(9),
-	combout => \DT_TEMP~combout\(9));
-
--- Location: LCFF_X64_Y29_N29
-\RG_TEMPERATURA|saida_temperatura[9]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_TEMP~combout\(9),
-	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
-	sload => VCC,
-	ena => \LD_TEMPERATURA~combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \RG_TEMPERATURA|saida_temperatura\(9));
-
--- Location: PIN_F26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_TEMP[8]~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_DT_TEMP(8),
-	combout => \DT_TEMP~combout\(8));
-
--- Location: LCFF_X64_Y29_N31
-\RG_TEMPERATURA|saida_temperatura[8]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_TEMP~combout\(8),
-	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
-	sload => VCC,
-	ena => \LD_TEMPERATURA~combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \RG_TEMPERATURA|saida_temperatura\(8));
-
--- Location: LCCOMB_X64_Y29_N30
-\COMP_SENSORES|LessThan1~0\ : cycloneii_lcell_comb
--- Equation(s):
--- \COMP_SENSORES|LessThan1~0_combout\ = (\SW2~combout\ & (((!\RG_TEMPERATURA|saida_temperatura\(9) & !\RG_TEMPERATURA|saida_temperatura\(8))))) # (!\SW2~combout\ & (!\RG_UMIDADE|saida_umidade\(8)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0000001101010101",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \RG_UMIDADE|saida_umidade\(8),
-	datab => \RG_TEMPERATURA|saida_temperatura\(9),
-	datac => \RG_TEMPERATURA|saida_temperatura\(8),
-	datad => \SW2~combout\,
-	combout => \COMP_SENSORES|LessThan1~0_combout\);
-
--- Location: PIN_H24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \DT_UMID[9]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -6446,10 +6353,103 @@ PORT MAP (
 	padio => ww_DT_UMID(9),
 	combout => \DT_UMID~combout\(9));
 
--- Location: LCCOMB_X64_Y29_N8
-\RG_UMIDADE|saida_umidade[9]~feeder\ : cycloneii_lcell_comb
+-- Location: LCFF_X64_Y29_N29
+\RG_UMIDADE|saida_umidade[9]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clock~clkctrl_outclk\,
+	sdata => \DT_UMID~combout\(9),
+	aclr => \CL_UMIDADE~clkctrl_outclk\,
+	sload => VCC,
+	ena => \LD_UMIDADE~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \RG_UMIDADE|saida_umidade\(9));
+
+-- Location: PIN_F26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_UMID[8]~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_DT_UMID(8),
+	combout => \DT_UMID~combout\(8));
+
+-- Location: LCFF_X64_Y29_N31
+\RG_UMIDADE|saida_umidade[8]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clock~clkctrl_outclk\,
+	sdata => \DT_UMID~combout\(8),
+	aclr => \CL_UMIDADE~clkctrl_outclk\,
+	sload => VCC,
+	ena => \LD_UMIDADE~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \RG_UMIDADE|saida_umidade\(8));
+
+-- Location: LCCOMB_X64_Y29_N30
+\COMP_SENSORES|LessThan1~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \RG_UMIDADE|saida_umidade[9]~feeder_combout\ = \DT_UMID~combout\(9)
+-- \COMP_SENSORES|LessThan1~0_combout\ = (\SW2~combout\ & (((!\RG_UMIDADE|saida_umidade\(9) & !\RG_UMIDADE|saida_umidade\(8))))) # (!\SW2~combout\ & (!\RG_TEMPERATURA|saida_temperatura\(8)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000001101010101",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \RG_TEMPERATURA|saida_temperatura\(8),
+	datab => \RG_UMIDADE|saida_umidade\(9),
+	datac => \RG_UMIDADE|saida_umidade\(8),
+	datad => \SW2~combout\,
+	combout => \COMP_SENSORES|LessThan1~0_combout\);
+
+-- Location: PIN_H24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_TEMP[9]~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_DT_TEMP(9),
+	combout => \DT_TEMP~combout\(9));
+
+-- Location: LCCOMB_X64_Y29_N8
+\RG_TEMPERATURA|saida_temperatura[9]~feeder\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \RG_TEMPERATURA|saida_temperatura[9]~feeder_combout\ = \DT_TEMP~combout\(9)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6457,24 +6457,24 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \DT_UMID~combout\(9),
-	combout => \RG_UMIDADE|saida_umidade[9]~feeder_combout\);
+	datad => \DT_TEMP~combout\(9),
+	combout => \RG_TEMPERATURA|saida_temperatura[9]~feeder_combout\);
 
 -- Location: LCFF_X64_Y29_N9
-\RG_UMIDADE|saida_umidade[9]\ : cycloneii_lcell_ff
+\RG_TEMPERATURA|saida_temperatura[9]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	datain => \RG_UMIDADE|saida_umidade[9]~feeder_combout\,
-	aclr => \CL_UMIDADE~clkctrl_outclk\,
-	ena => \LD_UMIDADE~combout\,
+	datain => \RG_TEMPERATURA|saida_temperatura[9]~feeder_combout\,
+	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
+	ena => \LD_TEMPERATURA~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \RG_UMIDADE|saida_umidade\(9));
+	regout => \RG_TEMPERATURA|saida_temperatura\(9));
 
 -- Location: LCCOMB_X64_Y29_N18
 \COMP_SENSORES|LessThan1~15\ : cycloneii_lcell_comb
 -- Equation(s):
--- \COMP_SENSORES|LessThan1~15_combout\ = (\COMP_SENSORES|LessThan1~13_combout\ & (\COMP_SENSORES|LessThan1~0_combout\ & ((\SW2~combout\) # (!\RG_UMIDADE|saida_umidade\(9)))))
+-- \COMP_SENSORES|LessThan1~15_combout\ = (\COMP_SENSORES|LessThan1~13_combout\ & (\COMP_SENSORES|LessThan1~0_combout\ & ((\SW2~combout\) # (!\RG_TEMPERATURA|saida_temperatura\(9)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6484,7 +6484,7 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \COMP_SENSORES|LessThan1~13_combout\,
 	datab => \COMP_SENSORES|LessThan1~0_combout\,
-	datac => \RG_UMIDADE|saida_umidade\(9),
+	datac => \RG_TEMPERATURA|saida_temperatura\(9),
 	datad => \SW2~combout\,
 	combout => \COMP_SENSORES|LessThan1~15_combout\);
 
@@ -6605,57 +6605,6 @@ PORT MAP (
 	combout => \COMP_SENSORES|LessThan1~28_combout\);
 
 -- Location: PIN_F20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_UMID[0]~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_DT_UMID(0),
-	combout => \DT_UMID~combout\(0));
-
--- Location: LCCOMB_X64_Y30_N18
-\RG_UMIDADE|saida_umidade[0]~feeder\ : cycloneii_lcell_comb
--- Equation(s):
--- \RG_UMIDADE|saida_umidade[0]~feeder_combout\ = \DT_UMID~combout\(0)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datad => \DT_UMID~combout\(0),
-	combout => \RG_UMIDADE|saida_umidade[0]~feeder_combout\);
-
--- Location: LCFF_X64_Y30_N19
-\RG_UMIDADE|saida_umidade[0]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clock~clkctrl_outclk\,
-	datain => \RG_UMIDADE|saida_umidade[0]~feeder_combout\,
-	aclr => \CL_UMIDADE~clkctrl_outclk\,
-	ena => \LD_UMIDADE~combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \RG_UMIDADE|saida_umidade\(0));
-
--- Location: PIN_J22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \DT_TEMP[0]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -6681,52 +6630,33 @@ PORT MAP (
 	padio => ww_DT_TEMP(0),
 	combout => \DT_TEMP~combout\(0));
 
--- Location: LCFF_X64_Y30_N29
+-- Location: LCCOMB_X64_Y30_N18
+\RG_TEMPERATURA|saida_temperatura[0]~feeder\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \RG_TEMPERATURA|saida_temperatura[0]~feeder_combout\ = \DT_TEMP~combout\(0)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datad => \DT_TEMP~combout\(0),
+	combout => \RG_TEMPERATURA|saida_temperatura[0]~feeder_combout\);
+
+-- Location: LCFF_X64_Y30_N19
 \RG_TEMPERATURA|saida_temperatura[0]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_TEMP~combout\(0),
+	datain => \RG_TEMPERATURA|saida_temperatura[0]~feeder_combout\,
 	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
-	sload => VCC,
 	ena => \LD_TEMPERATURA~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \RG_TEMPERATURA|saida_temperatura\(0));
 
--- Location: LCCOMB_X64_Y30_N28
-\M_SENSORES|escolha2[0]~13\ : cycloneii_lcell_comb
--- Equation(s):
--- \M_SENSORES|escolha2[0]~13_combout\ = (\SW2~combout\ & ((\RG_TEMPERATURA|saida_temperatura\(0)))) # (!\SW2~combout\ & (\RG_UMIDADE|saida_umidade\(0)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \RG_UMIDADE|saida_umidade\(0),
-	datac => \RG_TEMPERATURA|saida_temperatura\(0),
-	datad => \SW2~combout\,
-	combout => \M_SENSORES|escolha2[0]~13_combout\);
-
--- Location: LCCOMB_X64_Y30_N10
-\COMP_SENSORES|Equal0~8\ : cycloneii_lcell_comb
--- Equation(s):
--- \COMP_SENSORES|Equal0~8_combout\ = (!\M_SENSORES|escolha2[0]~13_combout\ & (\M_SENSORES|escolha2[12]~3_combout\ $ (!\RM|Mux3~0_combout\)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0000000010100101",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \M_SENSORES|escolha2[12]~3_combout\,
-	datac => \RM|Mux3~0_combout\,
-	datad => \M_SENSORES|escolha2[0]~13_combout\,
-	combout => \COMP_SENSORES|Equal0~8_combout\);
-
--- Location: PIN_C22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_UMID[4]~I\ : cycloneii_io
+-- Location: PIN_J22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_UMID[0]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
 	input_async_reset => "none",
@@ -6748,35 +6678,54 @@ PORT MAP (
 	devpor => ww_devpor,
 	devoe => ww_devoe,
 	oe => GND,
-	padio => ww_DT_UMID(4),
-	combout => \DT_UMID~combout\(4));
+	padio => ww_DT_UMID(0),
+	combout => \DT_UMID~combout\(0));
 
--- Location: LCCOMB_X64_Y32_N2
-\RG_UMIDADE|saida_umidade[4]~feeder\ : cycloneii_lcell_comb
--- Equation(s):
--- \RG_UMIDADE|saida_umidade[4]~feeder_combout\ = \DT_UMID~combout\(4)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datad => \DT_UMID~combout\(4),
-	combout => \RG_UMIDADE|saida_umidade[4]~feeder_combout\);
-
--- Location: LCFF_X64_Y32_N3
-\RG_UMIDADE|saida_umidade[4]\ : cycloneii_lcell_ff
+-- Location: LCFF_X64_Y30_N29
+\RG_UMIDADE|saida_umidade[0]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	datain => \RG_UMIDADE|saida_umidade[4]~feeder_combout\,
+	sdata => \DT_UMID~combout\(0),
 	aclr => \CL_UMIDADE~clkctrl_outclk\,
+	sload => VCC,
 	ena => \LD_UMIDADE~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \RG_UMIDADE|saida_umidade\(4));
+	regout => \RG_UMIDADE|saida_umidade\(0));
 
--- Location: PIN_D21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: LCCOMB_X64_Y30_N28
+\M_SENSORES|escolha2[0]~13\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \M_SENSORES|escolha2[0]~13_combout\ = (\SW2~combout\ & ((\RG_UMIDADE|saida_umidade\(0)))) # (!\SW2~combout\ & (\RG_TEMPERATURA|saida_temperatura\(0)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111000011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \RG_TEMPERATURA|saida_temperatura\(0),
+	datac => \RG_UMIDADE|saida_umidade\(0),
+	datad => \SW2~combout\,
+	combout => \M_SENSORES|escolha2[0]~13_combout\);
+
+-- Location: LCCOMB_X64_Y30_N10
+\COMP_SENSORES|Equal0~8\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \COMP_SENSORES|Equal0~8_combout\ = (!\M_SENSORES|escolha2[0]~13_combout\ & (\M_SENSORES|escolha2[12]~3_combout\ $ (!\RM|Mux3~0_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000010100101",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \M_SENSORES|escolha2[12]~3_combout\,
+	datac => \RM|Mux3~0_combout\,
+	datad => \M_SENSORES|escolha2[0]~13_combout\,
+	combout => \COMP_SENSORES|Equal0~8_combout\);
+
+-- Location: PIN_C22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \DT_TEMP[4]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -6802,36 +6751,33 @@ PORT MAP (
 	padio => ww_DT_TEMP(4),
 	combout => \DT_TEMP~combout\(4));
 
--- Location: LCFF_X64_Y32_N13
+-- Location: LCCOMB_X64_Y32_N2
+\RG_TEMPERATURA|saida_temperatura[4]~feeder\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \RG_TEMPERATURA|saida_temperatura[4]~feeder_combout\ = \DT_TEMP~combout\(4)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datad => \DT_TEMP~combout\(4),
+	combout => \RG_TEMPERATURA|saida_temperatura[4]~feeder_combout\);
+
+-- Location: LCFF_X64_Y32_N3
 \RG_TEMPERATURA|saida_temperatura[4]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_TEMP~combout\(4),
+	datain => \RG_TEMPERATURA|saida_temperatura[4]~feeder_combout\,
 	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
-	sload => VCC,
 	ena => \LD_TEMPERATURA~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \RG_TEMPERATURA|saida_temperatura\(4));
 
--- Location: LCCOMB_X64_Y32_N12
-\M_SENSORES|escolha2[4]~9\ : cycloneii_lcell_comb
--- Equation(s):
--- \M_SENSORES|escolha2[4]~9_combout\ = (\SW2~combout\ & ((\RG_TEMPERATURA|saida_temperatura\(4)))) # (!\SW2~combout\ & (\RG_UMIDADE|saida_umidade\(4)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \RG_UMIDADE|saida_umidade\(4),
-	datac => \RG_TEMPERATURA|saida_temperatura\(4),
-	datad => \SW2~combout\,
-	combout => \M_SENSORES|escolha2[4]~9_combout\);
-
--- Location: PIN_A22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_UMID[5]~I\ : cycloneii_io
+-- Location: PIN_D21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_UMID[4]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
 	input_async_reset => "none",
@@ -6853,35 +6799,38 @@ PORT MAP (
 	devpor => ww_devpor,
 	devoe => ww_devoe,
 	oe => GND,
-	padio => ww_DT_UMID(5),
-	combout => \DT_UMID~combout\(5));
+	padio => ww_DT_UMID(4),
+	combout => \DT_UMID~combout\(4));
 
--- Location: LCCOMB_X64_Y32_N22
-\RG_UMIDADE|saida_umidade[5]~feeder\ : cycloneii_lcell_comb
--- Equation(s):
--- \RG_UMIDADE|saida_umidade[5]~feeder_combout\ = \DT_UMID~combout\(5)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datad => \DT_UMID~combout\(5),
-	combout => \RG_UMIDADE|saida_umidade[5]~feeder_combout\);
-
--- Location: LCFF_X64_Y32_N23
-\RG_UMIDADE|saida_umidade[5]\ : cycloneii_lcell_ff
+-- Location: LCFF_X64_Y32_N13
+\RG_UMIDADE|saida_umidade[4]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	datain => \RG_UMIDADE|saida_umidade[5]~feeder_combout\,
+	sdata => \DT_UMID~combout\(4),
 	aclr => \CL_UMIDADE~clkctrl_outclk\,
+	sload => VCC,
 	ena => \LD_UMIDADE~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \RG_UMIDADE|saida_umidade\(5));
+	regout => \RG_UMIDADE|saida_umidade\(4));
 
--- Location: PIN_B25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: LCCOMB_X64_Y32_N12
+\M_SENSORES|escolha2[4]~9\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \M_SENSORES|escolha2[4]~9_combout\ = (\SW2~combout\ & ((\RG_UMIDADE|saida_umidade\(4)))) # (!\SW2~combout\ & (\RG_TEMPERATURA|saida_temperatura\(4)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111000011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \RG_TEMPERATURA|saida_temperatura\(4),
+	datac => \RG_UMIDADE|saida_umidade\(4),
+	datad => \SW2~combout\,
+	combout => \M_SENSORES|escolha2[4]~9_combout\);
+
+-- Location: PIN_A22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \DT_TEMP[5]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -6907,22 +6856,73 @@ PORT MAP (
 	padio => ww_DT_TEMP(5),
 	combout => \DT_TEMP~combout\(5));
 
--- Location: LCFF_X64_Y32_N9
+-- Location: LCCOMB_X64_Y32_N22
+\RG_TEMPERATURA|saida_temperatura[5]~feeder\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \RG_TEMPERATURA|saida_temperatura[5]~feeder_combout\ = \DT_TEMP~combout\(5)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datad => \DT_TEMP~combout\(5),
+	combout => \RG_TEMPERATURA|saida_temperatura[5]~feeder_combout\);
+
+-- Location: LCFF_X64_Y32_N23
 \RG_TEMPERATURA|saida_temperatura[5]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_TEMP~combout\(5),
+	datain => \RG_TEMPERATURA|saida_temperatura[5]~feeder_combout\,
 	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
-	sload => VCC,
 	ena => \LD_TEMPERATURA~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \RG_TEMPERATURA|saida_temperatura\(5));
 
+-- Location: PIN_B25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_UMID[5]~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_DT_UMID(5),
+	combout => \DT_UMID~combout\(5));
+
+-- Location: LCFF_X64_Y32_N9
+\RG_UMIDADE|saida_umidade[5]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clock~clkctrl_outclk\,
+	sdata => \DT_UMID~combout\(5),
+	aclr => \CL_UMIDADE~clkctrl_outclk\,
+	sload => VCC,
+	ena => \LD_UMIDADE~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \RG_UMIDADE|saida_umidade\(5));
+
 -- Location: LCCOMB_X64_Y32_N8
 \M_SENSORES|escolha2[5]~8\ : cycloneii_lcell_comb
 -- Equation(s):
--- \M_SENSORES|escolha2[5]~8_combout\ = (\SW2~combout\ & ((\RG_TEMPERATURA|saida_temperatura\(5)))) # (!\SW2~combout\ & (\RG_UMIDADE|saida_umidade\(5)))
+-- \M_SENSORES|escolha2[5]~8_combout\ = (\SW2~combout\ & ((\RG_UMIDADE|saida_umidade\(5)))) # (!\SW2~combout\ & (\RG_TEMPERATURA|saida_temperatura\(5)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -6930,8 +6930,8 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \RG_UMIDADE|saida_umidade\(5),
-	datac => \RG_TEMPERATURA|saida_temperatura\(5),
+	datab => \RG_TEMPERATURA|saida_temperatura\(5),
+	datac => \RG_UMIDADE|saida_umidade\(5),
 	datad => \SW2~combout\,
 	combout => \M_SENSORES|escolha2[5]~8_combout\);
 
@@ -6989,57 +6989,6 @@ PORT MAP (
 	combout => \COMP_SENSORES|Equal0~2_combout\);
 
 -- Location: PIN_E24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_UMID[7]~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_DT_UMID(7),
-	combout => \DT_UMID~combout\(7));
-
--- Location: LCCOMB_X64_Y29_N14
-\RG_UMIDADE|saida_umidade[7]~feeder\ : cycloneii_lcell_comb
--- Equation(s):
--- \RG_UMIDADE|saida_umidade[7]~feeder_combout\ = \DT_UMID~combout\(7)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datad => \DT_UMID~combout\(7),
-	combout => \RG_UMIDADE|saida_umidade[7]~feeder_combout\);
-
--- Location: LCFF_X64_Y29_N15
-\RG_UMIDADE|saida_umidade[7]\ : cycloneii_lcell_ff
-PORT MAP (
-	clk => \clock~clkctrl_outclk\,
-	datain => \RG_UMIDADE|saida_umidade[7]~feeder_combout\,
-	aclr => \CL_UMIDADE~clkctrl_outclk\,
-	ena => \LD_UMIDADE~combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	regout => \RG_UMIDADE|saida_umidade\(7));
-
--- Location: PIN_P18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \DT_TEMP[7]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -7065,36 +7014,33 @@ PORT MAP (
 	padio => ww_DT_TEMP(7),
 	combout => \DT_TEMP~combout\(7));
 
--- Location: LCFF_X64_Y29_N25
+-- Location: LCCOMB_X64_Y29_N14
+\RG_TEMPERATURA|saida_temperatura[7]~feeder\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \RG_TEMPERATURA|saida_temperatura[7]~feeder_combout\ = \DT_TEMP~combout\(7)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datad => \DT_TEMP~combout\(7),
+	combout => \RG_TEMPERATURA|saida_temperatura[7]~feeder_combout\);
+
+-- Location: LCFF_X64_Y29_N15
 \RG_TEMPERATURA|saida_temperatura[7]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_TEMP~combout\(7),
+	datain => \RG_TEMPERATURA|saida_temperatura[7]~feeder_combout\,
 	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
-	sload => VCC,
 	ena => \LD_TEMPERATURA~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	regout => \RG_TEMPERATURA|saida_temperatura\(7));
 
--- Location: LCCOMB_X64_Y29_N24
-\M_SENSORES|escolha2[7]~6\ : cycloneii_lcell_comb
--- Equation(s):
--- \M_SENSORES|escolha2[7]~6_combout\ = (\SW2~combout\ & ((\RG_TEMPERATURA|saida_temperatura\(7)))) # (!\SW2~combout\ & (\RG_UMIDADE|saida_umidade\(7)))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111000011001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \RG_UMIDADE|saida_umidade\(7),
-	datac => \RG_TEMPERATURA|saida_temperatura\(7),
-	datad => \SW2~combout\,
-	combout => \M_SENSORES|escolha2[7]~6_combout\);
-
--- Location: PIN_F25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_UMID[2]~I\ : cycloneii_io
+-- Location: PIN_P18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_UMID[7]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
 	input_async_reset => "none",
@@ -7116,22 +7062,38 @@ PORT MAP (
 	devpor => ww_devpor,
 	devoe => ww_devoe,
 	oe => GND,
-	padio => ww_DT_UMID(2),
-	combout => \DT_UMID~combout\(2));
+	padio => ww_DT_UMID(7),
+	combout => \DT_UMID~combout\(7));
 
--- Location: LCFF_X64_Y29_N3
-\RG_UMIDADE|saida_umidade[2]\ : cycloneii_lcell_ff
+-- Location: LCFF_X64_Y29_N25
+\RG_UMIDADE|saida_umidade[7]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_UMID~combout\(2),
+	sdata => \DT_UMID~combout\(7),
 	aclr => \CL_UMIDADE~clkctrl_outclk\,
 	sload => VCC,
 	ena => \LD_UMIDADE~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \RG_UMIDADE|saida_umidade\(2));
+	regout => \RG_UMIDADE|saida_umidade\(7));
 
--- Location: PIN_K22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: LCCOMB_X64_Y29_N24
+\M_SENSORES|escolha2[7]~6\ : cycloneii_lcell_comb
+-- Equation(s):
+-- \M_SENSORES|escolha2[7]~6_combout\ = (\SW2~combout\ & ((\RG_UMIDADE|saida_umidade\(7)))) # (!\SW2~combout\ & (\RG_TEMPERATURA|saida_temperatura\(7)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111000011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \RG_TEMPERATURA|saida_temperatura\(7),
+	datac => \RG_UMIDADE|saida_umidade\(7),
+	datad => \SW2~combout\,
+	combout => \M_SENSORES|escolha2[7]~6_combout\);
+
+-- Location: PIN_F25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \DT_TEMP[2]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -7157,7 +7119,7 @@ PORT MAP (
 	padio => ww_DT_TEMP(2),
 	combout => \DT_TEMP~combout\(2));
 
--- Location: LCFF_X64_Y29_N13
+-- Location: LCFF_X64_Y29_N3
 \RG_TEMPERATURA|saida_temperatura[2]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
@@ -7169,10 +7131,48 @@ PORT MAP (
 	devpor => ww_devpor,
 	regout => \RG_TEMPERATURA|saida_temperatura\(2));
 
+-- Location: PIN_K22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\DT_UMID[2]~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_DT_UMID(2),
+	combout => \DT_UMID~combout\(2));
+
+-- Location: LCFF_X64_Y29_N13
+\RG_UMIDADE|saida_umidade[2]\ : cycloneii_lcell_ff
+PORT MAP (
+	clk => \clock~clkctrl_outclk\,
+	sdata => \DT_UMID~combout\(2),
+	aclr => \CL_UMIDADE~clkctrl_outclk\,
+	sload => VCC,
+	ena => \LD_UMIDADE~combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	regout => \RG_UMIDADE|saida_umidade\(2));
+
 -- Location: LCCOMB_X64_Y29_N12
 \M_SENSORES|escolha2[2]~11\ : cycloneii_lcell_comb
 -- Equation(s):
--- \M_SENSORES|escolha2[2]~11_combout\ = (\SW2~combout\ & ((\RG_TEMPERATURA|saida_temperatura\(2)))) # (!\SW2~combout\ & (\RG_UMIDADE|saida_umidade\(2)))
+-- \M_SENSORES|escolha2[2]~11_combout\ = (\SW2~combout\ & ((\RG_UMIDADE|saida_umidade\(2)))) # (!\SW2~combout\ & (\RG_TEMPERATURA|saida_temperatura\(2)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7180,8 +7180,8 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \RG_UMIDADE|saida_umidade\(2),
-	datac => \RG_TEMPERATURA|saida_temperatura\(2),
+	datab => \RG_TEMPERATURA|saida_temperatura\(2),
+	datac => \RG_UMIDADE|saida_umidade\(2),
 	datad => \SW2~combout\,
 	combout => \M_SENSORES|escolha2[2]~11_combout\);
 
@@ -7204,7 +7204,7 @@ PORT MAP (
 	combout => \COMP_SENSORES|Equal0~0_combout\);
 
 -- Location: PIN_C23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_TEMP[10]~I\ : cycloneii_io
+\DT_UMID[10]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
 	input_async_reset => "none",
@@ -7226,25 +7226,25 @@ PORT MAP (
 	devpor => ww_devpor,
 	devoe => ww_devoe,
 	oe => GND,
-	padio => ww_DT_TEMP(10),
-	combout => \DT_TEMP~combout\(10));
+	padio => ww_DT_UMID(10),
+	combout => \DT_UMID~combout\(10));
 
 -- Location: LCFF_X64_Y32_N25
-\RG_TEMPERATURA|saida_temperatura[10]\ : cycloneii_lcell_ff
+\RG_UMIDADE|saida_umidade[10]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_TEMP~combout\(10),
-	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
+	sdata => \DT_UMID~combout\(10),
+	aclr => \CL_UMIDADE~clkctrl_outclk\,
 	sload => VCC,
-	ena => \LD_TEMPERATURA~combout\,
+	ena => \LD_UMIDADE~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \RG_TEMPERATURA|saida_temperatura\(10));
+	regout => \RG_UMIDADE|saida_umidade\(10));
 
 -- Location: LCCOMB_X64_Y32_N24
 \M_SENSORES|escolha2[10]~5\ : cycloneii_lcell_comb
 -- Equation(s):
--- \M_SENSORES|escolha2[10]~5_combout\ = (\SW2~combout\ & ((\RG_TEMPERATURA|saida_temperatura\(10)))) # (!\SW2~combout\ & (\RG_UMIDADE|saida_umidade\(10)))
+-- \M_SENSORES|escolha2[10]~5_combout\ = (\SW2~combout\ & ((\RG_UMIDADE|saida_umidade\(10)))) # (!\SW2~combout\ & (\RG_TEMPERATURA|saida_temperatura\(10)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7252,8 +7252,8 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \RG_UMIDADE|saida_umidade\(10),
-	datac => \RG_TEMPERATURA|saida_temperatura\(10),
+	dataa => \RG_TEMPERATURA|saida_temperatura\(10),
+	datac => \RG_UMIDADE|saida_umidade\(10),
 	datad => \SW2~combout\,
 	combout => \M_SENSORES|escolha2[10]~5_combout\);
 
@@ -7293,7 +7293,7 @@ PORT MAP (
 	combout => \COMP_SENSORES|Equal0~5_combout\);
 
 -- Location: PIN_J20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\DT_TEMP[11]~I\ : cycloneii_io
+\DT_UMID[11]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
 	input_async_reset => "none",
@@ -7315,25 +7315,25 @@ PORT MAP (
 	devpor => ww_devpor,
 	devoe => ww_devoe,
 	oe => GND,
-	padio => ww_DT_TEMP(11),
-	combout => \DT_TEMP~combout\(11));
+	padio => ww_DT_UMID(11),
+	combout => \DT_UMID~combout\(11));
 
 -- Location: LCFF_X64_Y30_N21
-\RG_TEMPERATURA|saida_temperatura[11]\ : cycloneii_lcell_ff
+\RG_UMIDADE|saida_umidade[11]\ : cycloneii_lcell_ff
 PORT MAP (
 	clk => \clock~clkctrl_outclk\,
-	sdata => \DT_TEMP~combout\(11),
-	aclr => \CL_TEMPERATURA~clkctrl_outclk\,
+	sdata => \DT_UMID~combout\(11),
+	aclr => \CL_UMIDADE~clkctrl_outclk\,
 	sload => VCC,
-	ena => \LD_TEMPERATURA~combout\,
+	ena => \LD_UMIDADE~combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	regout => \RG_TEMPERATURA|saida_temperatura\(11));
+	regout => \RG_UMIDADE|saida_umidade\(11));
 
 -- Location: LCCOMB_X64_Y30_N20
 \M_SENSORES|escolha2[11]~4\ : cycloneii_lcell_comb
 -- Equation(s):
--- \M_SENSORES|escolha2[11]~4_combout\ = (\SW2~combout\ & ((\RG_TEMPERATURA|saida_temperatura\(11)))) # (!\SW2~combout\ & (\RG_UMIDADE|saida_umidade\(11)))
+-- \M_SENSORES|escolha2[11]~4_combout\ = (\SW2~combout\ & ((\RG_UMIDADE|saida_umidade\(11)))) # (!\SW2~combout\ & (\RG_TEMPERATURA|saida_temperatura\(11)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -7341,8 +7341,8 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \RG_UMIDADE|saida_umidade\(11),
-	datac => \RG_TEMPERATURA|saida_temperatura\(11),
+	dataa => \RG_TEMPERATURA|saida_temperatura\(11),
+	datac => \RG_UMIDADE|saida_umidade\(11),
 	datad => \SW2~combout\,
 	combout => \M_SENSORES|escolha2[11]~4_combout\);
 

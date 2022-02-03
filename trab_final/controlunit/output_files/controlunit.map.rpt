@@ -1,5 +1,5 @@
-Analysis & Elaboration report for controlunit
-Mon Jan 31 11:43:50 2022
+Analysis & Synthesis report for controlunit
+Thu Feb 03 01:09:12 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -7,11 +7,18 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |controlunit
-  5. Analysis & Elaboration Settings
-  6. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |controlunit|this_state
+  9. User-Specified and Inferred Latches
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |controlunit
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -35,52 +42,31 @@ applicable agreement for further details.
 
 
 +--------------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                       ;
+; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Mon Jan 31 11:43:50 2022           ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 03 01:09:12 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; controlunit                                     ;
 ; Top-level Entity Name              ; controlunit                                     ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                       ;
-; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                       ;
-; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                       ;
-; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 134                                             ;
+;     Total combinational functions  ; 125                                             ;
+;     Dedicated logic registers      ; 21                                              ;
+; Total registers                    ; 21                                              ;
+; Total pins                         ; 129                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total GXB Receiver Channel PCS     ; 0                                               ;
+; Total GXB Receiver Channel PMA     ; 0                                               ;
+; Total GXB Transmitter Channel PCS  ; 0                                               ;
+; Total GXB Transmitter Channel PMA  ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 8      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
-
-
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |controlunit ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; data_width16   ; 15    ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                      ;
+; Analysis & Synthesis Settings                                                                                        ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
@@ -165,82 +151,364 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                 ; Library ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------------------+---------+
+; controlunit.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/controlunit/controlunit.vhd ;         ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 129              ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; this_state.S9    ;
+; Maximum fan-out          ; 52               ;
+; Total fan-out            ; 634              ;
+; Average fan-out          ; 1.57             ;
++--------------------------+------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+; |controlunit               ; 125 (125)         ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 129  ; 0            ; |controlunit        ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |controlunit|this_state                                                                                                                                                                                                                                                                                                                                   ;
++----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+; Name           ; this_state.S20 ; this_state.S19 ; this_state.S18 ; this_state.S17 ; this_state.S16 ; this_state.S15 ; this_state.S14 ; this_state.S13 ; this_state.S12 ; this_state.S11 ; this_state.S10 ; this_state.S9 ; this_state.S8 ; this_state.S7 ; this_state.S6 ; this_state.S5 ; this_state.S4 ; this_state.S3 ; this_state.S2 ; this_state.S1 ; this_state.S0 ;
++----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+; this_state.S0  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ;
+; this_state.S1  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 1             ;
+; this_state.S2  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 1             ;
+; this_state.S3  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 1             ;
+; this_state.S4  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S5  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S6  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S7  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S8  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S9  ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S10 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S11 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S12 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S13 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S14 ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S15 ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S16 ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S17 ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S18 ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S19 ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; this_state.S20 ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
++----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; LD_TEMPERATURA$latch                                ; WideOr11            ; yes                    ;
+; CL_TEMPERATURA$latch                                ; WideOr11            ; yes                    ;
+; LD_UMIDADE$latch                                    ; WideOr11            ; yes                    ;
+; CL_UMIDADE$latch                                    ; WideOr11            ; yes                    ;
+; LD_TEMPO$latch                                      ; WideOr11            ; yes                    ;
+; CL_TEMPO$latch                                      ; WideOr11            ; yes                    ;
+; LD_INTERVALO$latch                                  ; WideOr11            ; yes                    ;
+; CL_INTERVALO$latch                                  ; WideOr11            ; yes                    ;
+; SW1$latch                                           ; WideOr11            ; yes                    ;
+; SW2$latch                                           ; SW2                 ; yes                    ;
+; EN_CONTADOR$latch                                   ; WideOr11            ; yes                    ;
+; RST_CONTADOR$latch                                  ; WideOr11            ; yes                    ;
+; EN_ROM$latch                                        ; WideOr11            ; yes                    ;
+; ADD[0]$latch                                        ; WideOr25            ; yes                    ;
+; ADD[1]$latch                                        ; WideOr25            ; yes                    ;
+; ADD[2]$latch                                        ; WideOr25            ; yes                    ;
+; ADD[3]$latch                                        ; WideOr25            ; yes                    ;
+; DISP_TEMPO[0]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[1]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[2]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[3]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[4]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[5]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[6]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[7]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[8]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[9]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[10]$latch                                ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[11]$latch                                ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[12]$latch                                ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[13]$latch                                ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[14]$latch                                ; this_state.S9       ; yes                    ;
+; DISP_TEMPO[15]$latch                                ; this_state.S9       ; yes                    ;
+; DISP_TEMP[0]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_TEMP[1]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_TEMP[2]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_TEMP[3]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_TEMP[4]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_TEMP[5]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_TEMP[6]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_TEMP[7]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_TEMP[8]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_TEMP[9]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_TEMP[10]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMP[11]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMP[12]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMP[13]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMP[14]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_TEMP[15]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_UMID[0]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_UMID[1]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_UMID[2]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_UMID[3]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_UMID[4]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_UMID[5]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_UMID[6]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_UMID[7]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_UMID[8]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_UMID[9]$latch                                  ; this_state.S9       ; yes                    ;
+; DISP_UMID[10]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_UMID[11]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_UMID[12]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_UMID[13]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_UMID[14]$latch                                 ; this_state.S9       ; yes                    ;
+; DISP_UMID[15]$latch                                 ; this_state.S9       ; yes                    ;
+; ALARME$latch                                        ; WideOr11            ; yes                    ;
+; IRRIGA$latch                                        ; WideOr11            ; yes                    ;
+; ERROR$latch                                         ; WideOr11            ; yes                    ;
+; ESTADO[0]$latch                                     ; this_state.S20      ; yes                    ;
+; ESTADO[1]$latch                                     ; this_state.S20      ; yes                    ;
+; ESTADO[2]$latch                                     ; this_state.S20      ; yes                    ;
+; ESTADO[3]$latch                                     ; this_state.S20      ; yes                    ;
+; ESTADO[4]$latch                                     ; this_state.S20      ; yes                    ;
+; gt[6]                                               ; this_state.S18      ; yes                    ;
+; lt[1]                                               ; this_state.S13      ; yes                    ;
+; lt[0]                                               ; this_state.S12      ; yes                    ;
+; gt[3]                                               ; this_state.S15      ; yes                    ;
+; lt[4]                                               ; this_state.S16      ; yes                    ;
+; lt[5]                                               ; this_state.S17      ; yes                    ;
+; gt[5]                                               ; this_state.S17      ; yes                    ;
+; gt[2]                                               ; this_state.S14      ; yes                    ;
+; lt[3]                                               ; this_state.S15      ; yes                    ;
+; gt[0]                                               ; this_state.S12      ; yes                    ;
+; lt[2]                                               ; this_state.S14      ; yes                    ;
+; Number of user-specified and inferred latches = 84  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 21    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |controlunit ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; data_width16   ; 15    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Elaboration
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jan 31 11:43:49 2022
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off controlunit -c controlunit --analysis_and_elaboration
+    Info: Processing started: Thu Feb 03 01:09:10 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off controlunit -c controlunit
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (12125): Using design file controlunit.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: controlunit-behaviour
     Info (12023): Found entity 1: controlunit
 Info (12127): Elaborating entity "controlunit" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at controlunit.vhd(43): used explicit default value for signal "DISP_TEMP" because signal was never assigned a value
-Warning (10036): Verilog HDL or VHDL warning at controlunit.vhd(60): object "eq" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(203): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(203): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(206): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(206): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(209): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(209): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(212): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(212): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(215): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(215): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(218): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at controlunit.vhd(83): inferring latch(es) for signal or variable "gt", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlunit.vhd(83): inferring latch(es) for signal or variable "lt", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlunit.vhd(83): inferring latch(es) for signal or variable "DISP_TEMPO", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlunit.vhd(83): inferring latch(es) for signal or variable "DISP_UMID", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "DISP_UMID[0]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[1]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[2]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[3]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[4]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[5]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[6]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[7]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[8]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[9]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[10]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[11]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[12]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[13]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[14]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_UMID[15]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[0]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[1]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[2]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[3]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[4]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[5]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[6]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[7]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[8]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[9]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[10]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[11]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[12]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[13]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[14]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMPO[15]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "lt[0]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "lt[1]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "lt[2]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "lt[3]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "lt[4]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "lt[5]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "gt[2]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "gt[3]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "gt[5]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "gt[6]" at controlunit.vhd(83)
-Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 19 warnings
+Warning (10036): Verilog HDL or VHDL warning at controlunit.vhd(57): object "eq" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at controlunit.vhd(84): object "cont" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(482): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(482): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(484): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(484): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(486): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(486): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(488): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(488): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(490): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(490): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(492): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(492): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "ESTADO", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "LD_TEMPERATURA", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "LD_UMIDADE", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "LD_TEMPO", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "LD_INTERVALO", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "CL_TEMPERATURA", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "CL_UMIDADE", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "CL_TEMPO", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "CL_INTERVALO", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "SW1", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "SW2", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "EN_CONTADOR", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "EN_ROM", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "RST_CONTADOR", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "ALARME", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "IRRIGA", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "ERROR", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "ADD", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "DISP_TEMPO", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "DISP_UMID", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "DISP_TEMP", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "gt", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "lt", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "lt[0]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "lt[1]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "lt[2]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "lt[3]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "lt[4]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "lt[5]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "gt[0]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "gt[2]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "gt[3]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "gt[5]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "gt[6]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[0]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[1]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[2]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[3]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[4]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[5]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[6]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[7]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[8]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[9]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[10]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[11]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[12]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[13]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[14]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[15]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[0]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[1]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[2]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[3]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[4]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[5]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[6]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[7]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[8]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[9]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[10]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[11]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[12]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[13]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[14]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[15]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[0]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[1]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[2]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[3]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[4]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[5]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[6]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[7]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[8]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[9]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[10]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[11]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[12]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[13]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[14]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[15]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ADD[0]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ADD[1]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ADD[2]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ADD[3]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ERROR" at controlunit.vhd(82)
+Info (10041): Inferred latch for "IRRIGA" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ALARME" at controlunit.vhd(82)
+Info (10041): Inferred latch for "RST_CONTADOR" at controlunit.vhd(82)
+Info (10041): Inferred latch for "EN_ROM" at controlunit.vhd(82)
+Info (10041): Inferred latch for "EN_CONTADOR" at controlunit.vhd(82)
+Info (10041): Inferred latch for "SW2" at controlunit.vhd(82)
+Info (10041): Inferred latch for "SW1" at controlunit.vhd(82)
+Info (10041): Inferred latch for "CL_INTERVALO" at controlunit.vhd(82)
+Info (10041): Inferred latch for "CL_TEMPO" at controlunit.vhd(82)
+Info (10041): Inferred latch for "CL_UMIDADE" at controlunit.vhd(82)
+Info (10041): Inferred latch for "CL_TEMPERATURA" at controlunit.vhd(82)
+Info (10041): Inferred latch for "LD_INTERVALO" at controlunit.vhd(82)
+Info (10041): Inferred latch for "LD_TEMPO" at controlunit.vhd(82)
+Info (10041): Inferred latch for "LD_UMIDADE" at controlunit.vhd(82)
+Info (10041): Inferred latch for "LD_TEMPERATURA" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ESTADO[0]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ESTADO[1]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ESTADO[2]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ESTADO[3]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ESTADO[4]" at controlunit.vhd(82)
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "LD_UMIDADE$latch" merged with LATCH primitive "LD_TEMPERATURA$latch"
+    Info (13026): Duplicate LATCH primitive "CL_UMIDADE$latch" merged with LATCH primitive "CL_TEMPERATURA$latch"
+    Info (13026): Duplicate LATCH primitive "CL_TEMPO$latch" merged with LATCH primitive "CL_TEMPERATURA$latch"
+    Info (13026): Duplicate LATCH primitive "CL_INTERVALO$latch" merged with LATCH primitive "CL_TEMPERATURA$latch"
+    Info (13026): Duplicate LATCH primitive "IRRIGA$latch" merged with LATCH primitive "EN_CONTADOR$latch"
+Warning (13012): Latch CL_TEMPERATURA$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal this_state.S12
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "EQ_TEMPORAL"
+    Warning (15610): No output dependent on input pin "EQ_SENSORES"
+Info (21057): Implemented 263 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 56 input pins
+    Info (21059): Implemented 73 output pins
+    Info (21061): Implemented 134 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 44 warnings
     Info: Peak virtual memory: 4672 megabytes
-    Info: Processing ended: Mon Jan 31 11:43:50 2022
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Thu Feb 03 01:09:12 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

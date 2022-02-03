@@ -1,5 +1,5 @@
-Analysis & Synthesis report for processor
-Mon Jan 31 13:07:50 2022
+Analysis & Elaboration report for processor
+Thu Feb 03 00:17:55 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -7,28 +7,18 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |processor|controlunit:CONTROL|this_state
-  9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |processor
- 13. Parameter Settings for User Entity Instance: controlunit:CONTROL
- 14. Parameter Settings for User Entity Instance: datapath:DATA
- 15. Parameter Settings for User Entity Instance: datapath:DATA|reg_umidade:RG_UMIDADE
- 16. Parameter Settings for User Entity Instance: datapath:DATA|reg_temperatura:RG_TEMPERATURA
- 17. Parameter Settings for User Entity Instance: datapath:DATA|reg_tempo:RG_TEMPO
- 18. Parameter Settings for User Entity Instance: datapath:DATA|reg_intervalo:RG_INTERVALO
- 19. Parameter Settings for User Entity Instance: datapath:DATA|contador:CNT_T
- 20. Port Connectivity Checks: "datapath:DATA|comparador_sensores:COMP_SENSORES"
- 21. Port Connectivity Checks: "datapath:DATA|comparador_temporal:COMP_TEMPORAL"
- 22. Elapsed Time Per Partition
- 23. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |processor
+  5. Parameter Settings for User Entity Instance: controlunit:CONTROL
+  6. Parameter Settings for User Entity Instance: datapath:DATA
+  7. Parameter Settings for User Entity Instance: datapath:DATA|reg_umidade:RG_UMIDADE
+  8. Parameter Settings for User Entity Instance: datapath:DATA|reg_temperatura:RG_TEMPERATURA
+  9. Parameter Settings for User Entity Instance: datapath:DATA|reg_tempo:RG_TEMPO
+ 10. Parameter Settings for User Entity Instance: datapath:DATA|reg_intervalo:RG_INTERVALO
+ 11. Parameter Settings for User Entity Instance: datapath:DATA|contador:CNT_T
+ 12. Analysis & Elaboration Settings
+ 13. Analysis & Elaboration Messages
 
 
 
@@ -52,31 +42,123 @@ applicable agreement for further details.
 
 
 +--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
+; Analysis & Elaboration Summary                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jan 31 13:07:50 2022           ;
+; Analysis & Elaboration Status      ; Successful - Thu Feb 03 00:17:55 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; processor                                       ;
 ; Top-level Entity Name              ; processor                                       ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 101                                             ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total GXB Receiver Channel PCS     ; 0                                               ;
-; Total GXB Receiver Channel PMA     ; 0                                               ;
-; Total GXB Transmitter Channel PCS  ; 0                                               ;
-; Total GXB Transmitter Channel PMA  ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                       ;
+; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                       ;
+; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                       ;
+; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
 +------------------------------------+-------------------------------------------------+
 
 
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |processor ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; data_width16   ; 15    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: controlunit:CONTROL ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; data_width16   ; 15    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DATA ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; data_width16   ; 15    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DATA|reg_umidade:RG_UMIDADE ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DATA|reg_temperatura:RG_TEMPERATURA ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DATA|reg_tempo:RG_TEMPO ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DATA|reg_intervalo:RG_INTERVALO ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:DATA|contador:CNT_T ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; MIN_COUNT      ; 0     ; Signed Integer                                   ;
+; MAX_COUNT      ; 65535 ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
+; Analysis & Elaboration Settings                                                                                      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
@@ -161,319 +243,144 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 8      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                       ; Library ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------------------------+---------+
-; processor.vhd                    ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/processor/processor.vhd           ;         ;
-; controlunit.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/processor/controlunit.vhd         ;         ;
-; datapath.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/processor/datapath.vhd            ;         ;
-; comparador_temporal.vhd          ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/processor/comparador_temporal.vhd ;         ;
-; comparador_sensores.vhd          ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/processor/comparador_sensores.vhd ;         ;
-; reg_umidade.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/processor/reg_umidade.vhd         ;         ;
-; reg_temperatura.vhd              ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/processor/reg_temperatura.vhd     ;         ;
-; reg_tempo.vhd                    ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/processor/reg_tempo.vhd           ;         ;
-; reg_intervalo.vhd                ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/processor/reg_intervalo.vhd       ;         ;
-; mux_temporal.vhd                 ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/processor/mux_temporal.vhd        ;         ;
-; mux_sensores.vhd                 ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/processor/mux_sensores.vhd        ;         ;
-; contador.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/processor/contador.vhd            ;         ;
-; rom.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/dmroh/Documents/ere_ufmg/quar_semestre/labsd/trab_final/processor/rom.vhd                 ;         ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------------------------+---------+
-
-
-+------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary    ;
-+--------------------------+---------------------+
-; Resource                 ; Usage               ;
-+--------------------------+---------------------+
-; I/O pins                 ; 101                 ;
-; DSP block 9-bit elements ; 0                   ;
-; Maximum fan-out node     ; DT_UMID_P[0]~output ;
-; Maximum fan-out          ; 1                   ;
-; Total fan-out            ; 149                 ;
-; Average fan-out          ; 0.60                ;
-+--------------------------+---------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |processor                 ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 101  ; 0            ; |processor          ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |processor|controlunit:CONTROL|this_state                                                                                                                                                        ;
-+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
-; Name           ; this_state.S11 ; this_state.S10 ; this_state.S9 ; this_state.S8 ; this_state.S7 ; this_state.S6 ; this_state.S5 ; this_state.S4 ; this_state.S3 ; this_state.S2 ; this_state.S1 ; this_state.S0 ;
-+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
-; this_state.S0  ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ;
-; this_state.S1  ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 1             ;
-; this_state.S2  ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 1             ;
-; this_state.S3  ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 1             ;
-; this_state.S4  ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 1             ;
-; this_state.S5  ; 0              ; 0              ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 1             ;
-; this_state.S6  ; 0              ; 0              ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
-; this_state.S7  ; 0              ; 0              ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
-; this_state.S8  ; 0              ; 0              ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
-; this_state.S9  ; 0              ; 0              ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
-; this_state.S10 ; 0              ; 1              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
-; this_state.S11 ; 1              ; 0              ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
-+----------------+----------------+----------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
-
-
-+-----------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                      ;
-+----------------------------------------+------------------------------------------------+
-; Register name                          ; Reason for Removal                             ;
-+----------------------------------------+------------------------------------------------+
-; controlunit:CONTROL|this_state.S3      ; Stuck at GND due to stuck port data_in         ;
-; controlunit:CONTROL|this_state.S4      ; Stuck at GND due to stuck port data_in         ;
-; controlunit:CONTROL|this_state.S5      ; Stuck at GND due to stuck port data_in         ;
-; controlunit:CONTROL|this_state.S6      ; Stuck at GND due to stuck port data_in         ;
-; controlunit:CONTROL|this_state.S7      ; Stuck at GND due to stuck port data_in         ;
-; controlunit:CONTROL|this_state.S8      ; Stuck at GND due to stuck port data_in         ;
-; controlunit:CONTROL|this_state.S0      ; Lost fanout                                    ;
-; controlunit:CONTROL|this_state.S1      ; Lost fanout                                    ;
-; controlunit:CONTROL|this_state.S2      ; Lost fanout                                    ;
-; controlunit:CONTROL|this_state.S9      ; Stuck at GND due to stuck port data_in         ;
-; controlunit:CONTROL|this_state.S11     ; Merged with controlunit:CONTROL|this_state.S10 ;
-; controlunit:CONTROL|this_state.S10     ; Stuck at GND due to stuck port data_in         ;
-; Total Number of Removed Registers = 12 ;                                                ;
-+----------------------------------------+------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                           ;
-+-----------------------------------+---------------------------+-----------------------------------------------------------------------+
-; Register name                     ; Reason for Removal        ; Registers Removed due to This Register                                ;
-+-----------------------------------+---------------------------+-----------------------------------------------------------------------+
-; controlunit:CONTROL|this_state.S4 ; Stuck at GND              ; controlunit:CONTROL|this_state.S9, controlunit:CONTROL|this_state.S10 ;
-;                                   ; due to stuck port data_in ;                                                                       ;
-; controlunit:CONTROL|this_state.S3 ; Stuck at GND              ; controlunit:CONTROL|this_state.S1                                     ;
-;                                   ; due to stuck port data_in ;                                                                       ;
-+-----------------------------------+---------------------------+-----------------------------------------------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |processor ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; data_width16   ; 15    ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: controlunit:CONTROL ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; data_width16   ; 15    ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: datapath:DATA ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; data_width16   ; 15    ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: datapath:DATA|reg_umidade:RG_UMIDADE ;
-+----------------+-------+----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                     ;
-+----------------+-------+----------------------------------------------------------+
-; N              ; 16    ; Signed Integer                                           ;
-+----------------+-------+----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: datapath:DATA|reg_temperatura:RG_TEMPERATURA ;
-+----------------+-------+------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                             ;
-+----------------+-------+------------------------------------------------------------------+
-; N              ; 16    ; Signed Integer                                                   ;
-+----------------+-------+------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: datapath:DATA|reg_tempo:RG_TEMPO ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; N              ; 16    ; Signed Integer                                       ;
-+----------------+-------+------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: datapath:DATA|reg_intervalo:RG_INTERVALO ;
-+----------------+-------+--------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                         ;
-+----------------+-------+--------------------------------------------------------------+
-; N              ; 16    ; Signed Integer                                               ;
-+----------------+-------+--------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: datapath:DATA|contador:CNT_T ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; MIN_COUNT      ; 0     ; Signed Integer                                   ;
-; MAX_COUNT      ; 65535 ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:DATA|comparador_sensores:COMP_SENSORES"                                              ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; maior_sensores ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; igual_sensores ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; menor_sensores ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:DATA|comparador_temporal:COMP_TEMPORAL"                                              ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; maior_temporal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; igual_temporal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; menor_temporal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Elaboration
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jan 31 13:07:49 2022
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
+    Info: Processing started: Thu Feb 03 00:17:53 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (12125): Using design file processor.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: processor-behaviour
     Info (12023): Found entity 1: processor
 Info (12127): Elaborating entity "processor" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at processor.vhd(32): used implicit default value for signal "GT_TEMPORAL_P1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at processor.vhd(32): used implicit default value for signal "LT_TEMPORAL_P1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at processor.vhd(32): used implicit default value for signal "EQ_TEMPORAL_P1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (12125): Using design file controlunit.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: controlunit-behaviour
     Info (12023): Found entity 1: controlunit
 Info (12128): Elaborating entity "controlunit" for hierarchy "controlunit:CONTROL"
-Warning (10036): Verilog HDL or VHDL warning at controlunit.vhd(60): object "eq" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(210): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(210): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(213): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(213): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(216): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(216): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(219): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(219): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(222): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(222): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at controlunit.vhd(225): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at controlunit.vhd(83): inferring latch(es) for signal or variable "DISP_TEMP", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlunit.vhd(83): inferring latch(es) for signal or variable "gt", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at controlunit.vhd(83): inferring latch(es) for signal or variable "lt", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "lt[0]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "lt[1]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "lt[2]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "lt[3]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "lt[4]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "lt[5]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "gt[2]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "gt[3]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "gt[5]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "gt[6]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[0]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[1]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[2]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[3]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[4]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[5]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[6]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[7]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[8]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[9]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[10]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[11]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[12]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[13]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[14]" at controlunit.vhd(83)
-Info (10041): Inferred latch for "DISP_TEMP[15]" at controlunit.vhd(83)
+Warning (10036): Verilog HDL or VHDL warning at controlunit.vhd(57): object "eq" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at controlunit.vhd(84): object "cont" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(185): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(185): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(187): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(187): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(189): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(189): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(191): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(191): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(193): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(193): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(195): signal "lt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at controlunit.vhd(195): signal "gt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "LD_TEMPERATURA", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "LD_UMIDADE", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "LD_TEMPO", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "LD_INTERVALO", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "CL_TEMPERATURA", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "CL_UMIDADE", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "CL_TEMPO", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "CL_INTERVALO", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "SW1", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "EN_CONTADOR", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "EN_ROM", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "RST_CONTADOR", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "ALARME", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "IRRIGA", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "ERROR", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "ADD", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "DISP_TEMPO", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "DISP_UMID", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "DISP_TEMP", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "gt", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at controlunit.vhd(82): inferring latch(es) for signal or variable "lt", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "lt[0]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "lt[1]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "lt[2]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "lt[3]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "lt[4]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "lt[5]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "gt[0]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "gt[2]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "gt[3]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "gt[5]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "gt[6]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[0]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[1]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[2]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[3]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[4]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[5]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[6]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[7]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[8]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[9]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[10]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[11]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[12]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[13]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[14]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMP[15]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[0]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[1]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[2]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[3]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[4]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[5]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[6]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[7]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[8]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[9]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[10]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[11]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[12]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[13]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[14]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_UMID[15]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[0]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[1]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[2]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[3]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[4]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[5]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[6]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[7]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[8]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[9]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[10]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[11]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[12]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[13]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[14]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "DISP_TEMPO[15]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ADD[0]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ADD[1]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ADD[2]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ADD[3]" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ERROR" at controlunit.vhd(82)
+Info (10041): Inferred latch for "IRRIGA" at controlunit.vhd(82)
+Info (10041): Inferred latch for "ALARME" at controlunit.vhd(82)
+Info (10041): Inferred latch for "RST_CONTADOR" at controlunit.vhd(82)
+Info (10041): Inferred latch for "EN_ROM" at controlunit.vhd(82)
+Info (10041): Inferred latch for "EN_CONTADOR" at controlunit.vhd(82)
+Info (10041): Inferred latch for "SW1" at controlunit.vhd(82)
+Info (10041): Inferred latch for "CL_INTERVALO" at controlunit.vhd(82)
+Info (10041): Inferred latch for "CL_TEMPO" at controlunit.vhd(82)
+Info (10041): Inferred latch for "CL_UMIDADE" at controlunit.vhd(82)
+Info (10041): Inferred latch for "CL_TEMPERATURA" at controlunit.vhd(82)
+Info (10041): Inferred latch for "LD_INTERVALO" at controlunit.vhd(82)
+Info (10041): Inferred latch for "LD_TEMPO" at controlunit.vhd(82)
+Info (10041): Inferred latch for "LD_UMIDADE" at controlunit.vhd(82)
+Info (10041): Inferred latch for "LD_TEMPERATURA" at controlunit.vhd(82)
 Warning (12125): Using design file datapath.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: datapath-behaviour
     Info (12023): Found entity 1: datapath
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:DATA"
-Warning (10541): VHDL Signal Declaration warning at datapath.vhd(33): used implicit default value for signal "GT_TEMPORAL" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at datapath.vhd(33): used implicit default value for signal "LT_TEMPORAL" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at datapath.vhd(33): used implicit default value for signal "EQ_TEMPORAL" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at datapath.vhd(33): used implicit default value for signal "GT_SENSORES" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at datapath.vhd(33): used implicit default value for signal "LT_SENSORES" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at datapath.vhd(33): used implicit default value for signal "EQ_SENSORES" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (12125): Using design file comparador_temporal.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: comparador_temporal-comportamento
-    Info (12023): Found entity 1: comparador_temporal
-Info (12128): Elaborating entity "comparador_temporal" for hierarchy "datapath:DATA|comparador_temporal:COMP_TEMPORAL"
-Warning (12125): Using design file comparador_sensores.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: comparador_sensores-comportamento
-    Info (12023): Found entity 1: comparador_sensores
-Info (12128): Elaborating entity "comparador_sensores" for hierarchy "datapath:DATA|comparador_sensores:COMP_SENSORES"
+Warning (10540): VHDL Signal Declaration warning at datapath.vhd(140): used explicit default value for signal "x" because signal was never assigned a value
 Warning (12125): Using design file reg_umidade.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: reg_umidade-reg
     Info (12023): Found entity 1: reg_umidade
@@ -498,6 +405,10 @@ Warning (12125): Using design file reg_intervalo.vhd, which is not specified as 
 Info (12128): Elaborating entity "reg_intervalo" for hierarchy "datapath:DATA|reg_intervalo:RG_INTERVALO"
 Warning (10492): VHDL Process Statement warning at reg_intervalo.vhd(18): signal "reg_intervalo_ld" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at reg_intervalo.vhd(21): signal "reg_intervalo_cl" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (12125): Using design file rom.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: rom-behavioral
+    Info (12023): Found entity 1: rom
+Info (12128): Elaborating entity "rom" for hierarchy "datapath:DATA|rom:RM"
 Warning (12125): Using design file mux_temporal.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: mux_temporal-comportamento
     Info (12023): Found entity 1: mux_temporal
@@ -506,129 +417,22 @@ Warning (12125): Using design file mux_sensores.vhd, which is not specified as a
     Info (12022): Found design unit 1: mux_sensores-comportamento
     Info (12023): Found entity 1: mux_sensores
 Info (12128): Elaborating entity "mux_sensores" for hierarchy "datapath:DATA|mux_sensores:M_SENSORES"
+Warning (12125): Using design file comparador_temporal.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: comparador_temporal-comportamento
+    Info (12023): Found entity 1: comparador_temporal
+Info (12128): Elaborating entity "comparador_temporal" for hierarchy "datapath:DATA|comparador_temporal:COMP_TEMPORAL"
+Warning (12125): Using design file comparador_sensores.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: comparador_sensores-comportamento
+    Info (12023): Found entity 1: comparador_sensores
+Info (12128): Elaborating entity "comparador_sensores" for hierarchy "datapath:DATA|comparador_sensores:COMP_SENSORES"
 Warning (12125): Using design file contador.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: contador-comportamento
     Info (12023): Found entity 1: contador
 Info (12128): Elaborating entity "contador" for hierarchy "datapath:DATA|contador:CNT_T"
-Warning (12125): Using design file rom.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: rom-behavioral
-    Info (12023): Found entity 1: rom
-Info (12128): Elaborating entity "rom" for hierarchy "datapath:DATA|rom:RM"
-Warning (13039): The following bidir pins have no drivers
-    Warning (13040): Bidir "DT_UMID_P[0]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[1]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[2]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[3]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[4]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[5]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[6]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[7]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[8]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[9]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[10]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[11]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[12]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[13]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[14]" has no driver
-    Warning (13040): Bidir "DT_UMID_P[15]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[0]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[1]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[2]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[3]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[4]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[5]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[6]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[7]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[8]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[9]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[10]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[11]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[12]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[13]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[14]" has no driver
-    Warning (13040): Bidir "DT_TEMP_P[15]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[0]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[1]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[2]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[3]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[4]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[5]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[6]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[7]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[8]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[9]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[10]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[11]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[12]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[13]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[14]" has no driver
-    Warning (13040): Bidir "DT_TEMPO_P[15]" has no driver
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "DISP_TEMPO_P[0]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[1]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[2]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[3]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[4]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[5]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[6]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[7]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[8]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[9]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[10]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[11]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[12]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[13]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[14]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMPO_P[15]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[0]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[1]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[2]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[3]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[4]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[5]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[6]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[7]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[8]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[9]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[10]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[11]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[12]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[13]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[14]" is stuck at GND
-    Warning (13410): Pin "DISP_TEMP_P[15]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[0]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[1]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[2]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[3]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[4]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[5]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[6]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[7]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[8]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[9]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[10]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[11]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[12]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[13]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[14]" is stuck at GND
-    Warning (13410): Pin "DISP_UMID_P[15]" is stuck at GND
-    Warning (13410): Pin "ALARME_P" is stuck at GND
-    Warning (13410): Pin "IRRIGA_P" is stuck at GND
-    Warning (13410): Pin "ERROR_P" is stuck at GND
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "E_P"
-    Warning (15610): No output dependent on input pin "CLOCK_P"
-Info (21057): Implemented 101 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 51 output pins
-    Info (21060): Implemented 48 bidirectional pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 147 warnings
-    Info: Peak virtual memory: 4683 megabytes
-    Info: Processing ended: Mon Jan 31 13:07:50 2022
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 61 warnings
+    Info: Peak virtual memory: 4672 megabytes
+    Info: Processing ended: Thu Feb 03 00:17:55 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

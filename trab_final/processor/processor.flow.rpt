@@ -1,5 +1,5 @@
 Flow report for processor
-Mon Jan 31 13:08:05 2022
+Thu Feb 03 00:17:55 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,26 +40,24 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Jan 31 13:08:01 2022           ;
+; Flow Status                        ; Successful - Thu Feb 03 00:17:55 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; processor                                       ;
 ; Top-level Entity Name              ; processor                                       ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 0 / 21,280 ( 0 % )                              ;
-;     Total combinational functions  ; 0 / 21,280 ( 0 % )                              ;
-;     Dedicated logic registers      ; 0 / 21,280 ( 0 % )                              ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 101 / 167 ( 60 % )                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 774,144 ( 0 % )                             ;
-; Embedded Multiplier 9-bit elements ; 0 / 80 ( 0 % )                                  ;
-; Total GXB Receiver Channel PCS     ; 0 / 4 ( 0 % )                                   ;
-; Total GXB Receiver Channel PMA     ; 0 / 4 ( 0 % )                                   ;
-; Total GXB Transmitter Channel PCS  ; 0 / 4 ( 0 % )                                   ;
-; Total GXB Transmitter Channel PMA  ; 0 / 4 ( 0 % )                                   ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
-; Device                             ; EP4CGX22CF19C6                                  ;
-; Timing Models                      ; Final                                           ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                       ;
+; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                       ;
+; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                       ;
+; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -68,7 +66,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/31/2022 13:07:49 ;
+; Start date & time ; 02/03/2022 00:17:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; processor           ;
 +-------------------+---------------------+
@@ -79,45 +77,36 @@ applicable agreement for further details.
 +-------------------------------------+-------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                         ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+-------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 4459184785501.164364526923872 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 4459184785501.164385827348852 ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; 16764057                      ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING         ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                        ; --            ; --          ; Top        ;
 +-------------------------------------+-------------------------------+---------------+-------------+------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4683 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:07     ; 1.0                     ; 4947 MB             ; 00:00:06                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4598 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4614 MB             ; 00:00:03                           ;
-; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:12                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:02     ; 1.0                     ; 4672 MB             ; 00:00:02                           ;
+; Total                  ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; LAPTOP-EAJNMJA9  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; LAPTOP-EAJNMJA9  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; LAPTOP-EAJNMJA9  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; LAPTOP-EAJNMJA9  ; Windows 7 ; 6.2        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++-------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                     ;
++------------------------+------------------+-----------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++------------------------+------------------+-----------+------------+----------------+
+; Analysis & Elaboration ; LAPTOP-EAJNMJA9  ; Windows 7 ; 6.2        ; x86_64         ;
++------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
-quartus_fit --read_settings_files=off --write_settings_files=off processor -c processor
-quartus_asm --read_settings_files=off --write_settings_files=off processor -c processor
-quartus_sta processor -c processor
+quartus_map --read_settings_files=on --write_settings_files=off processor -c processor --analysis_and_elaboration
 
 
 

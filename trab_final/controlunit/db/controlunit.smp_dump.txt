@@ -1,15 +1,24 @@
 
 State Machine - |controlunit|this_state
-Name this_state.S11 this_state.S10 this_state.S9 this_state.S8 this_state.S7 this_state.S6 this_state.S5 this_state.S4 this_state.S3 this_state.S2 this_state.S1 this_state.S0 
-this_state.S0 0 0 0 0 0 0 0 0 0 0 0 0 
-this_state.S1 0 0 0 0 0 0 0 0 0 0 1 1 
-this_state.S2 0 0 0 0 0 0 0 0 0 1 0 1 
-this_state.S3 0 0 0 0 0 0 0 0 1 0 0 1 
-this_state.S4 0 0 0 0 0 0 0 1 0 0 0 1 
-this_state.S5 0 0 0 0 0 0 1 0 0 0 0 1 
-this_state.S6 0 0 0 0 0 1 0 0 0 0 0 1 
-this_state.S7 0 0 0 0 1 0 0 0 0 0 0 1 
-this_state.S8 0 0 0 1 0 0 0 0 0 0 0 1 
-this_state.S9 0 0 1 0 0 0 0 0 0 0 0 1 
-this_state.S10 0 1 0 0 0 0 0 0 0 0 0 1 
-this_state.S11 1 0 0 0 0 0 0 0 0 0 0 1 
+Name this_state.S20 this_state.S19 this_state.S18 this_state.S17 this_state.S16 this_state.S15 this_state.S14 this_state.S13 this_state.S12 this_state.S11 this_state.S10 this_state.S9 this_state.S8 this_state.S7 this_state.S6 this_state.S5 this_state.S4 this_state.S3 this_state.S2 this_state.S1 this_state.S0 
+this_state.S0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+this_state.S1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+this_state.S2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+this_state.S3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+this_state.S4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+this_state.S5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+this_state.S6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+this_state.S7 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+this_state.S8 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+this_state.S9 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+this_state.S10 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+this_state.S11 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+this_state.S12 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+this_state.S13 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+this_state.S14 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+this_state.S15 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+this_state.S16 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+this_state.S17 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+this_state.S18 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+this_state.S19 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+this_state.S20 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

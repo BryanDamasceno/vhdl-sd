@@ -24,7 +24,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "datapath")
-  (DATE "01/31/2022 18:42:20")
+  (DATE "02/02/2022 13:52:51")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition")
@@ -450,12 +450,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[13\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[13\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (999:999:999) (999:999:999))
         (PORT sdata (2987:2987:2987) (2987:2987:2987))
-        (PORT aclr (990:990:990) (990:990:990))
+        (PORT aclr (982:982:982) (982:982:982))
         (PORT ena (3233:3233:3233) (3233:3233:3233))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -468,12 +468,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[13\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[13\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (999:999:999) (999:999:999))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (1133:1133:1133) (1133:1133:1133))
+        (PORT aclr (1139:1139:1139) (1139:1139:1139))
         (PORT ena (3234:3234:3234) (3234:3234:3234))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -499,12 +499,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[11\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[11\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (999:999:999) (999:999:999))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (1133:1133:1133) (1133:1133:1133))
+        (PORT aclr (1139:1139:1139) (1139:1139:1139))
         (PORT ena (3234:3234:3234) (3234:3234:3234))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -517,12 +517,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[10\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[10\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1008:1008:1008) (1008:1008:1008))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (991:991:991) (991:991:991))
+        (PORT aclr (1145:1145:1145) (1145:1145:1145))
         (PORT ena (3296:3296:3296) (3296:3296:3296))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -535,12 +535,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[6\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[6\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (993:993:993) (993:993:993))
         (PORT sdata (3123:3123:3123) (3123:3123:3123))
-        (PORT aclr (1132:1132:1132) (1132:1132:1132))
+        (PORT aclr (1125:1125:1125) (1125:1125:1125))
         (PORT ena (3237:3237:3237) (3237:3237:3237))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -553,12 +553,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[6\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[6\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (993:993:993) (993:993:993))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (976:976:976) (976:976:976))
+        (PORT aclr (984:984:984) (984:984:984))
         (PORT ena (3230:3230:3230) (3230:3230:3230))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -584,12 +584,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[3\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[3\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1008:1008:1008) (1008:1008:1008))
         (PORT sdata (3030:3030:3030) (3030:3030:3030))
-        (PORT aclr (1145:1145:1145) (1145:1145:1145))
+        (PORT aclr (991:991:991) (991:991:991))
         (PORT ena (3205:3205:3205) (3205:3205:3205))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -602,12 +602,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[3\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[3\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1008:1008:1008) (1008:1008:1008))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (991:991:991) (991:991:991))
+        (PORT aclr (1145:1145:1145) (1145:1145:1145))
         (PORT ena (3296:3296:3296) (3296:3296:3296))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -633,12 +633,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[1\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[1\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (999:999:999) (999:999:999))
         (PORT sdata (3051:3051:3051) (3051:3051:3051))
-        (PORT aclr (990:990:990) (990:990:990))
+        (PORT aclr (982:982:982) (982:982:982))
         (PORT ena (3233:3233:3233) (3233:3233:3233))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -651,12 +651,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[1\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[1\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (999:999:999) (999:999:999))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (1133:1133:1133) (1133:1133:1133))
+        (PORT aclr (1139:1139:1139) (1139:1139:1139))
         (PORT ena (3234:3234:3234) (3234:3234:3234))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -682,12 +682,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[8\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[8\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (993:993:993) (993:993:993))
         (PORT sdata (3030:3030:3030) (3030:3030:3030))
-        (PORT aclr (976:976:976) (976:976:976))
+        (PORT aclr (984:984:984) (984:984:984))
         (PORT ena (3230:3230:3230) (3230:3230:3230))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -1094,7 +1094,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[13\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_UMID\[13\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (464:464:464) (464:464:464))
@@ -1103,7 +1103,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_UMID\[13\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[13\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (504:504:504) (504:504:504))
@@ -1112,7 +1112,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_UMID\[11\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[11\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (494:494:494) (494:494:494))
@@ -1121,19 +1121,10 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_UMID\[10\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[10\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (504:504:504) (504:504:504))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[6\]\~I\\.asynch_inst)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (484:484:484) (484:484:484))
       )
     )
   )
@@ -1142,16 +1133,16 @@
     (INSTANCE \\DT_UMID\[6\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (475:475:475) (475:475:475))
+        (IOPATH padio combout (484:484:484) (484:484:484))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[3\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[6\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (454:454:454) (454:454:454))
+        (IOPATH padio combout (475:475:475) (475:475:475))
       )
     )
   )
@@ -1160,16 +1151,16 @@
     (INSTANCE \\DT_UMID\[3\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (485:485:485) (485:485:485))
+        (IOPATH padio combout (454:454:454) (454:454:454))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[1\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[3\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (454:454:454) (454:454:454))
+        (IOPATH padio combout (485:485:485) (485:485:485))
       )
     )
   )
@@ -1178,13 +1169,22 @@
     (INSTANCE \\DT_UMID\[1\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
+        (IOPATH padio combout (454:454:454) (454:454:454))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_asynch_io")
+    (INSTANCE \\DT_TEMP\[1\]\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
         (IOPATH padio combout (494:494:494) (494:494:494))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_UMID\[8\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[8\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (484:484:484) (484:484:484))
@@ -1227,7 +1227,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[13\]\~feeder\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[13\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (2834:2834:2834) (2834:2834:2834))
@@ -1237,7 +1237,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[11\]\~feeder\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[11\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (2838:2838:2838) (2838:2838:2838))
@@ -1247,7 +1247,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[10\]\~feeder\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[10\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (2701:2701:2701) (2701:2701:2701))
@@ -1257,7 +1257,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[6\]\~feeder\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[6\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (3026:3026:3026) (3026:3026:3026))
@@ -1267,7 +1267,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[3\]\~feeder\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[3\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (2937:2937:2937) (2937:2937:2937))
@@ -1277,7 +1277,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[1\]\~feeder\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[1\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (2924:2924:2924) (2924:2924:2924))
@@ -4525,7 +4525,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_UMID\[15\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[15\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (484:484:484) (484:484:484))
@@ -4534,80 +4534,11 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[15\]\~feeder\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[15\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (2826:2826:2826) (2826:2826:2826))
         (IOPATH datad combout (59:59:59) (59:59:59))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\CL_UMIDADE\~I\\.asynch_inst)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (561:561:561) (561:561:561))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_clkctrl")
-    (INSTANCE \\CL_UMIDADE\~clkctrl\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT inclk[0] (71:71:71) (71:71:71))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_ena_reg")
-    (INSTANCE \\CL_UMIDADE\~clkctrl\\.extena0_reg)
-    (DELAY
-      (ABSOLUTE
-        (PORT d (142:142:142) (142:142:142))
-        (PORT clk (0:0:0) (0:0:0))
-        (IOPATH (posedge clk) q (127:127:127) (127:127:127))
-      )
-    )
-    (TIMINGCHECK
-      (SETUP d (posedge clk) (33:33:33))
-      (HOLD d (posedge clk) (56:56:56))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\LD_UMIDADE\~I\\.asynch_inst)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (484:484:484) (484:484:484))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[15\]\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (999:999:999) (999:999:999))
-        (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (1133:1133:1133) (1133:1133:1133))
-        (PORT ena (3234:3234:3234) (3234:3234:3234))
-        (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
-        (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD datain (posedge clk) (152:152:152))
-      (HOLD ena (posedge clk) (152:152:152))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[15\]\~I\\.asynch_inst)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (494:494:494) (494:494:494))
       )
     )
   )
@@ -4649,7 +4580,7 @@
     (INSTANCE \\LD_TEMPERATURA\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (454:454:454) (454:454:454))
+        (IOPATH padio combout (484:484:484) (484:484:484))
       )
     )
   )
@@ -4659,8 +4590,77 @@
     (DELAY
       (ABSOLUTE
         (PORT clk (999:999:999) (999:999:999))
+        (PORT datain (42:42:42) (42:42:42))
+        (PORT aclr (1139:1139:1139) (1139:1139:1139))
+        (PORT ena (3234:3234:3234) (3234:3234:3234))
+        (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
+        (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD datain (posedge clk) (152:152:152))
+      (HOLD ena (posedge clk) (152:152:152))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_asynch_io")
+    (INSTANCE \\DT_UMID\[15\]\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (494:494:494) (494:494:494))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_asynch_io")
+    (INSTANCE \\CL_UMIDADE\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (561:561:561) (561:561:561))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_clkctrl")
+    (INSTANCE \\CL_UMIDADE\~clkctrl\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT inclk[0] (71:71:71) (71:71:71))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_ena_reg")
+    (INSTANCE \\CL_UMIDADE\~clkctrl\\.extena0_reg)
+    (DELAY
+      (ABSOLUTE
+        (PORT d (142:142:142) (142:142:142))
+        (PORT clk (0:0:0) (0:0:0))
+        (IOPATH (posedge clk) q (127:127:127) (127:127:127))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP d (posedge clk) (33:33:33))
+      (HOLD d (posedge clk) (56:56:56))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_asynch_io")
+    (INSTANCE \\LD_UMIDADE\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (454:454:454) (454:454:454))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneii_lcell_ff")
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[15\]\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (999:999:999) (999:999:999))
         (PORT sdata (3032:3032:3032) (3032:3032:3032))
-        (PORT aclr (990:990:990) (990:990:990))
+        (PORT aclr (982:982:982) (982:982:982))
         (PORT ena (3233:3233:3233) (3233:3233:3233))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -4695,7 +4695,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_UMID\[14\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[14\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (504:504:504) (504:504:504))
@@ -4704,7 +4704,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[14\]\~feeder\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[14\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (2706:2706:2706) (2706:2706:2706))
@@ -4714,12 +4714,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[14\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[14\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1008:1008:1008) (1008:1008:1008))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (991:991:991) (991:991:991))
+        (PORT aclr (1145:1145:1145) (1145:1145:1145))
         (PORT ena (3296:3296:3296) (3296:3296:3296))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -4732,7 +4732,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[14\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_UMID\[14\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (504:504:504) (504:504:504))
@@ -4741,12 +4741,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[14\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[14\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1008:1008:1008) (1008:1008:1008))
         (PORT sdata (2882:2882:2882) (2882:2882:2882))
-        (PORT aclr (1145:1145:1145) (1145:1145:1145))
+        (PORT aclr (991:991:991) (991:991:991))
         (PORT ena (3205:3205:3205) (3205:3205:3205))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -4772,7 +4772,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_UMID\[12\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[12\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (474:474:474) (474:474:474))
@@ -4781,12 +4781,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[12\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[12\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (999:999:999) (999:999:999))
         (PORT sdata (3053:3053:3053) (3053:3053:3053))
-        (PORT aclr (1133:1133:1133) (1133:1133:1133))
+        (PORT aclr (1139:1139:1139) (1139:1139:1139))
         (PORT ena (3234:3234:3234) (3234:3234:3234))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -4799,7 +4799,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[12\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_UMID\[12\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (484:484:484) (484:484:484))
@@ -4808,12 +4808,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[12\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[12\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (999:999:999) (999:999:999))
         (PORT sdata (2899:2899:2899) (2899:2899:2899))
-        (PORT aclr (990:990:990) (990:990:990))
+        (PORT aclr (982:982:982) (982:982:982))
         (PORT ena (3233:3233:3233) (3233:3233:3233))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -4927,7 +4927,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[9\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_UMID\[9\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (474:474:474) (474:474:474))
@@ -4936,12 +4936,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[9\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[9\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (993:993:993) (993:993:993))
         (PORT sdata (2886:2886:2886) (2886:2886:2886))
-        (PORT aclr (1132:1132:1132) (1132:1132:1132))
+        (PORT aclr (1125:1125:1125) (1125:1125:1125))
         (PORT ena (3237:3237:3237) (3237:3237:3237))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -4954,7 +4954,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[8\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_UMID\[8\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (484:484:484) (484:484:484))
@@ -4963,12 +4963,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[8\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[8\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (993:993:993) (993:993:993))
         (PORT sdata (2897:2897:2897) (2897:2897:2897))
-        (PORT aclr (1132:1132:1132) (1132:1132:1132))
+        (PORT aclr (1125:1125:1125) (1125:1125:1125))
         (PORT ena (3237:3237:3237) (3237:3237:3237))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -4996,7 +4996,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_UMID\[9\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[9\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (474:474:474) (474:474:474))
@@ -5005,7 +5005,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[9\]\~feeder\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[9\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (2868:2868:2868) (2868:2868:2868))
@@ -5015,12 +5015,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[9\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[9\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (993:993:993) (993:993:993))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (976:976:976) (976:976:976))
+        (PORT aclr (984:984:984) (984:984:984))
         (PORT ena (3230:3230:3230) (3230:3230:3230))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -5137,7 +5137,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_UMID\[0\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[0\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (454:454:454) (454:454:454))
@@ -5146,7 +5146,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[0\]\~feeder\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[0\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (2882:2882:2882) (2882:2882:2882))
@@ -5156,12 +5156,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[0\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[0\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (999:999:999) (999:999:999))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (1133:1133:1133) (1133:1133:1133))
+        (PORT aclr (1139:1139:1139) (1139:1139:1139))
         (PORT ena (3234:3234:3234) (3234:3234:3234))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -5174,7 +5174,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[0\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_UMID\[0\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (454:454:454) (454:454:454))
@@ -5183,12 +5183,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[0\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[0\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (999:999:999) (999:999:999))
         (PORT sdata (3126:3126:3126) (3126:3126:3126))
-        (PORT aclr (990:990:990) (990:990:990))
+        (PORT aclr (982:982:982) (982:982:982))
         (PORT ena (3233:3233:3233) (3233:3233:3233))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -5228,7 +5228,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_UMID\[4\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[4\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (475:475:475) (475:475:475))
@@ -5237,7 +5237,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[4\]\~feeder\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[4\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (2845:2845:2845) (2845:2845:2845))
@@ -5247,12 +5247,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[4\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[4\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1008:1008:1008) (1008:1008:1008))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (991:991:991) (991:991:991))
+        (PORT aclr (1145:1145:1145) (1145:1145:1145))
         (PORT ena (3296:3296:3296) (3296:3296:3296))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -5265,7 +5265,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[4\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_UMID\[4\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (475:475:475) (475:475:475))
@@ -5274,12 +5274,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[4\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[4\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1008:1008:1008) (1008:1008:1008))
         (PORT sdata (3041:3041:3041) (3041:3041:3041))
-        (PORT aclr (1145:1145:1145) (1145:1145:1145))
+        (PORT aclr (991:991:991) (991:991:991))
         (PORT ena (3205:3205:3205) (3205:3205:3205))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -5305,7 +5305,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_UMID\[5\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[5\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (485:485:485) (485:485:485))
@@ -5314,7 +5314,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[5\]\~feeder\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[5\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (2958:2958:2958) (2958:2958:2958))
@@ -5324,12 +5324,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[5\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[5\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1008:1008:1008) (1008:1008:1008))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (991:991:991) (991:991:991))
+        (PORT aclr (1145:1145:1145) (1145:1145:1145))
         (PORT ena (3296:3296:3296) (3296:3296:3296))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -5342,7 +5342,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[5\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_UMID\[5\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (504:504:504) (504:504:504))
@@ -5351,12 +5351,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[5\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[5\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1008:1008:1008) (1008:1008:1008))
         (PORT sdata (2892:2892:2892) (2892:2892:2892))
-        (PORT aclr (1145:1145:1145) (1145:1145:1145))
+        (PORT aclr (991:991:991) (991:991:991))
         (PORT ena (3205:3205:3205) (3205:3205:3205))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -5386,7 +5386,7 @@
     (DELAY
       (ABSOLUTE
         (PORT dataa (352:352:352) (352:352:352))
-        (PORT datab (329:329:329) (329:329:329))
+        (PORT datab (333:333:333) (333:333:333))
         (PORT datac (332:332:332) (332:332:332))
         (PORT datad (334:334:334) (334:334:334))
         (IOPATH dataa combout (180:180:180) (180:180:180))
@@ -5430,7 +5430,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_UMID\[7\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[7\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (484:484:484) (484:484:484))
@@ -5439,7 +5439,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[7\]\~feeder\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[7\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (2863:2863:2863) (2863:2863:2863))
@@ -5449,12 +5449,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[7\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[7\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (993:993:993) (993:993:993))
         (PORT datain (42:42:42) (42:42:42))
-        (PORT aclr (976:976:976) (976:976:976))
+        (PORT aclr (984:984:984) (984:984:984))
         (PORT ena (3230:3230:3230) (3230:3230:3230))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -5467,7 +5467,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[7\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_UMID\[7\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (474:474:474) (474:474:474))
@@ -5476,12 +5476,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[7\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[7\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (993:993:993) (993:993:993))
         (PORT sdata (2902:2902:2902) (2902:2902:2902))
-        (PORT aclr (1132:1132:1132) (1132:1132:1132))
+        (PORT aclr (1125:1125:1125) (1125:1125:1125))
         (PORT ena (3237:3237:3237) (3237:3237:3237))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -5507,7 +5507,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_UMID\[2\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_TEMP\[2\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (484:484:484) (484:484:484))
@@ -5516,12 +5516,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_UMIDADE\|saida_umidade\[2\]\\)
+    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[2\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (993:993:993) (993:993:993))
         (PORT sdata (2987:2987:2987) (2987:2987:2987))
-        (PORT aclr (976:976:976) (976:976:976))
+        (PORT aclr (984:984:984) (984:984:984))
         (PORT ena (3230:3230:3230) (3230:3230:3230))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -5534,7 +5534,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[2\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_UMID\[2\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (454:454:454) (454:454:454))
@@ -5543,12 +5543,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[2\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[2\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (993:993:993) (993:993:993))
         (PORT sdata (3000:3000:3000) (3000:3000:3000))
-        (PORT aclr (1132:1132:1132) (1132:1132:1132))
+        (PORT aclr (1125:1125:1125) (1125:1125:1125))
         (PORT ena (3237:3237:3237) (3237:3237:3237))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -5590,7 +5590,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[10\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_UMID\[10\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (475:475:475) (475:475:475))
@@ -5599,12 +5599,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[10\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[10\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (1008:1008:1008) (1008:1008:1008))
         (PORT sdata (3033:3033:3033) (3033:3033:3033))
-        (PORT aclr (1145:1145:1145) (1145:1145:1145))
+        (PORT aclr (991:991:991) (991:991:991))
         (PORT ena (3205:3205:3205) (3205:3205:3205))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -5662,7 +5662,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_asynch_io")
-    (INSTANCE \\DT_TEMP\[11\]\~I\\.asynch_inst)
+    (INSTANCE \\DT_UMID\[11\]\~I\\.asynch_inst)
     (DELAY
       (ABSOLUTE
         (IOPATH padio combout (464:464:464) (464:464:464))
@@ -5671,12 +5671,12 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_ff")
-    (INSTANCE \\RG_TEMPERATURA\|saida_temperatura\[11\]\\)
+    (INSTANCE \\RG_UMIDADE\|saida_umidade\[11\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (999:999:999) (999:999:999))
         (PORT sdata (2895:2895:2895) (2895:2895:2895))
-        (PORT aclr (990:990:990) (990:990:990))
+        (PORT aclr (982:982:982) (982:982:982))
         (PORT ena (3233:3233:3233) (3233:3233:3233))
         (IOPATH (posedge clk) regout (141:141:141) (141:141:141))
         (IOPATH (posedge aclr) regout (133:133:133) (133:133:133))
@@ -5724,7 +5724,7 @@
         (PORT dataa (116:116:116) (116:116:116))
         (PORT datab (106:106:106) (106:106:106))
         (PORT datac (317:317:317) (317:317:317))
-        (PORT datad (323:323:323) (323:323:323))
+        (PORT datad (319:319:319) (319:319:319))
         (IOPATH dataa combout (187:187:187) (187:187:187))
         (IOPATH datab combout (180:180:180) (180:180:180))
         (IOPATH datac combout (133:133:133) (133:133:133))

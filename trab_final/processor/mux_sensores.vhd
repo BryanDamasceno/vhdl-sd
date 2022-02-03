@@ -14,8 +14,8 @@ end mux_sensores;
 architecture comportamento of mux_sensores is
 	begin
 		with selecao2 select
-			escolha2 <= saida_umidade when '0',
-						saida_temperatura when others;
+			escolha2 <= saida_temperatura when '0',
+						saida_umidade when others;
 						
 end comportamento;
 
