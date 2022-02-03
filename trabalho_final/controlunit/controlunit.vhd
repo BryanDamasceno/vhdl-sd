@@ -84,29 +84,7 @@ begin
 		variable cont : integer:= 0;
 				
 			begin
---				gt(0) <= '0';
---				gt(1) <= '0';
---				gt(2) <= '0';
---				gt(3) <= '0';
---				gt(4) <= '0';
---				gt(5) <= '0';
---				gt(6) <= '0';
---				
---				lt(0) <= '0';
---				lt(1) <= '0';
---				lt(2) <= '0';
---				lt(3) <= '0';
---				lt(4) <= '0';
---				lt(5) <= '0';
---				lt(6) <= '0';
---				
---				eq(0) <= '0';
---				eq(1) <= '0';
---				eq(2) <= '0';
---				eq(3) <= '0';
---				eq(4) <= '0';
---				eq(5) <= '0';
---				eq(6) <= '0';
+
 		case this_state is
 		
 			when S0 =>
@@ -162,7 +140,7 @@ begin
 			ADD <= std_logic_vector (to_unsigned(0,4));
 			next_state <= S2;
 			
-			when S2 =>			--Pode Dar Problema!!!!
+			when S2 =>			
 				
 				ESTADO <= "00010";
 				LD_TEMPERATURA <= '1';
