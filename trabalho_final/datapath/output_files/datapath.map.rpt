@@ -1,5 +1,5 @@
 Analysis & Synthesis report for datapath
-Wed Feb 02 13:52:35 2022
+Thu Feb 03 21:33:35 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -50,16 +50,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Feb 02 13:52:35 2022           ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 03 21:33:35 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; datapath                                        ;
 ; Top-level Entity Name              ; datapath                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 270                                             ;
-;     Total combinational functions  ; 222                                             ;
-;     Dedicated logic registers      ; 108                                             ;
-; Total registers                    ; 108                                             ;
-; Total pins                         ; 72                                              ;
+; Total logic elements               ; 272                                             ;
+;     Total combinational functions  ; 224                                             ;
+;     Dedicated logic registers      ; 109                                             ;
+; Total registers                    ; 109                                             ;
+; Total pins                         ; 88                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -187,28 +187,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 270   ;
+; Estimated Total logic elements              ; 272   ;
 ;                                             ;       ;
-; Total combinational functions               ; 222   ;
+; Total combinational functions               ; 224   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 56    ;
-;     -- 3 input functions                    ; 88    ;
+;     -- 4 input functions                    ; 57    ;
+;     -- 3 input functions                    ; 89    ;
 ;     -- <=2 input functions                  ; 78    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 122   ;
+;     -- normal mode                          ; 124   ;
 ;     -- arithmetic mode                      ; 100   ;
 ;                                             ;       ;
-; Total registers                             ; 108   ;
-;     -- Dedicated logic registers            ; 108   ;
+; Total registers                             ; 109   ;
+;     -- Dedicated logic registers            ; 109   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 72    ;
+; I/O pins                                    ; 88    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clock ;
-; Maximum fan-out                             ; 108   ;
-; Total fan-out                               ; 999   ;
-; Average fan-out                             ; 2.49  ;
+; Maximum fan-out                             ; 109   ;
+; Total fan-out                               ; 1023  ;
+; Average fan-out                             ; 2.43  ;
 +---------------------------------------------+-------+
 
 
@@ -217,30 +217,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
-; |datapath                              ; 222 (0)           ; 108 (0)      ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |datapath                                   ; work         ;
-;    |comparador_sensores:COMP_SENSORES| ; 42 (42)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|comparador_sensores:COMP_SENSORES ; work         ;
+; |datapath                              ; 224 (0)           ; 109 (0)      ; 0           ; 0            ; 0       ; 0         ; 88   ; 0            ; |datapath                                   ; work         ;
+;    |comparador_sensores:COMP_SENSORES| ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|comparador_sensores:COMP_SENSORES ; work         ;
 ;    |comparador_temporal:COMP_TEMPORAL| ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|comparador_temporal:COMP_TEMPORAL ; work         ;
 ;    |contador:CNT_T|                    ; 95 (95)           ; 48 (48)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|contador:CNT_T                    ; work         ;
 ;    |mux_sensores:M_SENSORES|           ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mux_sensores:M_SENSORES           ; work         ;
 ;    |mux_temporal:M_TEMPORAL|           ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mux_temporal:M_TEMPORAL           ; work         ;
-;    |reg_intervalo:RG_INTERVALO|        ; 0 (0)             ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|reg_intervalo:RG_INTERVALO        ; work         ;
+;    |reg_intervalo:RG_INTERVALO|        ; 0 (0)             ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|reg_intervalo:RG_INTERVALO        ; work         ;
 ;    |reg_temperatura:RG_TEMPERATURA|    ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|reg_temperatura:RG_TEMPERATURA    ; work         ;
 ;    |reg_tempo:RG_TEMPO|                ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|reg_tempo:RG_TEMPO                ; work         ;
 ;    |reg_umidade:RG_UMIDADE|            ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|reg_umidade:RG_UMIDADE            ; work         ;
-;    |rom:RM|                            ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|rom:RM                            ; work         ;
+;    |rom:RM|                            ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|rom:RM                            ; work         ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                             ;
-+---------------------------------------------------+------------------------------------------------------------+
-; Register name                                     ; Reason for Removal                                         ;
-+---------------------------------------------------+------------------------------------------------------------+
-; reg_intervalo:RG_INTERVALO|saida_intervalo[0,8,9] ; Stuck at GND due to stuck port data_in                     ;
-; reg_intervalo:RG_INTERVALO|saida_intervalo[7]     ; Merged with reg_intervalo:RG_INTERVALO|saida_intervalo[15] ;
-; Total Number of Removed Registers = 4             ;                                                            ;
-+---------------------------------------------------+------------------------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                         ;
++---------------------------------------------------+----------------------------------------+
+; Register name                                     ; Reason for Removal                     ;
++---------------------------------------------------+----------------------------------------+
+; reg_intervalo:RG_INTERVALO|saida_intervalo[0,8,9] ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 3             ;                                        ;
++---------------------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -248,12 +247,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 108   ;
+; Total registers                              ; 109   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 60    ;
+; Number of registers using Asynchronous Clear ; 61    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 75    ;
+; Number of registers using Clock Enable       ; 76    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -354,7 +353,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Feb 02 13:52:32 2022
+    Info: Processing started: Thu Feb 03 21:33:32 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off datapath -c datapath
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (12125): Using design file datapath.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
@@ -410,18 +409,22 @@ Warning (12125): Using design file contador.vhd, which is not specified as a des
     Info (12022): Found design unit 1: contador-comportamento
     Info (12023): Found entity 1: contador
 Info (12128): Elaborating entity "contador" for hierarchy "contador:CNT_T"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DT_INTER[0]" is stuck at GND
+    Warning (13410): Pin "DT_INTER[8]" is stuck at GND
+    Warning (13410): Pin "DT_INTER[9]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "EN_ROM"
-Info (21057): Implemented 357 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 376 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 66 input pins
-    Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 285 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 4648 megabytes
-    Info: Processing ended: Wed Feb 02 13:52:35 2022
+    Info (21059): Implemented 22 output pins
+    Info (21061): Implemented 288 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 4652 megabytes
+    Info: Processing ended: Thu Feb 03 21:33:35 2022
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

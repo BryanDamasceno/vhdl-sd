@@ -19,11 +19,11 @@ entity controlunit is
 		 
 			E : in std_logic;
 		 
-		 DT_TEMPO, DT_TEMP, DT_UMID : in std_logic_vector (data_width16 downto 0);
+		 DT_TEMPO, DT_TEMP, DT_UMID: in std_logic_vector (data_width16 downto 0);
 		 -- Entradas do datapath para a controladora
 		 
 		 GT_TEMPORAL, LT_TEMPORAL, EQ_TEMPORAL, GT_SENSORES, LT_SENSORES, EQ_SENSORES : in std_logic;
-
+			DT_INTER : in std_logic_vector (data_width16 downto 0);
 		  -- Saídas da controladora para o datapath
 		  
 		 LD_TEMPERATURA, CL_TEMPERATURA, LD_UMIDADE, CL_UMIDADE, LD_TEMPO, CL_TEMPO, LD_INTERVALO, CL_INTERVALO : out std_logic;
@@ -40,7 +40,7 @@ entity controlunit is
 		 DISP_TEMPO : out std_logic_vector (data_width16 downto 0):= std_logic_vector(to_unsigned(0,16));	
 		 DISP_TEMP	:out std_logic_vector (data_width16 downto 0):= std_logic_vector(to_unsigned(0,16));
 		 DISP_UMID : out std_logic_vector (data_width16 downto 0):= std_logic_vector(to_unsigned(0,16));
-		 
+		 DISP_INTER : out std_logic_vector (data_width16 downto 0) := std_logic_vector(to_unsigned(0,16));
 		 ALARME, IRRIGA, ERROR : out std_logic;
 		 
 		 ESTADO : out std_logic_vector (4 downto 0)
@@ -56,16 +56,6 @@ architecture behaviour of controlunit is
 	 signal this_state, next_state: state;
 	 		signal gt, eq, lt : vetor;
 
-	
-	 --function inicia (valores : vetor)
-		--return boolean is
-		--begin 
-			--for i in 0 to 6 loop
-				--valores(i) := '0';
-			--end loop;
-		--return true;
-		--end function;
-				
 begin 
 
 	 process (CLOCK) is
@@ -140,7 +130,7 @@ begin
 			ADD <= std_logic_vector (to_unsigned(0,4));
 			next_state <= S2;
 			
-			when S2 =>			
+			when S2 =>			--Pode Dar Problema!!!!
 				
 				ESTADO <= "00010";
 				LD_TEMPERATURA <= '1';
@@ -322,6 +312,7 @@ begin
 			DISP_TEMPO <= DT_TEMPO;
 			DISP_UMID <= DT_UMID;
 			DISP_TEMP <= DT_TEMP;
+			DISP_INTER <= DT_INTER;
 			ADD <= std_logic_vector (to_unsigned(0,4));
 			
 			next_state <= S10;

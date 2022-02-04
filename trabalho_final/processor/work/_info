@@ -17,7 +17,7 @@ L6
 Vd9dLk0I8:z5j4a2@<aYH]1
 Z9 OV;C;10.1d;51
 31
-Z10 !s108 1643861278.104000
+Z10 !s108 1643935216.850000
 Z11 !s90 -reportprogress|300|-explicit|-93|comparador_sensores.vhd|
 Z12 !s107 comparador_sensores.vhd|
 Z13 o-explicit -93 -O0
@@ -56,7 +56,7 @@ L6
 VKg4XY7DP9YW<TmaTfKeHL2
 R9
 31
-Z18 !s108 1643861278.277000
+Z18 !s108 1643935216.966000
 Z19 !s90 -reportprogress|300|-explicit|-93|comparador_temporal.vhd|
 Z20 !s107 comparador_temporal.vhd|
 R13
@@ -94,7 +94,7 @@ L5
 V<3CMJE3>LBYR`m`^XhaDn1
 R9
 31
-Z25 !s108 1643861278.490000
+Z25 !s108 1643935217.183000
 Z26 !s90 -reportprogress|300|-explicit|-93|contador.vhd|
 Z27 !s107 contador.vhd|
 R13
@@ -119,7 +119,7 @@ R14
 !s100 gFlZBL@VVlA>>GK4Ize[n0
 !i10b 1
 Econtrolunit
-Z28 w1643859120
+Z28 w1643931368
 R22
 R4
 R5
@@ -128,24 +128,24 @@ Z29 8controlunit.vhd
 Z30 Fcontrolunit.vhd
 l0
 L7
-VUznIDhM^F3?@G5bfhj8Fi1
+VaeAMZB?9d4j:YS?l50S_i2
 R9
 31
-Z31 !s108 1643861277.789000
+Z31 !s108 1643935216.627000
 Z32 !s90 -reportprogress|300|-explicit|-93|controlunit.vhd|
 Z33 !s107 controlunit.vhd|
 R13
 R14
-!s100 Q2IXf]ZUMZE3YdXQMN06m0
+!s100 U<A;@85maRCcP5be8bo<g0
 !i10b 1
 Abehaviour
 R22
 R4
 R5
-DEx4 work 11 controlunit 0 22 UznIDhM^F3?@G5bfhj8Fi1
-l69
+DEx4 work 11 controlunit 0 22 aeAMZB?9d4j:YS?l50S_i2
+l59
 L52
-VAfOz9cR5gX`JLCCm^aLV^0
+VX7fP?2@;^k6NZbcRPT_z=2
 R9
 31
 R31
@@ -153,10 +153,10 @@ R32
 R33
 R13
 R14
-!s100 ^]^DDe3[?^X;VHBQXd42L1
+!s100 J?FjE5z>YRPcH8XiHOR]<1
 !i10b 1
 Edatapath
-Z34 w1643820535
+Z34 w1643934100
 R22
 R4
 R5
@@ -165,24 +165,24 @@ Z35 8datapath.vhd
 Z36 Fdatapath.vhd
 l0
 L7
-VjG:1OY?Sc7@ozVSj><<A13
+VU55IAlG:a9N_8oKmX?cln0
 R9
 31
-Z37 !s108 1643861277.530000
+Z37 !s108 1643935216.408000
 Z38 !s90 -reportprogress|300|-explicit|-93|datapath.vhd|
 Z39 !s107 datapath.vhd|
 R13
 R14
-!s100 aech4P>XGldNK794g7aIG0
+!s100 mR9;5k9SObGZ@kh`SHUEV2
 !i10b 1
 Abehaviour
 R22
 R4
 R5
-DEx4 work 8 datapath 0 22 jG:1OY?Sc7@ozVSj><<A13
+DEx4 work 8 datapath 0 22 U55IAlG:a9N_8oKmX?cln0
 l142
 L41
-V0;CU7;XPlf;J[dcDBO<lZ1
+VFOh9dc^GT=INoE?ldbN?j3
 R9
 31
 R37
@@ -190,7 +190,7 @@ R38
 R39
 R13
 R14
-!s100 `JCV?2_i>9jd4Q;iVY`@A3
+!s100 2JbAofmhYY0C`>F`9:zib0
 !i10b 1
 Emux_sensores
 Z40 w1643665883
@@ -204,7 +204,7 @@ L6
 VzZD07<X5AI6b>LNVZ<]]e2
 R9
 31
-Z43 !s108 1643861278.712000
+Z43 !s108 1643935217.408000
 Z44 !s90 -reportprogress|300|-explicit|-93|mux_sensores.vhd|
 Z45 !s107 mux_sensores.vhd|
 R13
@@ -239,7 +239,7 @@ L6
 VRMTfWGdjE=fY7T?S^Kc?f1
 R9
 31
-Z49 !s108 1643861278.819000
+Z49 !s108 1643935217.649000
 Z50 !s90 -reportprogress|300|-explicit|-93|mux_temporal.vhd|
 Z51 !s107 mux_temporal.vhd|
 R13
@@ -263,7 +263,7 @@ R14
 !s100 1nXikF2d`^OiUW_<?XSn:1
 !i10b 1
 Eprocessor
-Z52 w1643858271
+Z52 w1643935139
 R22
 R4
 R5
@@ -272,24 +272,24 @@ Z53 8processor.vhd
 Z54 Fprocessor.vhd
 l0
 L5
-VA6D2iDL_XAZ9Q4lZh<@a^3
+VBERBfn5Qnez1J<KDK73X;3
 R9
 31
-Z55 !s108 1643861277.332000
+Z55 !s108 1643935216.183000
 Z56 !s90 -reportprogress|300|-explicit|-93|processor.vhd|
 Z57 !s107 processor.vhd|
 R13
 R14
-!s100 CGYEchYLT85S?42jln58W2
+!s100 <`1:oA<gzaWj2QiAdia]42
 !i10b 1
 Abehaviour
 R22
 R4
 R5
-DEx4 work 9 processor 0 22 A6D2iDL_XAZ9Q4lZh<@a^3
-l132
+DEx4 work 9 processor 0 22 BERBfn5Qnez1J<KDK73X;3
+l140
 L37
-VJ6kWJ7E6V1RX29jfFSJQn2
+V86Jkn5RQ[1T@Udfg7HUGg0
 R9
 31
 R55
@@ -297,7 +297,7 @@ R56
 R57
 R13
 R14
-!s100 NT4]e=@NXW9>O2YfUeR5H1
+!s100 6K>Q`n`FAdlFd;8Q^1?IF2
 !i10b 1
 Ereg_intervalo
 Z58 w1643382381
@@ -312,7 +312,7 @@ L5
 VE=;1^i6^VocJ6>QIC[O]K3
 R9
 31
-Z61 !s108 1643861279.361000
+Z61 !s108 1643935218.506000
 Z62 !s90 -reportprogress|300|-explicit|-93|reg_intervalo.vhd|
 Z63 !s107 reg_intervalo.vhd|
 R13
@@ -349,7 +349,7 @@ L5
 V?ji:VB36MF<a:;0KMCIAM3
 R9
 31
-Z67 !s108 1643861278.923000
+Z67 !s108 1643935217.859000
 Z68 !s90 -reportprogress|300|-explicit|-93|reg_temperatura.vhd|
 Z69 !s107 reg_temperatura.vhd|
 R13
@@ -386,7 +386,7 @@ L5
 V3_B7BRZANJjYVH@QzgOk60
 R9
 31
-Z73 !s108 1643861279.174000
+Z73 !s108 1643935218.277000
 Z74 !s90 -reportprogress|300|-explicit|-93|reg_tempo.vhd|
 Z75 !s107 reg_tempo.vhd|
 R13
@@ -423,7 +423,7 @@ L5
 VHkBa0cH7io:QXE3[SEOnV1
 R9
 31
-Z79 !s108 1643861279.031000
+Z79 !s108 1643935218.068000
 Z80 !s90 -reportprogress|300|-explicit|-93|reg_umidade.vhd|
 Z81 !s107 reg_umidade.vhd|
 R13
@@ -448,7 +448,7 @@ R14
 !s100 X_DnI3a;MCjVKbolUDhNN2
 !i10b 1
 Erom
-Z82 w1643326382
+Z82 w1643934209
 R22
 R4
 R5
@@ -460,7 +460,7 @@ L6
 VUR2Y[Se?NUV;GXa<^JoHc3
 R9
 31
-Z85 !s108 1643861279.463000
+Z85 !s108 1643935218.722000
 Z86 !s90 -reportprogress|300|-explicit|-93|rom.vhd|
 Z87 !s107 rom.vhd|
 R13
@@ -474,7 +474,7 @@ R5
 DEx4 work 3 rom 0 22 UR2Y[Se?NUV;GXa<^JoHc3
 l34
 L15
-Vh>[>ZcZ`J3BXlfo@I[X_I2
+VWon@2ZjXNJ]PFYkFRNNMn0
 R9
 31
 R85
@@ -482,10 +482,10 @@ R86
 R87
 R13
 R14
-!s100 cOaBIVP;QA_BQ:dWNQmD72
+!s100 6KgYj2o;0Ul4b>lM]l;G10
 !i10b 1
 Etb_processor
-Z88 w1643861269
+Z88 w1643935154
 R22
 R4
 R5
@@ -499,7 +499,7 @@ V8clJ3kfLafiKgo`04kU_O2
 R9
 31
 !i10b 1
-Z91 !s108 1643861279.574000
+Z91 !s108 1643935218.937000
 Z92 !s90 -reportprogress|300|-explicit|-93|tb_processor.vhd|
 Z93 !s107 tb_processor.vhd|
 R13
@@ -511,8 +511,8 @@ R5
 DEx4 work 12 tb_processor 0 22 8clJ3kfLafiKgo`04kU_O2
 l50
 L9
-VZ6_O:Uh[COBYZea`[3o]J0
-!s100 W;i<KelaeQ4YdG9BLzRL92
+Vl37J^kaB2So3];?if8i_[0
+!s100 [jE6GVlkiN<SI]_f8P3bC0
 R9
 31
 !i10b 1

@@ -29,8 +29,8 @@ entity datapath is
 			ADD : in std_logic_vector (3 downto 0);
 			
 		  -- Saídas do datapth para controladora
-			
-			GT_TEMPORAL, LT_TEMPORAL, EQ_TEMPORAL, GT_SENSORES, LT_SENSORES, EQ_SENSORES : out std_logic
+			DT_INTER : out std_logic_vector (data_width16 downto 0);
+			GT_TEMPORAL, LT_TEMPORAL, EQ_TEMPORAL, GT_SENSORES, LT_SENSORES, EQ_SENSORES: out std_logic
 			
 		  -- Saídas do datapath para fora		  
 		  
@@ -168,6 +168,7 @@ begin
 	
 	 CNT_T: contador port map (enable_contador => EN_CONTADOR, reset_contador => RST_CONTADOR, count => CNT, clock => CLOCK);
 	 
+	 DT_INTER <= OUT_INTERVALO;
 end behaviour;
 
 

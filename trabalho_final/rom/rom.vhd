@@ -48,6 +48,7 @@ begin
        when "1001" => data <= my_rom(9);
        when "1010" => data <= my_rom(10);
        when "1011" => data <= my_rom(11);
+		 when "1100" => data <= my_rom (12);
        when others => data <= std_logic_vector(to_unsigned (0,16));
 	 end case;
   end process;

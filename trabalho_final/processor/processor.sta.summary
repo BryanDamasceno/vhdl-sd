@@ -2,100 +2,424 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'controlunit:CONTROL|this_state.S2'
-Slack : -4.340
-TNS   : -8.409
+Type  : Slow 1200mV 85C Model Setup 'controlunit:CONTROL|this_state.S18'
+Slack : -7.999
+TNS   : -8.302
+
+Type  : Slow 1200mV 85C Model Setup 'controlunit:CONTROL|this_state.S13'
+Slack : -7.924
+TNS   : -10.199
+
+Type  : Slow 1200mV 85C Model Setup 'controlunit:CONTROL|this_state.S16'
+Slack : -7.709
+TNS   : -8.234
+
+Type  : Slow 1200mV 85C Model Setup 'controlunit:CONTROL|this_state.S14'
+Slack : -6.371
+TNS   : -13.310
+
+Type  : Slow 1200mV 85C Model Setup 'controlunit:CONTROL|this_state.S15'
+Slack : -5.568
+TNS   : -12.361
+
+Type  : Slow 1200mV 85C Model Setup 'controlunit:CONTROL|this_state.S12'
+Slack : -5.298
+TNS   : -12.675
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_P'
-Slack : -0.826
-TNS   : -2.666
+Slack : -5.216
+TNS   : -216.961
+
+Type  : Slow 1200mV 85C Model Setup 'controlunit:CONTROL|this_state.S17'
+Slack : -5.130
+TNS   : -11.907
+
+Type  : Slow 1200mV 85C Model Setup 'controlunit:CONTROL|this_state.S20'
+Slack : -1.772
+TNS   : -9.540
+
+Type  : Slow 1200mV 85C Model Setup 'controlunit:CONTROL|this_state.S9'
+Slack : -1.065
+TNS   : -4.326
+
+Type  : Slow 1200mV 85C Model Setup 'controlunit:CONTROL|this_state.S19'
+Slack : -0.950
+TNS   : -3.572
+
+Type  : Slow 1200mV 85C Model Hold 'controlunit:CONTROL|this_state.S20'
+Slack : -2.362
+TNS   : -17.625
+
+Type  : Slow 1200mV 85C Model Hold 'controlunit:CONTROL|this_state.S19'
+Slack : -2.291
+TNS   : -13.147
+
+Type  : Slow 1200mV 85C Model Hold 'controlunit:CONTROL|this_state.S18'
+Slack : -2.191
+TNS   : -7.696
+
+Type  : Slow 1200mV 85C Model Hold 'controlunit:CONTROL|this_state.S16'
+Slack : -2.132
+TNS   : -7.165
+
+Type  : Slow 1200mV 85C Model Hold 'controlunit:CONTROL|this_state.S15'
+Slack : -1.902
+TNS   : -5.195
+
+Type  : Slow 1200mV 85C Model Hold 'controlunit:CONTROL|this_state.S14'
+Slack : -1.900
+TNS   : -5.181
+
+Type  : Slow 1200mV 85C Model Hold 'controlunit:CONTROL|this_state.S17'
+Slack : -1.854
+TNS   : -5.064
+
+Type  : Slow 1200mV 85C Model Hold 'controlunit:CONTROL|this_state.S12'
+Slack : -1.759
+TNS   : -4.332
+
+Type  : Slow 1200mV 85C Model Hold 'controlunit:CONTROL|this_state.S13'
+Slack : -1.740
+TNS   : -4.218
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK_P'
-Slack : -0.035
-TNS   : -0.035
+Slack : -0.211
+TNS   : -1.140
 
-Type  : Slow 1200mV 85C Model Hold 'controlunit:CONTROL|this_state.S2'
-Slack : 0.012
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Hold 'controlunit:CONTROL|this_state.S9'
+Slack : -0.200
+TNS   : -0.674
 
 Type  : Slow 1200mV 85C Model Recovery 'CLOCK_P'
-Slack : -0.472
-TNS   : -6.310
+Slack : -2.935
+TNS   : -159.842
 
 Type  : Slow 1200mV 85C Model Removal 'CLOCK_P'
-Slack : 0.903
+Slack : 1.996
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_P'
 Slack : -3.000
-TNS   : -23.000
+TNS   : -101.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S2'
-Slack : 0.464
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S20'
+Slack : 0.333
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S2'
-Slack : -3.878
-TNS   : -7.503
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S17'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S9'
+Slack : 0.389
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S14'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S15'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S16'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S13'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S12'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S19'
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S18'
+Slack : 0.423
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S18'
+Slack : -7.146
+TNS   : -7.358
+
+Type  : Slow 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S13'
+Slack : -7.038
+TNS   : -8.792
+
+Type  : Slow 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S16'
+Slack : -6.833
+TNS   : -7.183
+
+Type  : Slow 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S14'
+Slack : -5.714
+TNS   : -11.673
+
+Type  : Slow 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S15'
+Slack : -4.952
+TNS   : -10.821
+
+Type  : Slow 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S12'
+Slack : -4.751
+TNS   : -11.017
+
+Type  : Slow 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S17'
+Slack : -4.587
+TNS   : -10.425
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_P'
-Slack : -0.637
-TNS   : -1.819
+Slack : -4.511
+TNS   : -183.009
+
+Type  : Slow 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S20'
+Slack : -1.515
+TNS   : -7.587
+
+Type  : Slow 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S9'
+Slack : -0.971
+TNS   : -3.939
+
+Type  : Slow 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S19'
+Slack : -0.744
+TNS   : -2.709
+
+Type  : Slow 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S20'
+Slack : -2.030
+TNS   : -15.149
+
+Type  : Slow 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S19'
+Slack : -1.967
+TNS   : -11.270
+
+Type  : Slow 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S18'
+Slack : -1.863
+TNS   : -6.268
+
+Type  : Slow 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S16'
+Slack : -1.799
+TNS   : -5.692
+
+Type  : Slow 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S15'
+Slack : -1.596
+TNS   : -4.153
+
+Type  : Slow 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S14'
+Slack : -1.595
+TNS   : -4.147
+
+Type  : Slow 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S17'
+Slack : -1.542
+TNS   : -3.904
+
+Type  : Slow 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S12'
+Slack : -1.473
+TNS   : -3.468
+
+Type  : Slow 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S13'
+Slack : -1.451
+TNS   : -3.358
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_P'
-Slack : 0.015
-TNS   : 0.000
+Slack : -0.126
+TNS   : -0.548
 
-Type  : Slow 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S2'
-Slack : 0.041
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S9'
+Slack : -0.062
+TNS   : -0.134
 
 Type  : Slow 1200mV 0C Model Recovery 'CLOCK_P'
-Slack : -0.309
-TNS   : -3.846
+Slack : -2.500
+TNS   : -135.213
 
 Type  : Slow 1200mV 0C Model Removal 'CLOCK_P'
-Slack : 0.815
+Slack : 1.722
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_P'
 Slack : -3.000
-TNS   : -23.000
+TNS   : -101.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S2'
-Slack : 0.470
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S13'
+Slack : 0.349
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S2'
-Slack : -2.188
-TNS   : -4.194
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S16'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S12'
+Slack : 0.364
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S15'
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S14'
+Slack : 0.370
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S18'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S19'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S20'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S17'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S9'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S13'
+Slack : -4.300
+TNS   : -4.300
+
+Type  : Fast 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S18'
+Slack : -4.300
+TNS   : -4.300
+
+Type  : Fast 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S16'
+Slack : -4.129
+TNS   : -4.129
+
+Type  : Fast 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S14'
+Slack : -3.268
+TNS   : -6.066
+
+Type  : Fast 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S15'
+Slack : -2.830
+TNS   : -5.496
+
+Type  : Fast 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S12'
+Slack : -2.630
+TNS   : -5.256
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_P'
-Slack : -0.282
-TNS   : -0.443
+Slack : -2.615
+TNS   : -93.313
+
+Type  : Fast 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S17'
+Slack : -2.484
+TNS   : -4.951
+
+Type  : Fast 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S20'
+Slack : -0.625
+TNS   : -2.342
+
+Type  : Fast 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S9'
+Slack : -0.298
+TNS   : -0.431
+
+Type  : Fast 1200mV 0C Model Setup 'controlunit:CONTROL|this_state.S19'
+Slack : -0.165
+TNS   : -0.389
+
+Type  : Fast 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S20'
+Slack : -1.517
+TNS   : -12.110
+
+Type  : Fast 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S19'
+Slack : -1.479
+TNS   : -9.029
+
+Type  : Fast 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S18'
+Slack : -1.414
+TNS   : -5.559
+
+Type  : Fast 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S16'
+Slack : -1.398
+TNS   : -5.415
+
+Type  : Fast 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S15'
+Slack : -1.264
+TNS   : -4.209
+
+Type  : Fast 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S14'
+Slack : -1.263
+TNS   : -4.200
+
+Type  : Fast 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S17'
+Slack : -1.247
+TNS   : -4.160
+
+Type  : Fast 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S12'
+Slack : -1.184
+TNS   : -3.489
+
+Type  : Fast 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S13'
+Slack : -1.182
+TNS   : -3.471
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_P'
-Slack : -0.118
-TNS   : -0.403
+Slack : -0.252
+TNS   : -2.378
 
-Type  : Fast 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S2'
-Slack : -0.117
-TNS   : -0.121
+Type  : Fast 1200mV 0C Model Hold 'controlunit:CONTROL|this_state.S9'
+Slack : -0.025
+TNS   : -0.050
 
 Type  : Fast 1200mV 0C Model Recovery 'CLOCK_P'
-Slack : 0.156
-TNS   : 0.000
+Slack : -1.332
+TNS   : -70.643
 
 Type  : Fast 1200mV 0C Model Removal 'CLOCK_P'
-Slack : 0.496
+Slack : 1.213
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_P'
 Slack : -3.000
-TNS   : -23.520
+TNS   : -103.231
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S2'
-Slack : 0.460
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S17'
+Slack : 0.331
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S20'
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S16'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S9'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S15'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S12'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S14'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S13'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S19'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controlunit:CONTROL|this_state.S18'
+Slack : 0.394
 TNS   : 0.000
 
 ------------------------------------------------------------
