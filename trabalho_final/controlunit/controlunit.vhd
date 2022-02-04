@@ -130,7 +130,7 @@ begin
 			ADD <= std_logic_vector (to_unsigned(0,4));
 			next_state <= S2;
 			
-			when S2 =>			--Pode Dar Problema!!!!
+			when S2 =>			
 				
 				ESTADO <= "00010";
 				LD_TEMPERATURA <= '1';
